@@ -1,0 +1,386 @@
+[
+  {
+    "id": "SCOPUS_736",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Develops and validates a dedicated scale measuring AI dependence/reliance among university students, with educational context as primary setting."
+  },
+  {
+    "id": "SCOPUS_710",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Focuses on educators' perceptions of AI and academic integrity; trust not a focal construct."
+  },
+  {
+    "id": "SCOPUS_621",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Examines perceptions of AI risks in academic performance prediction; trust not a dedicated measured construct."
+  },
+  {
+    "id": "SCOPUS_640",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores EFL student perceptions of AI writing tools; trust not a measured or focal construct."
+  },
+  {
+    "id": "SCOPUS_618",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Evaluates AI tutoring effectiveness for calculus; trust not a focal construct."
+  },
+  {
+    "id": "SCOPUS_603",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Reliance on AI-powered writing tools is the central variable studied among ESL health science graduates in an educational context."
+  },
+  {
+    "id": "SCOPUS_669",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Covers general educator insights on AI in education; trust not a measured focal construct."
+  },
+  {
+    "id": "SCOPUS_708",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores ChatGPT effects on cognitive/performance skills in CS education; trust not measured or focal."
+  },
+  {
+    "id": "SCOPUS_609",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores instructor perspectives on GenAI roles; trust not a dedicated measured construct."
+  },
+  {
+    "id": "SCOPUS_622",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Evaluates ChatGPT-based ITS efficacy in programming education; trust not a focal construct."
+  },
+  {
+    "id": "SCOPUS_719",
+    "decision": "U",
+    "exclude_code": "",
+    "notes": "TAM study of ChatGPT adoption; abstract truncated - need to verify if trust is explicitly modeled as a variable vs. just acceptance/intention."
+  },
+  {
+    "id": "SCOPUS_660",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Examines technology perceptions and critical thinking among EFL learners; trust not a focal construct."
+  },
+  {
+    "id": "SCOPUS_707",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Study of code-switching in bilingual students; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_625",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores EAP student perceptions of GenAI vs. grammar tools; trust not a dedicated measured construct."
+  },
+  {
+    "id": "SCOPUS_632",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores factors in educator ChatGPT adoption; trust not explicitly modeled as a focal variable."
+  },
+  {
+    "id": "SCOPUS_683",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Studies AI's influence on EFL grammatical proficiency; trust not a focal or measured construct."
+  },
+  {
+    "id": "PSYC_50",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Conceptual essay on AI in management education discussing over-reliance; trust not a measured focal construct."
+  },
+  {
+    "id": "SCOPUS_615",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores undergrad perceptions of AI in personalized learning; trust not a dedicated measured construct."
+  },
+  {
+    "id": "SCOPUS_712",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Studies GenAI effects on English learning outcomes and student acceptance; trust not explicitly modeled as a focal construct."
+  },
+  {
+    "id": "SCOPUS_757",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Examines graduate student perceptions of ChatGPT for writing; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_613",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "AI trust is explicitly listed as a keyword/variable, examining how trust mediates effects of AI teaching use on student well-being and innovative behavior."
+  },
+  {
+    "id": "SCOPUS_709",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "TAM study examining AI acceptance via risk awareness; trust not explicitly modeled as a focal construct."
+  },
+  {
+    "id": "SCOPUS_693",
+    "decision": "X",
+    "exclude_code": "E2",
+    "notes": "Technical focus on automated essay scoring systems and NLP; no trust construct in educational application."
+  },
+  {
+    "id": "SCOPUS_704",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Pedagogical paper on ChatGPT in L2 writing instruction; trust/reliance mentioned peripherally not as focal construct."
+  },
+  {
+    "id": "PSYC_58",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Perspective piece on LLMs in education with gamification; over-reliance concern mentioned but trust not a measured focal construct."
+  },
+  {
+    "id": "SCOPUS_650",
+    "decision": "X",
+    "exclude_code": "E2",
+    "notes": "Technical focus on trustworthy/interpretable AI for learner modeling; no user trust calibration or reliance construct."
+  },
+  {
+    "id": "SCOPUS_753",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Study on mental health self-stigma and social self-worth; no AI or trust-in-AI content."
+  },
+  {
+    "id": "SCOPUS_718",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores EFL learners' attitudes toward GenAI via metaphor analysis; trust not a dedicated measured construct."
+  },
+  {
+    "id": "SCOPUS_701",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Systematic review of AI in HE opportunities/challenges; over-dependence mentioned but trust not a core reviewed theme."
+  },
+  {
+    "id": "SCOPUS_733",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Examines programming instructors' perceptions of ChatGPT; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_723",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Quantitative study of ChatGPT perceptions in HE; trust not explicitly modeled as a focal construct."
+  },
+  {
+    "id": "SCOPUS_748",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Conceptual paper on teacher professional learning through observation; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_614",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "SWOT analysis of GenAI risks in computing education; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_626",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Investigates overreliance on machine translation in language learning as the primary focal construct in an educational context."
+  },
+  {
+    "id": "SCOPUS_664",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Study on HE massification and neoliberalism in Colombia; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_666",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores GenAI integration strategies in HE; trust/over-reliance mentioned but not a dedicated focal construct."
+  },
+  {
+    "id": "PSYC_54",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Qualitative study of student experiences with ChatGPT in university; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_717",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Models task dependence and perceived information reliability as dedicated constructs in students' ChatGPT use, directly relevant to trust calibration in educational AI."
+  },
+  {
+    "id": "SCOPUS_754",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Examines ChatGPT for academic writing instruction; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_742",
+    "decision": "X",
+    "exclude_code": "E2",
+    "notes": "Technical focus on trustworthy AI architecture for learner modeling; no user trust calibration or reliance measured."
+  },
+  {
+    "id": "SCOPUS_703",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Systematic review of ChatGPT in ELT focusing on effectiveness; trust not a core reviewed theme."
+  },
+  {
+    "id": "SCOPUS_634",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Mixed-methods study of AI coding tools' effects in programming education; trust not a focal or measured construct."
+  },
+  {
+    "id": "WOS_15",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Conceptual piece discussing AI reliance risks in personalized learning; trust not a measured focal construct."
+  },
+  {
+    "id": "SCOPUS_677",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Review of AI (GPT) performance on physics exam questions; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_668",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Qualitative study of ChatGPT use for EFL academic writing; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_638",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Systematic review of ChatGPT's influence on student engagement; trust not a core reviewed construct."
+  },
+  {
+    "id": "SCOPUS_627",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Trust in AI (TAI) is the primary construct explicitly measured in K-12 teachers, examining predictors (AI knowledge, digital competence) in an educational context."
+  },
+  {
+    "id": "SCOPUS_651",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Conceptual framework for GenAI in management education; overreliance discussed but trust not a measured focal construct."
+  },
+  {
+    "id": "SCOPUS_747",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Neo-Aristotelian philosophy of physical education; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_639",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Focuses on mitigating AI implicit bias in HE admissions; trust mentioned peripherally as a consequence, not a measured focal construct."
+  },
+  {
+    "id": "SCOPUS_629",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Studies AI writing tool use and acceptance among Vietnamese EFL learners; trust not explicitly modeled as a focal variable."
+  },
+  {
+    "id": "SCOPUS_671",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Explores student perceptions of AI in entrepreneurship education; trust not a dedicated measured construct."
+  },
+  {
+    "id": "SCOPUS_611",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Bibliometric review of ChatGPT in academic writing; trust not a core reviewed theme."
+  },
+  {
+    "id": "SCOPUS_663",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Studies EFL undergrad perceptions of ChatGPT for research competency; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_716",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Quantitative study on EFL learner perceptions of ChatGPT for writing; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_732",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Studies student preferences for learning analytics dashboard data; trust not a focal construct."
+  },
+  {
+    "id": "SCOPUS_199",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Qualitative study of nursing students' perceptions of AI in research course; trust not a dedicated measured construct."
+  },
+  {
+    "id": "SCOPUS_256",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "TAM study of GenAI attitudes; trust not explicitly modeled as a variable (focuses on concerns, ease of use, benefits)."
+  },
+  {
+    "id": "SCOPUS_296",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Trust in AI is explicitly listed as a keyword and modeled variable in a cross-country study of AI tool use continuance in business education."
+  },
+  {
+    "id": "SCOPUS_108",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Qualitative study of GenAI use in HE vs workplace; trust not a focal or measured construct."
+  },
+  {
+    "id": "SCOPUS_147",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Scoping review of GenAI for neurodivergent K-12 learners; trust not a core reviewed construct."
+  },
+  {
+    "id": "SCOPUS_566",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Scoping review of GenAI in language education; trust not identified as a core reviewed construct."
+  },
+  {
+    "id": "SCOPUS_316",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Systematic review of teacher digital competence effects; trust not a focal or reviewed construct."
+  },
+  {
+    "id": "SCOPUS_403",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Qualitative study of AI chatbot misuse and ethical risks in education; trust not a focal or measured construct."
+  }
+]

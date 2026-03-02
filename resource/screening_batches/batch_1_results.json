@@ -1,0 +1,386 @@
+[
+  {
+    "id": "SCOPUS_946",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "EFL corpus study on phrasal verb use; no AI, no trust content."
+  },
+  {
+    "id": "SCOPUS_942",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Study on cognitive control and alcohol dependence; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_951",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Conceptual critique of dualisms in higher education; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_949",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Robot vs human teacher comparison for ESL; trust in AI not a measured or focal construct."
+  },
+  {
+    "id": "SCOPUS_941",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Indigenous Studies curriculum; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_918",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Lesson observation and teacher evaluation in further education; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_906",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Sketch inhibition in design education; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_913",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Higher education quality indicators; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_891",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Medical student learning in primary care settings; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_890",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Sketch inhibition analysis in design higher education; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_876",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Flipped learning in EFL education; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_878",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Student engagement with Grammarly feedback; trust in AI not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_844",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Review of AI proctoring systems; trust concerns mentioned peripherally but not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_856",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Social work curriculum relevance in India; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_847",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Implicit theories about ability and learning strategies; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_840",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Analytics for higher education decision-making; no AI trust content."
+  },
+  {
+    "id": "SCOPUS_845",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "TAM-based mobile learning app study; trust not explicitly modeled as a separate variable."
+  },
+  {
+    "id": "SCOPUS_854",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Student mobility and intercultural competence in higher education; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_849",
+    "decision": "X",
+    "exclude_code": "E4",
+    "notes": "Driver assistance technology reliance study; non-educational context with no educational transferability."
+  },
+  {
+    "id": "SCOPUS_816",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Digital distraction and self-regulation in college students; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_834",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "XAI in education framework with trust as a primary motivating construct for explainability in educational AI systems."
+  },
+  {
+    "id": "SCOPUS_814",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Faculty promotion system analysis in medical schools; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_837",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Recruitment methods for intelligence analysts; no educational AI or trust content."
+  },
+  {
+    "id": "PSYC_65",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "AI and learning analytics to address trust/trustworthiness concerns in peer assessment; trust is a primary construct in educational context."
+  },
+  {
+    "id": "SCOPUS_830",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Assessment reform post-COVID in Singapore; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_815",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Trust in teachable conversational AI agents explicitly measured in a teacher-learner crowdsourcing context with clear educational applicability."
+  },
+  {
+    "id": "SCOPUS_790",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Social media compulsive use and academic performance; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_797",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "ChatGPT impact on EFL writing skills and motivation; trust not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_803",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Ethical implications of ChatGPT in higher education; trust mentioned but not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_791",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Reflective interview with ChatGPT about educational impacts; trust not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_809",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Community resources in social studies teaching in Ghana; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_807",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "LLMs in medical education overview; trust/overreliance mentioned peripherally in challenges section, not a primary construct."
+  },
+  {
+    "id": "SCOPUS_780",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "AI chatbots in nursing education; overreliance concerns mentioned but trust not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_810",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Saudi EFL learner autonomy beliefs and practices; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_773",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Generational differences in GenAI adoption in higher education; overreliance noted but trust not a primary measured construct."
+  },
+  {
+    "id": "PSYC_64",
+    "decision": "X",
+    "exclude_code": "E4",
+    "notes": "Healthcare chatbot trust study with trust as primary construct, but non-educational health information context with limited educational transferability."
+  },
+  {
+    "id": "SCOPUS_796",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Ethical implications of generative chatbots in HE; trust mentioned as ethical concern but not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_778",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Healthcare digitalization impacts on medical education curricula; trust not a focal construct."
+  },
+  {
+    "id": "SCOPUS_776",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "AI writing assistance tools usage patterns in Philippines HE; no trust construct measured."
+  },
+  {
+    "id": "SCOPUS_806",
+    "decision": "X",
+    "exclude_code": "E3",
+    "notes": "Student governors and institutional trust/power in HE governance; educational trust without AI."
+  },
+  {
+    "id": "SCOPUS_734",
+    "decision": "U",
+    "exclude_code": "",
+    "notes": "AI chatbot adoption study with TTF model; trust mentioned as a construct ('trustable relation') but unclear if explicitly modeled as a measured variable \u2014 needs full text."
+  },
+  {
+    "id": "SCOPUS_604",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Saudi EFL learners' perceptions of AI applications; trust not a dedicated measured construct."
+  },
+  {
+    "id": "SCOPUS_755",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "AI language models and academic integrity; trust not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_694",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Critical analysis of AI solutionism in research/innovation; trust/overreliance mentioned but not a measured construct in educational context."
+  },
+  {
+    "id": "SCOPUS_670",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Qualitative exploration of ChatGPT impacts in HE; trust not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_764",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Academic integrity and GenAI in higher education; trust not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_628",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "UTAUT2-based ChatGPT acceptance among trainee teachers; trust not explicitly modeled as a variable separate from acceptance."
+  },
+  {
+    "id": "SCOPUS_691",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "AI tools for Japanese EFL communicative competence; trust not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_724",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "ChatGPT influence on student learning behaviors; trust not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_760",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "LLMs and foundation models in dental education; trust not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_751",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Ethical guidelines for GenAI in HE assessment; trust not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_673",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Big data ethics in engineering education; trust in AI not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_624",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "Social problem-solving assessment methods; no AI or trust in AI content."
+  },
+  {
+    "id": "SCOPUS_662",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Teachers' perspectives on ChatGPT in ELT; trust not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_623",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "AI influence on EFL teacher and learner engagement; trust not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_688",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Critical thinking and AI tools in classrooms; trust not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_698",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "VR and think-aloud protocol for spatial perception research; no AI trust content."
+  },
+  {
+    "id": "SCOPUS_636",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Challenges of ChatGPT in education including overreliance; trust not a primary measured construct."
+  },
+  {
+    "id": "SCOPUS_617",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "ChatGPT for course design SWOT analysis; trust not a focal measured construct."
+  },
+  {
+    "id": "SCOPUS_690",
+    "decision": "X",
+    "exclude_code": "E1",
+    "notes": "Special issue introduction on ChatGPT in language teaching; overreliance noted but trust not a primary measured construct."
+  },
+  {
+    "id": "WOS_119",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Automation bias and over-trust in AI systems in medical education; trust calibration is a primary construct with direct educational applicability."
+  },
+  {
+    "id": "SCOPUS_672",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "L2 Chinese dependency resolution in language acquisition; no AI or trust content."
+  },
+  {
+    "id": "SCOPUS_731",
+    "decision": "I",
+    "exclude_code": "",
+    "notes": "Trustworthy AI framework for intelligent tutoring system with trust/trustworthiness as primary construct in educational AI design."
+  },
+  {
+    "id": "SCOPUS_711",
+    "decision": "X",
+    "exclude_code": "E5",
+    "notes": "L2 writing WTC scale development; no AI or trust content."
+  }
+]
