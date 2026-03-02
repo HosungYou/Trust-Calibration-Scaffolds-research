@@ -1,0 +1,570 @@
+{
+  "total": 74,
+  "downloaded": 51,
+  "failed": 23,
+  "skipped": 0,
+  "results": [
+    {
+      "id": "SCOPUS_111",
+      "doi": "10.1007/s44217-025-01057-6",
+      "status": "downloaded",
+      "source": "doi_redirect",
+      "file": "SCOPUS_111.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s44217-025-01057-6.pdf"
+    },
+    {
+      "id": "SCOPUS_112",
+      "doi": "10.1057/s41599-025-06253-1",
+      "status": "downloaded",
+      "source": "doi_redirect",
+      "file": "SCOPUS_112.pdf",
+      "url": "https://www.nature.com/articles/s41599-025-06253-1.pdf"
+    },
+    {
+      "id": "SCOPUS_114",
+      "doi": "10.3390/su172310817",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_114.pdf",
+      "url": "https://www.mdpi.com/2071-1050/17/23/10817/pdf?version=1764740799"
+    },
+    {
+      "id": "SCOPUS_117",
+      "doi": "10.1186/s12909-025-08234-z",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_117.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1186/s12909-025-08234-z.pdf"
+    },
+    {
+      "id": "SCOPUS_12",
+      "doi": "10.1016/j.caeo.2026.100336",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_126",
+      "doi": "10.1111/ejed.70336",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ejed.70336"
+    },
+    {
+      "id": "SCOPUS_136",
+      "doi": "10.1186/s41239-025-00556-8",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_136.pdf",
+      "url": "https://educationaltechnologyjournal.springeropen.com/counter/pdf/10.1186/s41239-025-00556-8"
+    },
+    {
+      "id": "SCOPUS_137",
+      "doi": "10.1186/s12909-025-07965-3",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_137.pdf",
+      "url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-025-07965-3"
+    },
+    {
+      "id": "SCOPUS_140",
+      "doi": "10.1016/j.caeai.2025.100477",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_143",
+      "doi": "10.1002/pits.70068",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pits.70068"
+    },
+    {
+      "id": "SCOPUS_146",
+      "doi": "10.1186/s12909-025-07416-z",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_146.pdf",
+      "url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-025-07416-z"
+    },
+    {
+      "id": "SCOPUS_148",
+      "doi": "10.1007/s40593-025-00486-6",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_148.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s40593-025-00486-6.pdf"
+    },
+    {
+      "id": "SCOPUS_173",
+      "doi": "10.1007/s10639-025-13741-z",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_173.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10639-025-13741-z.pdf"
+    },
+    {
+      "id": "SCOPUS_190",
+      "doi": "10.1177/21582440251399104",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_193",
+      "doi": "10.26803/ijlter.24.10.32",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_193.pdf",
+      "url": "https://ijlter.org/index.php/ijlter/article/download/13975/pdf"
+    },
+    {
+      "id": "SCOPUS_197",
+      "doi": "10.3390/educsci15101307",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_197.pdf",
+      "url": "https://www.mdpi.com/2227-7102/15/10/1307/pdf?version=1759383236"
+    },
+    {
+      "id": "SCOPUS_2",
+      "doi": "10.1007/s44217-026-01134-4",
+      "status": "downloaded",
+      "source": "doi_redirect",
+      "file": "SCOPUS_2.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s44217-026-01134-4.pdf"
+    },
+    {
+      "id": "SCOPUS_213",
+      "doi": "10.1007/s40593-024-00433-x",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_213.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s40593-024-00433-x.pdf"
+    },
+    {
+      "id": "SCOPUS_214",
+      "doi": "10.1007/s10758-024-09780-z",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_214.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10758-024-09780-z.pdf"
+    },
+    {
+      "id": "SCOPUS_215",
+      "doi": "10.55766/sjss279466",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_215.pdf",
+      "url": "https://so05.tci-thaijo.org/index.php/sjss/article/download/279466/187484"
+    },
+    {
+      "id": "SCOPUS_226",
+      "doi": "10.3390/su17177567",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_226.pdf",
+      "url": "https://www.mdpi.com/2071-1050/17/17/7567/pdf?version=1755830583"
+    },
+    {
+      "id": "SCOPUS_229",
+      "doi": "10.1111/bjet.13613",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjet.13613"
+    },
+    {
+      "id": "SCOPUS_23",
+      "doi": "10.1016/j.actpsy.2026.106239",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_231",
+      "doi": "10.1111/bjet.13614",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjet.13614"
+    },
+    {
+      "id": "SCOPUS_241",
+      "doi": "10.26803/ijlter.24.8.17",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_241.pdf",
+      "url": "https://ijlter.org/index.php/ijlter/article/download/13793/pdf"
+    },
+    {
+      "id": "SCOPUS_246",
+      "doi": "10.1007/s40670-025-02394-9",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_246.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s40670-025-02394-9.pdf"
+    },
+    {
+      "id": "SCOPUS_250",
+      "doi": "10.32674/m2fmc286",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_250.pdf",
+      "url": "https://www.ojed.org/jis/article/download/7829/3475"
+    },
+    {
+      "id": "SCOPUS_253",
+      "doi": "10.17718/tojde.1530814",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_253.pdf",
+      "url": "https://dergipark.org.tr/en/download/article-file/4134142"
+    },
+    {
+      "id": "SCOPUS_257",
+      "doi": "10.1111/1460-6984.70088",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1460-6984.70088"
+    },
+    {
+      "id": "SCOPUS_274",
+      "doi": "10.1016/j.caeai.2025.100383",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_274.pdf",
+      "url": "http://arxiv.org/pdf/2502.05770"
+    },
+    {
+      "id": "SCOPUS_277",
+      "doi": "10.1016/j.caeai.2025.100368",
+      "status": "failed",
+      "error": "File too small (2750 bytes)",
+      "tried_url": "https://doi.org/10.1016/j.caeai.2025.100368"
+    },
+    {
+      "id": "SCOPUS_29",
+      "doi": "10.3390/su18031598",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_29.pdf",
+      "url": "https://www.mdpi.com/2071-1050/18/3/1598/pdf"
+    },
+    {
+      "id": "SCOPUS_296",
+      "doi": "10.1016/j.caeai.2025.100402",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_297",
+      "doi": "10.1016/j.caeai.2025.100396",
+      "status": "failed",
+      "error": "File too small (2698 bytes)",
+      "tried_url": "https://doi.org/10.1016/j.caeai.2025.100396"
+    },
+    {
+      "id": "SCOPUS_32",
+      "doi": "10.11591/ijere.v15i1.36136",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_32.pdf",
+      "url": "https://ijere.iaescore.com/index.php/IJERE/article/download/36136/14901"
+    },
+    {
+      "id": "SCOPUS_329",
+      "doi": "10.1111/ejed.70053",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ejed.70053"
+    },
+    {
+      "id": "SCOPUS_337",
+      "doi": "10.26803/ijlter.24.3.22",
+      "status": "recovered",
+      "error": "No PDF URL from any source",
+      "source": "direct_retry",
+      "url": "https://ijlter.org/index.php/ijlter/article/view/12688/pdf"
+    },
+    {
+      "id": "SCOPUS_340",
+      "doi": "10.3390/bs15030287",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_340.pdf",
+      "url": "https://doi.org/10.3390/bs15030287"
+    },
+    {
+      "id": "SCOPUS_372",
+      "doi": "10.1504/ijtel.2025.143514",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_372.pdf",
+      "url": "https://doi.org/10.1504/ijtel.2025.143514"
+    },
+    {
+      "id": "SCOPUS_374",
+      "doi": "10.12973/eu-jer.14.1.199",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_374.pdf",
+      "url": "https://pdf.eu-jer.com/EU-JER_14_1_199.pdf"
+    },
+    {
+      "id": "SCOPUS_384",
+      "doi": "10.21860/j.16.1.12",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_384.pdf",
+      "url": "https://ojs.srce.hr/index.php/jahr/article/download/32408/18109"
+    },
+    {
+      "id": "SCOPUS_397",
+      "doi": "10.29140/tltl.v7n4.103824",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_397.pdf",
+      "url": "https://www.castledown.com/journals/tltl/article/download/103824/1076"
+    },
+    {
+      "id": "SCOPUS_407",
+      "doi": "10.1155/hbe2/8841208",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1155/hbe2/8841208"
+    },
+    {
+      "id": "SCOPUS_425",
+      "doi": "10.1080/2331186x.2025.2591503",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_447",
+      "doi": "10.1177/21582440251362998",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_47",
+      "doi": "10.30892/gtg.64120-1671",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_47.pdf",
+      "url": "https://doi.org/10.30892/gtg.64120-1671"
+    },
+    {
+      "id": "SCOPUS_472",
+      "doi": "10.2196/74947",
+      "status": "recovered",
+      "error": "No PDF URL from any source",
+      "source": "direct_retry",
+      "url": "https://preprints.jmir.org/preprint/74947/accepted"
+    },
+    {
+      "id": "SCOPUS_475",
+      "doi": "10.59429/esp.v10i8.3851",
+      "status": "recovered",
+      "error": "No PDF URL from any source",
+      "source": "direct_retry",
+      "url": "https://esp.as-pub.com/index.php/esp/article/download/3851/2330"
+    },
+    {
+      "id": "SCOPUS_491",
+      "doi": "10.1111/bjet.70015",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjet.70015"
+    },
+    {
+      "id": "SCOPUS_495",
+      "doi": "10.5944/ried.28.2.43238",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_495.pdf",
+      "url": "https://revistas.uned.es/index.php/ried/article/download/43238/32637"
+    },
+    {
+      "id": "SCOPUS_510",
+      "doi": "10.12688/f1000research.161637.1",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_510.pdf",
+      "url": "https://doi.org/10.12688/f1000research.161637.1"
+    },
+    {
+      "id": "SCOPUS_511",
+      "doi": "10.59429/esp.v10i7.3872",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_511.pdf",
+      "url": "https://esp.as-pub.com/index.php/esp/article/download/3872/2262"
+    },
+    {
+      "id": "SCOPUS_588",
+      "doi": "10.22521/edupij.2025.15.158",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_591",
+      "doi": "10.1080/2331186x.2025.2488546",
+      "status": "no_url",
+      "error": "No PDF URL from any source"
+    },
+    {
+      "id": "SCOPUS_60",
+      "doi": "10.3389/fpsyg.2025.1749655",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_60.pdf",
+      "url": "https://public-pages-files-2025.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1749655/pdf"
+    },
+    {
+      "id": "SCOPUS_603",
+      "doi": "10.20535/2410-8286.315068",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_603.pdf",
+      "url": "https://ae.fl.kpi.ua/article/download/315068/310204"
+    },
+    {
+      "id": "SCOPUS_612",
+      "doi": "10.3390/educsci14121386",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_612.pdf",
+      "url": "https://doi.org/10.3390/educsci14121386"
+    },
+    {
+      "id": "SCOPUS_613",
+      "doi": "10.3390/bs14121223",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_613.pdf",
+      "url": "https://doi.org/10.3390/bs14121223"
+    },
+    {
+      "id": "SCOPUS_616",
+      "doi": "10.1007/s44217-024-00092-z",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_616.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s44217-024-00092-z.pdf"
+    },
+    {
+      "id": "SCOPUS_626",
+      "doi": "10.1111/flan.12768",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://doi.org/10.1111/flan.12768"
+    },
+    {
+      "id": "SCOPUS_627",
+      "doi": "10.1007/s10639-024-12772-2",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_627.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10639-024-12772-2.pdf"
+    },
+    {
+      "id": "SCOPUS_631",
+      "doi": "10.1177/00187208231218156",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://journals.sagepub.com/doi/pdf/10.1177/00187208231218156"
+    },
+    {
+      "id": "SCOPUS_68",
+      "doi": "10.3389/fpsyg.2025.1725393",
+      "status": "downloaded",
+      "source": "openalex",
+      "file": "SCOPUS_68.pdf",
+      "url": "https://public-pages-files-2025.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1725393/pdf"
+    },
+    {
+      "id": "SCOPUS_715",
+      "doi": "10.24294/jipd.v8i8.5600",
+      "status": "recovered",
+      "error": "HTTPSConnectionPool(host='systems.enpress-publisher.com', port=443): Max retries",
+      "tried_url": "https://systems.enpress-publisher.com/index.php/jipd/article/download/5600/3487",
+      "source": "direct_retry",
+      "url": "https://www.enpress-publisher.com/files/journals/1/articles/5600/public/5600-28951-1-PB.pdf"
+    },
+    {
+      "id": "SCOPUS_726",
+      "doi": "10.2196/55399",
+      "status": "recovered",
+      "error": "Got HTML instead of PDF",
+      "tried_url": "https://doi.org/10.2196/55399",
+      "source": "direct_retry",
+      "url": "https://preprints.jmir.org/preprint/55399/accepted"
+    },
+    {
+      "id": "SCOPUS_734",
+      "doi": "10.28945/5260",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_734.pdf",
+      "url": "http://www.jite.org/documents/Vol23/JITE-IIPv23Art001Soodan9986.pdf"
+    },
+    {
+      "id": "SCOPUS_736",
+      "doi": "10.3389/feduc.2024.1323898",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_736.pdf",
+      "url": "https://www.frontiersin.org/articles/10.3389/feduc.2024.1323898/pdf?isPublishedV2=False"
+    },
+    {
+      "id": "SCOPUS_741",
+      "doi": "10.1109/tlt.2024.3355015",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_741.pdf",
+      "url": "https://ieeexplore.ieee.org/ielx7/4620076/4620077/10400910.pdf"
+    },
+    {
+      "id": "SCOPUS_76",
+      "doi": "10.46328/ijtes.5282",
+      "status": "recovered",
+      "error": "No PDF URL from any source",
+      "source": "direct_retry",
+      "url": "https://ijtes.net/index.php/ijtes/article/download/5282/2858"
+    },
+    {
+      "id": "SCOPUS_770",
+      "doi": "10.1186/s40561-023-00282-6",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "SCOPUS_770.pdf",
+      "url": "https://slejournal.springeropen.com/counter/pdf/10.1186/s40561-023-00282-6"
+    },
+    {
+      "id": "SCOPUS_822",
+      "doi": "10.1111/bjet.13232",
+      "status": "failed",
+      "error": "HTTP 403",
+      "tried_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjet.13232"
+    },
+    {
+      "id": "SCOPUS_834",
+      "doi": "10.1016/j.caeai.2022.100074",
+      "status": "failed",
+      "error": "File too small (2664 bytes)",
+      "tried_url": "https://doi.org/10.1016/j.caeai.2022.100074"
+    },
+    {
+      "id": "SCOPUS_9",
+      "doi": "10.1186/s40359-025-03792-9",
+      "status": "downloaded",
+      "source": "doi_redirect",
+      "file": "SCOPUS_9.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1186/s40359-025-03792-9.pdf"
+    },
+    {
+      "id": "WOS_119",
+      "doi": "10.2196/50174",
+      "status": "downloaded",
+      "source": "semantic_scholar",
+      "file": "WOS_119.pdf",
+      "url": "https://mededu.jmir.org/2024/1/e50174/PDF"
+    }
+  ]
+}
