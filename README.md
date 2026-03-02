@@ -81,8 +81,16 @@ Trust calibration — the alignment between learner trust in AI and actual AI ca
 │   └── .gitkeep
 │
 └── resource/                            # Source data files
-    ├── Scopus.csv
-    └── WebofScience.xls
+    ├── Scopus_revised.csv               # Scopus export (951 records)
+    ├── WoS_new.xls                      # Web of Science export (188 records)
+    ├── PsycINFO_ProQuest.xls            # PsycINFO export (70 records)
+    ├── phase1_cleaned.csv               # Phase 1 output: 799 deduplicated articles
+    ├── phase1_removal_log.json          # Phase 1 removal audit trail
+    ├── phase2a_rule_based.json          # Phase 2a rule-based screening results
+    ├── phase2_final_results.json        # Phase 2 final: 128 included for full-text
+    ├── TCS_screening_coding_v1.xlsx     # Screening & coding Excel (6 sheets)
+    ├── TCS_Coding_Manual_v1.docx        # Coding manual (11 chapters + appendices)
+    └── screening_batches/               # LLM screening batch data (audit trail)
 ```
 
 ## Key Terminology Decisions
@@ -112,6 +120,26 @@ That repository contains search strategies, data extraction scripts, and initial
 - Wood, D., Bruner, J. S., & Ross, G. (1976). The role of tutoring in problem solving. *JCPP*, 17(2).
 - Winne, P. H., & Hadwin, A. F. (1998). Studying as self-regulated learning.
 
+## Screening Progress
+
+| Phase | Input | Output | Status |
+|-------|-------|--------|--------|
+| Database search | 3 databases | 1,209 records | Done |
+| Phase 1: Pre-screening | 1,209 | 799 unique articles | Done |
+| Phase 2: T/A screening | 799 | 128 (115 I + 13 U) | Done |
+| Phase 3: Full-text screening | 128 | ~40-60 target | Pending (PDF retrieval) |
+| Phase 4: Thematic coding | ~40-60 | Coded dataset | Pending |
+
+### Phase 2 Exclusion Breakdown
+
+| Code | Reason | Count |
+|------|--------|-------|
+| E1 | Trust mentioned peripherally | 300 |
+| E3 | Non-AI educational trust | 184 |
+| E5 | No trust/reliance content | 159 |
+| E4 | Non-educational context | 20 |
+| E2 | Technical trustworthiness | 8 |
+
 ## Status
 
 - [x] Repository structure
@@ -121,6 +149,13 @@ That repository contains search strategies, data extraction scripts, and initial
 - [x] Manuscript sections (8/8)
 - [x] References compiled
 - [x] Integrated draft
+- [x] Systematic search across 3 databases (Scopus, WoS, PsycINFO)
+- [x] Phase 1: Pre-screening cleanup (1,209 → 799)
+- [x] Phase 2: Title/Abstract screening (799 → 128)
+- [x] Screening template & coding manual
+- [ ] PDF retrieval (74 OA + 54 institutional access)
+- [ ] Phase 3: Full-text screening
+- [ ] Phase 4: Thematic coding (4 RQ dimensions)
 - [ ] Literature confirmation ([CONFIRM WITH LITERATURE] markers)
 - [ ] Word count optimization (target: ~8,000 words)
 - [ ] Final proofreading and revision
