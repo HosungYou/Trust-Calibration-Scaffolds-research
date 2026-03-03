@@ -1,8 +1,8 @@
 # Quantitative Analysis Summary — Trust Calibration Critical Review
 
-**Data source:** coding_results_all.json (N=73 papers coded, of 128 in review corpus)
-**Date:** 2026-03-02
-**Note:** Statistics based on RAG-assisted coding with manual corrections applied for study_type/methodology mismatches (43 fixes) and DOI framework false positives (31 fixes).
+**Data source:** coding_results_all.json (N=92 papers coded, of 147 in review corpus)
+**Date:** 2026-03-03 (updated from N=73 → N=92)
+**Note:** Statistics based on RAG-assisted coding. Phase 3B added 19 papers including 16 web-search trust calibration papers (#129-145). Previous manual corrections (43 study_type fixes, 31 DOI false positive fixes) still apply to original 73 papers.
 
 ---
 
@@ -11,75 +11,67 @@
 ### Trust Construct
 | Construct | Count | % |
 |-----------|-------|---|
-| trust_in_AI | 67 | 91.8% |
-| trust_in_automation | 3 | 4.1% |
-| interpersonal_trust | 2 | 2.7% |
-| institutional_trust | 1 | 1.4% |
+| trust_in_AI | 81 | 88.0% |
+| trust_in_automation | 6 | 6.5% |
+| institutional_trust | 3 | 3.3% |
+| interpersonal_trust | 2 | 2.2% |
 
 ### Trust Definition
 | Definition Level | Count | % |
 |------------------|-------|---|
-| None provided | 63 | 86.3% |
-| Implicit | 6 | 8.2% |
-| Explicit | 4 | 5.5% |
+| None provided | 77 | 83.7% |
+| Explicit | 9 | 9.8% |
+| Implicit | 6 | 6.5% |
 
 ### Trust Dimension
 | Dimension | Count | % |
 |-----------|-------|---|
-| Multidimensional | 64 | 87.7% |
-| Not specified | 9 | 12.3% |
+| Multidimensional | 83 | 90.2% |
+| Not specified | 9 | 9.8% |
 
 ### Trust Measurement
 | Measured? | Count | % |
 |-----------|-------|---|
-| No | 67 | 91.8% |
-| Yes | 6 | 8.2% |
-
-**Papers reporting trust measurement (n=6):**
-- #13 Wang et al. (2026) — Creative Self-Efficacy scale reframed
-- #41 Gökçearslan et al. (2026) — sum of scores
-- #46 Hou et al. (2025)
-- #47 Hou et al. (2025)
-- #101 Carter et al. (2024) — Trust scale
-- #126 Yakar et al. (2022) — media-based
+| No | 85 | 92.4% |
+| Yes | 7 | 7.6% |
 
 ### Calibration Measurement
 | Measured? | Count | % |
 |-----------|-------|---|
-| No | 73 | **100%** |
+| No | 91 | 98.9% |
+| Yes | 1 | 1.1% |
 
-**KEY FINDING: Zero papers in the educational AI corpus measured trust calibration accuracy.**
+**KEY FINDING: Only 1 of 92 papers measured trust calibration accuracy — confirming the critical gap.**
 
 ---
 
 ## RQ2: Theoretical Frameworks
 
-### Framework Distribution (paper-level, corrected)
+### Framework Distribution (paper-level)
 | Framework | Count | % |
 |-----------|-------|---|
-| None identified | 39 | 53.4% |
-| TAM (incl. combinations) | 15 | 20.5% |
-| AIED frameworks | 8 | 11.0% |
-| UTAUT (incl. combinations) | 7 | 9.6% |
-| DOI (genuine, conservative) | 5 | 6.8% |
-| Lee & See (trust-in-automation) | 4 | 5.5% |
-| SDT (Self-Determination Theory) | 3 | 4.1% |
-| Hoff & Bashir (three-layer model) | 2 | 2.7% |
-| SRL frameworks | 2 | 2.7% |
+| None identified | 47 | 51.1% |
+| TAM (incl. combinations) | 17 | 18.5% |
+| DOI | 12 | 13.0% |
+| AIED frameworks | 11 | 12.0% |
+| UTAUT (incl. combinations) | 8 | 8.7% |
+| Lee & See (trust-in-automation) | 7 | 7.6% |
+| SRL frameworks | 5 | 5.4% |
+| SDT (Self-Determination Theory) | 3 | 3.3% |
+| Hoff & Bashir (three-layer model) | 2 | 2.2% |
+| Mayer et al. (ABI model) | 2 | 2.2% |
 
-**Note:** 15 papers use multiple frameworks. Percentages exceed 100% due to overlap.
-
-**Papers using TAM or UTAUT (technology acceptance): 17 (23.3%)**
-**Papers with no theoretical framework: 39 (53.4%)**
-**Papers using trust-specific frameworks (Lee_See + Hoff_Bashir): 5 (6.8%)**
+**Note:** Multiple frameworks per paper. Percentages exceed 100% due to overlap.
 
 ### Framework Depth
 | Depth | Count | % |
 |-------|-------|---|
-| None | 39 | 53.4% |
-| Applied | 17 | 23.3% |
-| Superficial | 15 | 20.5% |
-| Foundational | 2 | 2.7% |
+| None | 47 | 51.1% |
+| Superficial | 22 | 23.9% |
+| Applied | 19 | 20.7% |
+| Foundational | 4 | 4.3% |
+
+**Key change from N=73:** Web-search papers increased Lee & See from 4→7 and SRL from 2→5, reflecting their calibration focus.
 
 ---
 
@@ -88,94 +80,159 @@
 ### Addresses Calibration
 | Level | Count | % |
 |-------|-------|---|
-| Partially | 38 | 52.1% |
-| No | 32 | 43.8% |
-| Yes | 3 | 4.1% |
+| Partially | 41 | 44.6% |
+| No | 35 | 38.0% |
+| Yes | 16 | 17.4% |
 
-**Papers explicitly addressing calibration (n=3):**
+**Major shift from N=73:** Papers explicitly addressing calibration increased from 3 (4.1%) to 16 (17.4%) — driven by 13 web-search papers that directly study trust calibration.
+
+**Papers explicitly addressing calibration (n=16):**
 - #12 Safarov et al. (2026) — Explainable GenAI and trust
 - #13 Wang et al. (2026) — AI-supported higher-order thinking
 - #101 Carter et al. (2024) — Human-Automation Trust Expectation Model (HATEM)
+- #129 Okamura & Yamada (2020) — Adaptive trust calibration for human-AI collaboration ★
+- #130 Li et al. (2024) — Miscalibrated AI confidence on user trust ★
+- #132 Vasconcelos et al. (2023) — Explanations reduce overreliance ★
+- #134 Ma et al. (2024) — Self-confidence calibration in AI-assisted decision making ★
+- #136 Wischnewski et al. (2023) — Trust calibrations for automated systems survey ★
+- #137 Mehrotra et al. (2024) — Systematic review fostering appropriate trust ★
+- #138 Scharowski et al. (2025) — Trust scale validation ★
+- #139 Tomsett et al. (2020) — Rapid trust calibration via XAI ★
+- #140 Lee et al. (2025) — Metacognitive sensitivity and trust calibration ★
+- #141 Steyvers et al. (2025) — Metacognition and uncertainty communication ★
+- #142 Zhang et al. (2025) — Learning behaviors mediate metacognitive calibration ★
+- #143 Lee & Bosch (2025) — Calibration discrepancy predicts metacognitive strategy ★
+- #145 Pitts & Motamedi (2025) — Human-AI trust conceptual framework ★
+
+(★ = web-search additions, mostly from HCI/cognitive science, not originally in educational AI databases)
 
 ### Overtrust/Undertrust Discussion
 | Discussed? | Overtrust | Undertrust |
 |------------|-----------|------------|
-| Yes | 24 (32.9%) | 23 (31.5%) |
-| No | 49 (67.1%) | 50 (68.5%) |
+| Yes | 32 (34.8%) | 34 (37.0%) |
+| No | 60 (65.2%) | 58 (63.0%) |
+| Both | 16 (17.4%) | — |
 
 ### Scaffold Proposed
 | Proposed? | Count | % |
 |-----------|-------|---|
-| Yes | 46 | 63.0% |
-| No | 27 | 37.0% |
+| Yes | 60 | 65.2% |
+| No | 32 | 34.8% |
 
 ### Scaffold Type Distribution
 | Type | Count | % |
 |------|-------|---|
-| None | 27 | 37.0% |
-| Multiple | 18 | 24.7% |
-| Transparency | 16 | 21.9% |
-| Other | 9 | 12.3% |
-| Metacognitive | 2 | 2.7% |
-| Autonomy | 1 | 1.4% |
+| Multiple | 24 | 26.1% |
+| Transparency | 22 | 23.9% |
+| Other | 9 | 9.8% |
+| None (no scaffold) | 32 | 34.8% |
+| Metacognitive | 3 | 3.3% |
+| Autonomy | 2 | 2.2% |
 
 ### Oversight Design
 | Status | Count | % |
 |--------|-------|---|
-| None | 39 | 53.4% |
-| Discussed | 34 | 46.6% |
+| None | 50 | 54.3% |
+| Discussed | 41 | 44.6% |
+| Monitoring system | 1 | 1.1% |
 
 ---
 
 ## Methodological Profile
 
-### Study Type (corrected)
+### Study Type
 | Type | Count | % |
 |------|-------|---|
-| Review | 45 | 61.6% |
-| Empirical | 22 | 30.1% |
-| Theoretical | 6 | 8.2% |
+| Review | 49 | 53.3% |
+| Empirical | 34 | 37.0% |
+| Theoretical | 8 | 8.7% |
+| Mixed | 1 | 1.1% |
 
-### Methodology (as coded)
+### Methodology
 | Methodology | Count | % |
 |-------------|-------|---|
-| Narrative review | 26 | 35.6% |
-| Systematic review | 19 | 26.0% |
-| Quantitative | 16 | 21.9% |
-| Conceptual | 6 | 8.2% |
-| Qualitative | 4 | 5.5% |
-| Mixed methods | 2 | 2.7% |
+| Narrative review | 30 | 32.6% |
+| Quantitative | 25 | 27.2% |
+| Systematic review | 22 | 23.9% |
+| Conceptual | 8 | 8.7% |
+| Qualitative | 4 | 4.3% |
+| Mixed methods | 3 | 3.3% |
+
+### Year Distribution
+| Year | Count | % |
+|------|-------|---|
+| 2019 | 2 | 2.2% |
+| 2020 | 4 | 4.3% |
+| 2022 | 5 | 5.4% |
+| 2023 | 3 | 3.3% |
+| 2024 | 13 | 14.1% |
+| 2025 | 58 | 63.0% |
+| 2026 | 7 | 7.6% |
+
+### AI System Types (top 10)
+| System | Count |
+|--------|-------|
+| GenAI | 43 |
+| ChatGPT | 36 |
+| AI system (unspecified) | 30 |
+| AI chatbot | 16 |
+| LLM | 8 |
+| GPT-4 | 3 |
+| Recommendation system | 3 |
+| AI teaching assistant | 3 |
+| GPT-3 | 2 |
+| AI assessment | 1 |
+
+### Educational Context
+| Context | Count | % |
+|---------|-------|---|
+| Higher education | 60 | 65.2% |
+| Other/General | 14 | 15.2% |
+| Healthcare/Medical | 11 | 12.0% |
+| K-12 | 7 | 7.6% |
 
 ### Relevance Score
 | Score | Count | % |
 |-------|-------|---|
-| 4 | 49 | 67.1% |
-| 3 | 9 | 12.3% |
-| 5 | 7 | 9.6% |
-| 2 | 7 | 9.6% |
-| 1 | 1 | 1.4% |
+| 1 | 1 | 1.1% |
+| 2 | 7 | 7.6% |
+| 3 | 10 | 10.9% |
+| 4 | 54 | 58.7% |
+| 5 | 20 | 21.7% |
+
+---
+
+## The Calibration Gap — Cross-tabulation
+
+| | Calibration Measured | Calibration NOT Measured |
+|---|---|---|
+| Trust Measured (n=7) | 1 (14.3%) | 6 (85.7%) |
+| Trust NOT Measured (n=85) | 0 (0%) | 85 (100%) |
+
+**Interpretation:** Even among the few papers that measure trust, almost none measure whether that trust is calibrated (appropriate) relative to AI reliability. This is the central empirical gap the paper addresses.
 
 ---
 
 ## Data Quality Notes
 
-1. **43 study_type/methodology mismatches corrected** — RAG pipeline query template overlap
-2. **31 DOI framework false positives corrected** — regex matched Digital Object Identifiers
-3. **25 generic key_findings (34.2%)** — "See full text for findings" placeholder entries
-4. **55 of 128 papers uncoded** (45 with PDFs, 10 without) — 56.6% coverage
-5. **Trust measurement quality concern** — Some trust_measured=yes entries appear to measure reliance or attitudes rather than trust specifically (#46, #47: use university enrollment data)
-6. **Coding was AI-assisted** — All statistics should be interpreted with appropriate methodological caveats
+1. **43 study_type/methodology mismatches corrected** (original 73 papers)
+2. **31 DOI framework false positives corrected** (original 73 papers)
+3. **Review type inflation** — Many empirical papers classified as 'review' due to literature review sections in PDFs; requires manual verification
+4. **55 of 147 papers uncoded** (37.4%) — awaiting institutional PDF access
+5. **Coding was AI-assisted** — All statistics should be interpreted with appropriate methodological caveats
+6. **Web-search papers (#129-147) intentionally selected** for calibration relevance — not representative of the broader corpus
 
 ---
 
 ## Key Narrative Statistics for Manuscript
 
-- "Of N=73 coded papers, **zero (0%)** measured trust calibration accuracy"
-- "Only 6 papers (8.2%) included any form of trust measurement"
-- "86.3% of papers provided no explicit definition of trust"
-- "Over half (53.4%) employed no identifiable theoretical framework"
-- "Only 5 papers (6.8%) drew on trust-specific frameworks from the automation literature (Lee & See, 2004; Hoff & Bashir, 2015)"
-- "Technology acceptance frameworks (TAM/UTAUT) guided 23.3% of studies — more than trust-in-automation frameworks by a factor of 3.4"
-- "While 52.1% of papers partially addressed calibration, only 3 (4.1%) did so explicitly"
-- "Overtrust was discussed in 32.9% of papers; undertrust in 31.5%"
-- "63.0% proposed some form of scaffold, but only 2.7% specifically proposed metacognitive scaffolds"
+- "Of N=92 coded papers, **only 1 (1.1%)** measured trust calibration accuracy"
+- "Only 7 papers (7.6%) included any form of trust measurement"
+- "83.7% of papers provided no explicit definition of trust"
+- "Over half (51.1%) employed no identifiable theoretical framework"
+- "Trust-specific frameworks from the automation literature (Lee & See; Hoff & Bashir) appeared in only 9 papers (9.8%) — yet these frameworks explicitly model calibration"
+- "Technology acceptance frameworks (TAM/UTAUT) guided 27.2% of studies — 3× more common than trust-in-automation frameworks"
+- "16 papers (17.4%) explicitly addressed calibration — but 13 of these came from web-search additions outside the original educational AI databases, revealing a disciplinary blind spot"
+- "Overtrust was discussed in 34.8% of papers; undertrust in 37.0%; only 17.4% discussed both"
+- "65.2% proposed some form of scaffold, but only 3.3% specifically proposed metacognitive scaffolds"
+- "The most common scaffold type was transparency (23.9%), while metacognitive scaffolds — theoretically most aligned with calibration — appeared in only 3.3%"
