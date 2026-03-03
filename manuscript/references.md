@@ -14,6 +14,8 @@ Baidoo-Anu, D., & Ansah, L. O. (2023). Education in the era of generative artifi
 
 Bandura, A. (1997). *Self-efficacy: The exercise of control*. W. H. Freeman.
 
+Bannert, M., Reimann, P., & Sonnenberg, C. (2009). Process mining techniques for analysing patterns and strategies in students' self-regulated learning. *Metacognition and Learning*, *4*(2), 131--161. https://doi.org/10.1007/s11409-009-9040-2
+
 Bannert, M., Sonnenberg, C., Mengelkamp, C., & Pieger, E. (2015). Short- and long-term effects of students' self-directed metacognitive prompts on mathematical problem-solving. *Computers in Human Behavior*, *52*, 293--306. https://doi.org/10.1016/j.chb.2015.05.038
 
 Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, O., & Mariman, R. (2025). Generative AI can harm learning. *Proceedings of the National Academy of Sciences*, *122*(2), e2412617122. https://doi.org/10.1073/pnas.2412617122
@@ -137,3 +139,41 @@ Zawacki-Richter, O., Marin, V. I., Bond, M., & Gouverneur, F. (2019). Systematic
 Zimmerman, B. J. (2000). Attaining self-regulation: A social cognitive perspective. In M. Boekaerts, P. R. Pintrich, & M. Zeidner (Eds.), *Handbook of self-regulation* (pp. 13--39). Academic Press. https://doi.org/10.1016/B978-012109890-2/50031-7
 
 Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. *Theory Into Practice*, *41*(2), 64--70. https://doi.org/10.1207/s15430421tip4102_2
+
+---
+
+## Additional References (Priority A--D Papers)
+
+Chi, M. T. H., Siler, S. A., Jeong, H., Yamauchi, T., & Hausmann, R. G. (2001). Learning from human tutoring. *Cognitive Science*, *25*(4), 471--533. https://doi.org/10.1207/s15516709cog2504_1
+
+Hasan, R., Lennon, M., Cody, J., Krumholz, H. M., & Schulz, W. L. (2024). Facilitating trust calibration in AI-driven diagnostic systems through transparent communication of AI limitations. *Journal of Medical Internet Research*, *26*, e58666. https://doi.org/10.2196/58666
+
+Kimani, E., Rowan, K., Feuerriegel, S., & Perer, A. (2024). Are you really sure? Understanding the effects of human self-confidence calibration prompts on trust, reliance, and task performance in AI-assisted decision making. *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems*, Article 671. https://doi.org/10.1145/3613904.3642671
+
+Lee, J., Lee, S., & Steyvers, M. (2025). Metacognitive sensitivity: Key to calibrating trust with AI. *PNAS Nexus*, *4*(3), pgaf133. https://doi.org/10.1093/pnasnexus/pgaf133
+
+Li, Y., Chen, M., & Liao, Q. V. (2024). Understanding the effects of miscalibrated AI confidence on user trust. *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.48550/arXiv.2402.07632
+
+Mehrotra, S., & Tielman, M. L. (2023). Measuring and understanding trust calibrations for automated systems: A survey of the state-of-the-art and future directions. *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*, Article 197. https://doi.org/10.1145/3544548.3581197
+
+Mehrotra, S., Jonker, C. M., & Tielman, M. L. (2024). A systematic review of the research on fostering appropriate trust in human-AI interaction. *ACM Computing Surveys*, *56*(12), 1--40. https://doi.org/10.1145/3696449
+
+Nelson, T. O., & Narens, L. (1990). Metamemory: A theoretical framework and new findings. In G. H. Bower (Ed.), *The psychology of learning and motivation* (Vol. 26, pp. 125--173). Academic Press.
+
+Okamura, K., & Yamada, S. (2020). Adaptive trust calibration for human-AI collaboration. *PLOS ONE*, *15*(2), e0229132. https://doi.org/10.1371/journal.pone.0229132
+
+Parasuraman, R., & Manzey, D. H. (2010). Complacency and bias in human use of automation: An attentional integration. *Human Factors*, *52*(3), 381--410. https://doi.org/10.1177/0018720810376055
+
+Pare, G., Trudel, M.-C., Jaana, M., & Kitsiou, S. (2015). Synthesizing information systems knowledge: A typology of literature reviews. *Information & Management*, *52*(2), 183--199. https://doi.org/10.1016/j.im.2014.08.008
+
+Risko, E. F., & Gilbert, S. J. (2016). Cognitive offloading. *Trends in Cognitive Sciences*, *20*(9), 676--688. https://doi.org/10.1016/j.tics.2016.07.002
+
+Scharowski, N., Perrig, S. A. L., von Felten, N., & Brühlmann, F. (2025). To trust or distrust trust measures: Validating questionnaires for trust in AI. *Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT)*. https://doi.org/10.48550/arXiv.2403.00582
+
+Steyvers, M., & Peters, M. A. K. (2025). Metacognition and uncertainty communication in humans and large language models. *Current Directions in Psychological Science*. https://doi.org/10.1177/09637214251391158
+
+Tomsett, R., Preece, A., Braines, D., Cerutti, F., Chakraborty, S., Srivastava, M., Pearson, G., & Kaplan, L. (2020). Rapid trust calibration through interpretable and uncertainty-aware AI. *Patterns*, *1*(6), 100049. https://doi.org/10.1016/j.patter.2020.100049
+
+Vasconcelos, H., Jörke, M., Grunde-McLaughlin, M., Gerstenberg, T., Bernstein, M. S., & Krishna, R. (2023). Explanations can reduce overreliance on AI systems during decision-making. *Proceedings of the ACM on Human-Computer Interaction*, *7*(CSCW1), 1--38. https://doi.org/10.1145/3579605
+
+Yin, M., Wortman Vaughan, J., & Wallach, H. (2019). Understanding the effect of accuracy on trust in machine learning models. *Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems*, Article 279. https://doi.org/10.1145/3290605.3300509
