@@ -31,7 +31,9 @@ node_modules/
 *.pdf
 
 # Allow research PDFs in resource directory
-!resource/pdfs/**/*.pdf
+!resource/pdfs/web_search/**/*.pdf
+# Consolidated PDFs too large for git (135MB) - tracked via pdf_inventory.json
+# !resource/pdfs/all/**/*.pdf
 
 # Jupyter
 .ipynb_checkpoints/

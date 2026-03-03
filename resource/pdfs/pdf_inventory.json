@@ -1,0 +1,706 @@
+[
+  {
+    "paper_no": 1,
+    "filename": "001_Amjad_2026.pdf",
+    "size_kb": 461.3,
+    "coded": true,
+    "author": "Amjad",
+    "year": "2026"
+  },
+  {
+    "paper_no": 2,
+    "filename": "002_Ansari_2026.pdf",
+    "size_kb": 2536.8,
+    "coded": true,
+    "author": "Ansari",
+    "year": "2026"
+  },
+  {
+    "paper_no": 10,
+    "filename": "010_Kyak_2026.pdf",
+    "size_kb": 113.5,
+    "coded": true,
+    "author": "Kıyak",
+    "year": "2026"
+  },
+  {
+    "paper_no": 11,
+    "filename": "011_Rizun_2026.pdf",
+    "size_kb": 1386.7,
+    "coded": true,
+    "author": "Rizun",
+    "year": "2026"
+  },
+  {
+    "paper_no": 12,
+    "filename": "012_Safarov_2026.pdf",
+    "size_kb": 567.8,
+    "coded": true,
+    "author": "Safarov",
+    "year": "2026"
+  },
+  {
+    "paper_no": 13,
+    "filename": "013_Wang_2026.pdf",
+    "size_kb": 1183.4,
+    "coded": true,
+    "author": "Wang",
+    "year": "2026"
+  },
+  {
+    "paper_no": 15,
+    "filename": "015_Zhang_2026.pdf",
+    "size_kb": 449.7,
+    "coded": true,
+    "author": "Zhang",
+    "year": "2026"
+  },
+  {
+    "paper_no": 17,
+    "filename": "017_Abdalla_2025.pdf",
+    "size_kb": 480.9,
+    "coded": false,
+    "author": "Abdalla",
+    "year": "2025"
+  },
+  {
+    "paper_no": 18,
+    "filename": "018_Abdalla_2025.pdf",
+    "size_kb": 480.9,
+    "coded": false,
+    "author": "Abdalla",
+    "year": "2025"
+  },
+  {
+    "paper_no": 19,
+    "filename": "019_Abubakar_2025.pdf",
+    "size_kb": 1847.9,
+    "coded": true,
+    "author": "Abubakar",
+    "year": "2025"
+  },
+  {
+    "paper_no": 20,
+    "filename": "020_Adiyono_2025.pdf",
+    "size_kb": 3577.1,
+    "coded": false,
+    "author": "Adiyono",
+    "year": "2025"
+  },
+  {
+    "paper_no": 25,
+    "filename": "025_Amin_2025.pdf",
+    "size_kb": 1481.1,
+    "coded": true,
+    "author": "Amin",
+    "year": "2025"
+  },
+  {
+    "paper_no": 28,
+    "filename": "028_Babanoğlu_2025.pdf",
+    "size_kb": 2475.8,
+    "coded": true,
+    "author": "Babanoğlu",
+    "year": "2025"
+  },
+  {
+    "paper_no": 29,
+    "filename": "029_Bilbao-Erana_2025.pdf",
+    "size_kb": 1766.3,
+    "coded": true,
+    "author": "Bilbao-Eraña",
+    "year": "2025"
+  },
+  {
+    "paper_no": 30,
+    "filename": "030_Bleikher_2025.pdf",
+    "size_kb": 166.4,
+    "coded": true,
+    "author": "Bleikher",
+    "year": "2025"
+  },
+  {
+    "paper_no": 31,
+    "filename": "031_Boughanzai_2025.pdf",
+    "size_kb": 2180.0,
+    "coded": true,
+    "author": "Boughanzai",
+    "year": "2025"
+  },
+  {
+    "paper_no": 32,
+    "filename": "032_Chan_2025.pdf",
+    "size_kb": 278.4,
+    "coded": true,
+    "author": "Chan",
+    "year": "2025"
+  },
+  {
+    "paper_no": 33,
+    "filename": "033_Chan_2025.pdf",
+    "size_kb": 855.7,
+    "coded": true,
+    "author": "Chan",
+    "year": "2025"
+  },
+  {
+    "paper_no": 36,
+    "filename": "036_Cui_2025.pdf",
+    "size_kb": 1235.5,
+    "coded": true,
+    "author": "Cui",
+    "year": "2025"
+  },
+  {
+    "paper_no": 38,
+    "filename": "038_Farhat_2025.pdf",
+    "size_kb": 519.9,
+    "coded": true,
+    "author": "Farhat",
+    "year": "2025"
+  },
+  {
+    "paper_no": 40,
+    "filename": "040_Guo_2025.pdf",
+    "size_kb": 2804.2,
+    "coded": true,
+    "author": "Guo",
+    "year": "2025"
+  },
+  {
+    "paper_no": 41,
+    "filename": "041_Gokcearslan_2025.pdf",
+    "size_kb": 879.7,
+    "coded": true,
+    "author": "Gökçearslan",
+    "year": "2025"
+  },
+  {
+    "paper_no": 42,
+    "filename": "042_Hajihasankhansary_2025.pdf",
+    "size_kb": 658.6,
+    "coded": true,
+    "author": "Hajihasankhansary",
+    "year": "2025"
+  },
+  {
+    "paper_no": 44,
+    "filename": "044_Hanna_2025.pdf",
+    "size_kb": 154.9,
+    "coded": true,
+    "author": "Hanna",
+    "year": "2025"
+  },
+  {
+    "paper_no": 46,
+    "filename": "046_Hou_2025.pdf",
+    "size_kb": 1983.7,
+    "coded": true,
+    "author": "Hou",
+    "year": "2025"
+  },
+  {
+    "paper_no": 47,
+    "filename": "047_Hou_2025.pdf",
+    "size_kb": 1983.7,
+    "coded": true,
+    "author": "Hou",
+    "year": "2025"
+  },
+  {
+    "paper_no": 49,
+    "filename": "049_Jinowat_2025.pdf",
+    "size_kb": 380.6,
+    "coded": true,
+    "author": "Jinowat",
+    "year": "2025"
+  },
+  {
+    "paper_no": 50,
+    "filename": "050_Jogezai_2025.pdf",
+    "size_kb": 1386.7,
+    "coded": false,
+    "author": "Jogezai",
+    "year": "2025"
+  },
+  {
+    "paper_no": 51,
+    "filename": "051_Al_Kaabi_2025.pdf",
+    "size_kb": 763.4,
+    "coded": false,
+    "author": "Al Kaabi",
+    "year": "2025"
+  },
+  {
+    "paper_no": 52,
+    "filename": "052_Karran_2025.pdf",
+    "size_kb": 929.6,
+    "coded": true,
+    "author": "Karran",
+    "year": "2025"
+  },
+  {
+    "paper_no": 54,
+    "filename": "054_Kim_2025.pdf",
+    "size_kb": 3252.4,
+    "coded": true,
+    "author": "Kim",
+    "year": "2025"
+  },
+  {
+    "paper_no": 55,
+    "filename": "055_Kouhsari_2025.pdf",
+    "size_kb": 919.1,
+    "coded": true,
+    "author": "Kouhsari",
+    "year": "2025"
+  },
+  {
+    "paper_no": 57,
+    "filename": "057_Alks_Kucukaydn_2025.pdf",
+    "size_kb": 412.7,
+    "coded": true,
+    "author": "Alkış Küçükaydın",
+    "year": "2025"
+  },
+  {
+    "paper_no": 58,
+    "filename": "058_Le_2025.pdf",
+    "size_kb": 4175.8,
+    "coded": true,
+    "author": "Le",
+    "year": "2025"
+  },
+  {
+    "paper_no": 59,
+    "filename": "059_Lee_2025.pdf",
+    "size_kb": 907.2,
+    "coded": true,
+    "author": "Lee",
+    "year": "2025"
+  },
+  {
+    "paper_no": 61,
+    "filename": "061_Li_2025.pdf",
+    "size_kb": 1764.9,
+    "coded": true,
+    "author": "Li",
+    "year": "2025"
+  },
+  {
+    "paper_no": 62,
+    "filename": "062_Li_2025.pdf",
+    "size_kb": 218.5,
+    "coded": true,
+    "author": "Li",
+    "year": "2025"
+  },
+  {
+    "paper_no": 63,
+    "filename": "063_Li_2025.pdf",
+    "size_kb": 1594.3,
+    "coded": true,
+    "author": "Li",
+    "year": "2025"
+  },
+  {
+    "paper_no": 64,
+    "filename": "064_Li_2025.pdf",
+    "size_kb": 763.4,
+    "coded": true,
+    "author": "Li",
+    "year": "2025"
+  },
+  {
+    "paper_no": 67,
+    "filename": "067_Lin_2025.pdf",
+    "size_kb": 1312.8,
+    "coded": true,
+    "author": "Lin",
+    "year": "2025"
+  },
+  {
+    "paper_no": 68,
+    "filename": "068_Lucas_2025.pdf",
+    "size_kb": 1915.9,
+    "coded": true,
+    "author": "Lucas",
+    "year": "2025"
+  },
+  {
+    "paper_no": 73,
+    "filename": "073_Merzifonluoglu_2025.pdf",
+    "size_kb": 2348.9,
+    "coded": true,
+    "author": "Merzifonluoglu",
+    "year": "2025"
+  },
+  {
+    "paper_no": 74,
+    "filename": "074_Mustofa_2025.pdf",
+    "size_kb": 1895.0,
+    "coded": true,
+    "author": "Mustofa",
+    "year": "2025"
+  },
+  {
+    "paper_no": 76,
+    "filename": "076_Nazaretsky_2025.pdf",
+    "size_kb": 1473.2,
+    "coded": true,
+    "author": "Nazaretsky",
+    "year": "2025"
+  },
+  {
+    "paper_no": 78,
+    "filename": "078_Nhan_2025.pdf",
+    "size_kb": 1095.5,
+    "coded": true,
+    "author": "Nhan",
+    "year": "2025"
+  },
+  {
+    "paper_no": 79,
+    "filename": "079_Ode_2025.pdf",
+    "size_kb": 3658.1,
+    "coded": true,
+    "author": "Ode",
+    "year": "2025"
+  },
+  {
+    "paper_no": 81,
+    "filename": "081_Pellesi_2025.pdf",
+    "size_kb": 614.3,
+    "coded": true,
+    "author": "Pellesi",
+    "year": "2025"
+  },
+  {
+    "paper_no": 82,
+    "filename": "082_Song_2025.pdf",
+    "size_kb": 993.5,
+    "coded": true,
+    "author": "Song",
+    "year": "2025"
+  },
+  {
+    "paper_no": 84,
+    "filename": "084_Tang_2025.pdf",
+    "size_kb": 3502.3,
+    "coded": true,
+    "author": "Tang",
+    "year": "2025"
+  },
+  {
+    "paper_no": 86,
+    "filename": "086_Turkmen_2025.pdf",
+    "size_kb": 1483.9,
+    "coded": true,
+    "author": "Türkmen",
+    "year": "2025"
+  },
+  {
+    "paper_no": 89,
+    "filename": "089_Waluyo_2025.pdf",
+    "size_kb": 1409.3,
+    "coded": true,
+    "author": "Waluyo",
+    "year": "2025"
+  },
+  {
+    "paper_no": 90,
+    "filename": "090_Wang_2025.pdf",
+    "size_kb": 1254.2,
+    "coded": true,
+    "author": "Wang",
+    "year": "2025"
+  },
+  {
+    "paper_no": 91,
+    "filename": "091_Wen_2025.pdf",
+    "size_kb": 502.5,
+    "coded": true,
+    "author": "Wen",
+    "year": "2025"
+  },
+  {
+    "paper_no": 92,
+    "filename": "092_Xu_2025.pdf",
+    "size_kb": 591.9,
+    "coded": true,
+    "author": "Xu",
+    "year": "2025"
+  },
+  {
+    "paper_no": 93,
+    "filename": "093_Akman_Yesilel_2025.pdf",
+    "size_kb": 478.1,
+    "coded": true,
+    "author": "Akman Yeşilel",
+    "year": "2025"
+  },
+  {
+    "paper_no": 94,
+    "filename": "094_Zhang_2025.pdf",
+    "size_kb": 1230.8,
+    "coded": true,
+    "author": "Zhang",
+    "year": "2025"
+  },
+  {
+    "paper_no": 95,
+    "filename": "095_Zhang_2025.pdf",
+    "size_kb": 397.9,
+    "coded": true,
+    "author": "Zhang",
+    "year": "2025"
+  },
+  {
+    "paper_no": 100,
+    "filename": "100_Capinding_2024.pdf",
+    "size_kb": 474.5,
+    "coded": true,
+    "author": "Capinding",
+    "year": "2024"
+  },
+  {
+    "paper_no": 101,
+    "filename": "101_Carter_2024.pdf",
+    "size_kb": 1312.8,
+    "coded": true,
+    "author": "Carter",
+    "year": "2024"
+  },
+  {
+    "paper_no": 104,
+    "filename": "104_Kizilcec_2024.pdf",
+    "size_kb": 571.0,
+    "coded": true,
+    "author": "Kizilcec",
+    "year": "2024"
+  },
+  {
+    "paper_no": 106,
+    "filename": "106_Lu_2024.pdf",
+    "size_kb": 3163.7,
+    "coded": true,
+    "author": "Lu",
+    "year": "2024"
+  },
+  {
+    "paper_no": 108,
+    "filename": "108_Ma_2024.pdf",
+    "size_kb": 502.5,
+    "coded": true,
+    "author": "Ma",
+    "year": "2024"
+  },
+  {
+    "paper_no": 111,
+    "filename": "111_Murtisari_2024.pdf",
+    "size_kb": 321.4,
+    "coded": true,
+    "author": "Murtisari",
+    "year": "2024"
+  },
+  {
+    "paper_no": 117,
+    "filename": "117_Zhai_2024.pdf",
+    "size_kb": 1323.4,
+    "coded": true,
+    "author": "Zhai",
+    "year": "2024"
+  },
+  {
+    "paper_no": 120,
+    "filename": "120_Jackson_2023.pdf",
+    "size_kb": 745.5,
+    "coded": true,
+    "author": "Jackson",
+    "year": "2023"
+  },
+  {
+    "paper_no": 122,
+    "filename": "122_Chhibber_2022.pdf",
+    "size_kb": 2167.7,
+    "coded": true,
+    "author": "Chhibber",
+    "year": "2022"
+  },
+  {
+    "paper_no": 123,
+    "filename": "123_Darvishi_2022.pdf",
+    "size_kb": 4668.4,
+    "coded": true,
+    "author": "Darvishi",
+    "year": "2022"
+  },
+  {
+    "paper_no": 124,
+    "filename": "124_Khosravi_2022.pdf",
+    "size_kb": 12405.9,
+    "coded": true,
+    "author": "Khosravi",
+    "year": "2022"
+  },
+  {
+    "paper_no": 125,
+    "filename": "125_Nazaretsky_2022.pdf",
+    "size_kb": 1538.6,
+    "coded": true,
+    "author": "Nazaretsky",
+    "year": "2022"
+  },
+  {
+    "paper_no": 126,
+    "filename": "126_Yakar_2022.pdf",
+    "size_kb": 495.1,
+    "coded": true,
+    "author": "Yakar",
+    "year": "2022"
+  },
+  {
+    "paper_no": 127,
+    "filename": "127_Hatherley_2020.pdf",
+    "size_kb": 188.0,
+    "coded": true,
+    "author": "Hatherley",
+    "year": "2020"
+  },
+  {
+    "paper_no": 128,
+    "filename": "128_Qin_2020.pdf",
+    "size_kb": 303.1,
+    "coded": true,
+    "author": "Qin",
+    "year": "2020"
+  },
+  {
+    "paper_no": 129,
+    "filename": "129_Okamura_2020.pdf",
+    "size_kb": 2243.8,
+    "coded": true,
+    "author": "Okamura",
+    "year": "2020"
+  },
+  {
+    "paper_no": 130,
+    "filename": "130_Li_2024.pdf",
+    "size_kb": 4554.0,
+    "coded": true,
+    "author": "Li",
+    "year": "2024"
+  },
+  {
+    "paper_no": 131,
+    "filename": "131_Yin_2019.pdf",
+    "size_kb": 1426.7,
+    "coded": true,
+    "author": "Yin",
+    "year": "2019"
+  },
+  {
+    "paper_no": 132,
+    "filename": "132_Vasconcelos_2023.pdf",
+    "size_kb": 2238.7,
+    "coded": true,
+    "author": "Vasconcelos",
+    "year": "2023"
+  },
+  {
+    "paper_no": 134,
+    "filename": "134_Ma_2024.pdf",
+    "size_kb": 1779.2,
+    "coded": true,
+    "author": "Ma",
+    "year": "2024"
+  },
+  {
+    "paper_no": 135,
+    "filename": "135_Logg_2019.pdf",
+    "size_kb": 1278.4,
+    "coded": true,
+    "author": "Logg",
+    "year": "2019"
+  },
+  {
+    "paper_no": 136,
+    "filename": "136_Wischnewski_2023.pdf",
+    "size_kb": 1042.5,
+    "coded": true,
+    "author": "Wischnewski",
+    "year": "2023"
+  },
+  {
+    "paper_no": 137,
+    "filename": "137_Mehrotra_2024.pdf",
+    "size_kb": 7194.9,
+    "coded": true,
+    "author": "Mehrotra",
+    "year": "2024"
+  },
+  {
+    "paper_no": 138,
+    "filename": "138_Scharowski_2025.pdf",
+    "size_kb": 1624.6,
+    "coded": true,
+    "author": "Scharowski",
+    "year": "2025"
+  },
+  {
+    "paper_no": 139,
+    "filename": "139_Tomsett_2020.pdf",
+    "size_kb": 908.7,
+    "coded": true,
+    "author": "Tomsett",
+    "year": "2020"
+  },
+  {
+    "paper_no": 140,
+    "filename": "140_Lee_2025.pdf",
+    "size_kb": 572.0,
+    "coded": true,
+    "author": "Lee",
+    "year": "2025"
+  },
+  {
+    "paper_no": 141,
+    "filename": "141_Steyvers_2025.pdf",
+    "size_kb": 242.3,
+    "coded": true,
+    "author": "Steyvers",
+    "year": "2025"
+  },
+  {
+    "paper_no": 142,
+    "filename": "142_Zhang_2025.pdf",
+    "size_kb": 2691.6,
+    "coded": true,
+    "author": "Zhang",
+    "year": "2025"
+  },
+  {
+    "paper_no": 143,
+    "filename": "143_Lee_2025.pdf",
+    "size_kb": 1433.2,
+    "coded": true,
+    "author": "Lee",
+    "year": "2025"
+  },
+  {
+    "paper_no": 144,
+    "filename": "144_Nazaretsky_2025.pdf",
+    "size_kb": 1473.2,
+    "coded": true,
+    "author": "Nazaretsky",
+    "year": "2025"
+  },
+  {
+    "paper_no": 145,
+    "filename": "145_Pitts_2025.pdf",
+    "size_kb": 1331.7,
+    "coded": true,
+    "author": "Pitts",
+    "year": "2025"
+  }
+]
