@@ -146,15 +146,17 @@ Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. *Theory
 
 Chi, M. T. H., Siler, S. A., Jeong, H., Yamauchi, T., & Hausmann, R. G. (2001). Learning from human tutoring. *Cognitive Science*, *25*(4), 471--533. https://doi.org/10.1207/s15516709cog2504_1
 
-Hasan, R., Lennon, M., Cody, J., Krumholz, H. M., & Schulz, W. L. (2024). Facilitating trust calibration in AI-driven diagnostic systems through transparent communication of AI limitations. *Journal of Medical Internet Research*, *26*, e58666. https://doi.org/10.2196/58666
+Sakamoto, T., Hasan, R., Lennon, M., Cody, J., Krumholz, H. M., & Schulz, W. L. (2024). Facilitating trust calibration in artificial intelligence--driven diagnostic decision support systems. *Journal of Medical Internet Research*, *26*, e58666. https://doi.org/10.2196/58666
 
-Kimani, E., Rowan, K., Feuerriegel, S., & Perer, A. (2024). Are you really sure? Understanding the effects of human self-confidence calibration prompts on trust, reliance, and task performance in AI-assisted decision making. *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems*, Article 671. https://doi.org/10.1145/3613904.3642671
+Ma, S., Kimani, E., Rowan, K., Feuerriegel, S., & Perer, A. (2024). Are you really sure? Understanding the effects of human self-confidence calibration prompts on trust, reliance, and task performance in AI-assisted decision making. *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems*, Article 671. https://doi.org/10.1145/3613904.3642671
 
 Lee, J., Lee, S., & Steyvers, M. (2025). Metacognitive sensitivity: Key to calibrating trust with AI. *PNAS Nexus*, *4*(3), pgaf133. https://doi.org/10.1093/pnasnexus/pgaf133
 
+Lee, S., & Bosch, N. (2025). Calibration discrepancy predicts students' subsequent metacognitive strategy use in AI-supported learning. *International Journal of Artificial Intelligence in Education*. https://doi.org/10.1007/s40593-025-00514-5
+
 Li, Y., Chen, M., & Liao, Q. V. (2024). Understanding the effects of miscalibrated AI confidence on user trust. *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.48550/arXiv.2402.07632
 
-Mehrotra, S., & Tielman, M. L. (2023). Measuring and understanding trust calibrations for automated systems: A survey of the state-of-the-art and future directions. *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*, Article 197. https://doi.org/10.1145/3544548.3581197
+Wischnewski, M., Krämer, N., & Müller, E. (2023). Measuring and understanding trust calibrations for automated systems: A survey of the state-of-the-art and future directions. *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*, Article 197. https://doi.org/10.1145/3544548.3581197
 
 Mehrotra, S., Jonker, C. M., & Tielman, M. L. (2024). A systematic review of the research on fostering appropriate trust in human-AI interaction. *ACM Computing Surveys*, *56*(12), 1--40. https://doi.org/10.1145/3696449
 
