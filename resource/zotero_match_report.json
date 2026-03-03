@@ -392,5 +392,87 @@
       "folder": "1226",
       "filename": "S2666920X22000297.html"
     }
+  ],
+  "web_search_matched": [
+    {
+      "paper_no": 129,
+      "filename": "129_Okamura and Yamada - 2020 - Adaptive trust calibration for human-AI collaboration.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 130,
+      "filename": "130_Li et al. - 2025 - Understanding the Effects of Miscalibrated AI Confidence on User Trust, Reliance, and Decision Effic.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 131,
+      "filename": "131_Yin et al. - 2019 - Understanding the Effect of Accuracy on Trust in Machine Learning Models.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 132,
+      "filename": "132_Vasconcelos et al. - 2023 - Explanations Can Reduce Overreliance on AI Systems During Decision-Making.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 134,
+      "filename": "134_Ma et al. - 2024 - “Are You Really Sure” Understanding the Effects of Human Self-Confidence Calibration in AI-Assisted.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 135,
+      "filename": "135_Logg et al. - 2019 - Algorithm appreciation People prefer algorithmic to human judgment.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 136,
+      "filename": "136_Wischnewski et al. - 2023 - Measuring and Understanding Trust Calibrations for Automated Systems A Survey of the State-Of-The-A.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 137,
+      "filename": "137_Mehrotra et al. - 2024 - A Systematic Review on Fostering Appropriate Trust in Human-AI Interaction Trends, Opportunities an.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 138,
+      "filename": "138_Scharowski et al. - 2025 - To Trust or Distrust Trust Measures Validating Questionnaires for Trust in AI.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 139,
+      "filename": "139_Tomsett et al. - 2020 - Rapid Trust Calibration through Interpretable and Uncertainty-Aware AI.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 140,
+      "filename": "140_Lee et al. - 2025 - Metacognitive sensitivity The key to calibrating trust and optimal decision making with AI.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 141,
+      "filename": "141_Metacognition and Uncertainty Communication in Humans and Large Language Models.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 142,
+      "filename": "142_Lee et al. - 2025 - Learning Behaviors Mediate the Effect of AI-powered Support for Metacognitive Calibration on Learnin.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 143,
+      "filename": "143_Lee and Bosch - 2025 - Calibration Discrepancy Predicts Students’ Subsequent Metacognitive Strategy Use in Computer-based L.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 144,
+      "filename": "144_Nazaretsky et al. - 2025 - The critical role of trust in adopting AI-powered educational technology for learning An instrument.pdf",
+      "source": "zotero_ai_trust4"
+    },
+    {
+      "paper_no": 145,
+      "filename": "145_Pitts and Motamedi - 2025 - Understanding Human-AI Trust in Education.pdf",
+      "source": "zotero_ai_trust4"
+    }
   ]
 }

@@ -27,8 +27,11 @@ node_modules/
 *.swo
 *~
 
-# PDF outputs
+# PDF outputs (general)
 *.pdf
+
+# Allow research PDFs in resource directory
+!resource/pdfs/**/*.pdf
 
 # Jupyter
 .ipynb_checkpoints/

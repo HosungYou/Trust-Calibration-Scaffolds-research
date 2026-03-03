@@ -1287,7 +1287,7 @@
     "title": "Adaptive trust calibration for human-AI collaboration",
     "doi": "10.1371/journal.pone.0229132",
     "source": "PLOS ONE",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "A",
     "note": "Behavioral dependence switching as calibration proxy"
   },
@@ -1299,7 +1299,7 @@
     "title": "Understanding the Effects of Miscalibrated AI Confidence on User Trust",
     "doi": "10.48550/arXiv.2402.07632",
     "source": "CHI 2024 / arXiv",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "A",
     "note": "Direct experimental manipulation of calibration levels"
   },
@@ -1311,7 +1311,7 @@
     "title": "Understanding the Effect of Accuracy on Trust in Machine Learning Models",
     "doi": "10.1145/3290605.3300509",
     "source": "CHI 2019",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "A",
     "note": "Trust-accuracy alignment experiment"
   },
@@ -1323,18 +1323,18 @@
     "title": "Explanations Can Reduce Overreliance on AI Systems During Decision-Making",
     "doi": "10.1145/3579605",
     "source": "Proceedings of the ACM on Human-Computer Interaction (CSCW)",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "A",
     "note": "5 studies, N=731, behavioral overreliance measurement"
   },
   {
     "paper_no": 133,
     "id": "WEB_A5",
-    "first_author": "Hasan",
+    "first_author": "Sakamoto",
     "year": "2024",
-    "title": "Facilitating Trust Calibration in AI-Driven Diagnostic Systems",
+    "title": "Facilitating Trust Calibration in Artificial Intelligence–Driven Diagnostic Decision Support Systems for Determining Physicians' Diagnostic Accuracy: Quasi-Experimental Study",
     "doi": "10.2196/58666",
-    "source": "JMIR",
+    "source": "JMIR Formative Research",
     "has_pdf": false,
     "priority": "A",
     "note": "Trust calibration intervention validation (clinical, transferable to education)"
@@ -1342,12 +1342,12 @@
   {
     "paper_no": 134,
     "id": "WEB_A6",
-    "first_author": "Kimani",
+    "first_author": "Ma",
     "year": "2024",
-    "title": "Are You Really Sure? Understanding the Effects of Human Self-Confidence Calibration Prompts on Trust, Reliance, and Task Performance in AI-Assisted Decision Making",
+    "title": "\"Are You Really Sure?\" Understanding the Effects of Human Self-Confidence Calibration in AI-Assisted Decision Making",
     "doi": "10.1145/3613904.3642671",
     "source": "CHI 2024",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "A",
     "note": "Self-confidence calibration prompts improve reliance behavior"
   },
@@ -1359,19 +1359,19 @@
     "title": "Algorithm appreciation: People prefer algorithmic to human judgment",
     "doi": "10.1016/j.obhdp.2018.12.005",
     "source": "Organizational Behavior and Human Decision Processes",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "A",
     "note": "Weight-on-Advice (WOA) as behavioral trust calibration measure"
   },
   {
     "paper_no": 136,
     "id": "WEB_B1",
-    "first_author": "Mehrotra",
+    "first_author": "Wischnewski",
     "year": "2023",
-    "title": "Measuring and Understanding Trust Calibrations for Automated Systems: A Survey of the State-of-The-Art and Future Directions",
+    "title": "Measuring and Understanding Trust Calibrations for Automated Systems: A Survey of the State-Of-The-Art and Future Directions",
     "doi": "10.1145/3544548.3581197",
     "source": "CHI 2023",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "B",
     "note": "Key survey of calibration measurement methods"
   },
@@ -1383,7 +1383,7 @@
     "title": "A Systematic Review of the Research on Fostering Appropriate Trust in Human-AI Interaction",
     "doi": "10.1145/3696449",
     "source": "ACM Computing Surveys",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "B",
     "note": "Directly identifies measurement gap"
   },
@@ -1395,7 +1395,7 @@
     "title": "To Trust or Distrust Trust Measures: Validating Questionnaires for Trust in AI",
     "doi": "10.48550/arXiv.2403.00582",
     "source": "FAccT 2025 / arXiv",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "B",
     "note": "TPA, TAI trust scale validation, N=1485"
   },
@@ -1407,7 +1407,7 @@
     "title": "Rapid Trust Calibration through Interpretable and Uncertainty-Aware AI",
     "doi": "10.1016/j.patter.2020.100049",
     "source": "Patterns",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "B",
     "note": "Trust calibration through interpretability and uncertainty"
   },
@@ -1419,7 +1419,7 @@
     "title": "Metacognitive sensitivity: key to calibrating trust with AI",
     "doi": "10.1093/pnasnexus/pgaf133",
     "source": "PNAS Nexus",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "C",
     "note": "Direct conceptual link between metacognition and trust calibration"
   },
@@ -1431,7 +1431,7 @@
     "title": "Metacognition and Uncertainty Communication in Humans and Large Language Models",
     "doi": "10.1177/09637214251391158",
     "source": "Current Directions in Psychological Science",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "C",
     "note": "Metacognition-LLM uncertainty communication"
   },
@@ -1443,19 +1443,19 @@
     "title": "Learning Behaviors Mediate the Effects of AI-Powered Support on Metacognitive Calibration in Collaborative Learning",
     "doi": "10.1145/3706598.3713960",
     "source": "CHI 2025",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "C",
     "note": "SRL calibration measurement in AI conditions"
   },
   {
     "paper_no": 143,
     "id": "WEB_C4",
-    "first_author": "IJAIED",
+    "first_author": "Lee",
     "year": "2025",
-    "title": "Calibration Discrepancy Predicts Metacognitive Strategy Use in AI-Assisted Learning",
+    "title": "Calibration Discrepancy Predicts Students' Subsequent Metacognitive Strategy Use in Computer-based Learning Environments",
     "doi": "10.1007/s40593-025-00514-5",
     "source": "International Journal of Artificial Intelligence in Education",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "C",
     "note": "N=210, calibration discrepancy in AI-supported learning"
   },
@@ -1467,7 +1467,7 @@
     "title": "Student trust in AI-powered educational technology: Development and validation of a measurement scale",
     "doi": "",
     "source": "Computers and Education: Artificial Intelligence",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "D",
     "note": "N=665, 4-factor student trust scale (complement to teacher version #76/#125)"
   },
@@ -1479,7 +1479,7 @@
     "title": "Understanding Human-AI Trust in Education: A Conceptual Framework",
     "doi": "10.48550/arXiv.2506.09160",
     "source": "arXiv",
-    "has_pdf": false,
+    "has_pdf": true,
     "priority": "D",
     "note": "Human-like vs system-like trust distinction in education"
   },
