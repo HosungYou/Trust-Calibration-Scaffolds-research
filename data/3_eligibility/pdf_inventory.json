@@ -1,0 +1,1160 @@
+{
+  "total_included": 128,
+  "pdf_available": 112,
+  "pdf_missing": 16,
+  "total_size_mb": 141.3,
+  "papers": [
+    {
+      "id": "PSYC_37",
+      "title": "Enhancing college students’ ai literacy through human-ai co-creation: A quantitative study",
+      "doi": "10.1080/10494820.2025.2495733",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 502,
+      "decision": "I"
+    },
+    {
+      "id": "PSYC_45",
+      "title": "InquiryGPT: Augmenting ChatGPT for enhancing inquiry-based learning in STEM education",
+      "doi": "10.1177/07356331241289824",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1594,
+      "decision": "U"
+    },
+    {
+      "id": "PSYC_46",
+      "title": "Knowledge is not all you need for comfort in use of AI in healthcare",
+      "doi": "10.1016/j.puhe.2024.11.019",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1764,
+      "decision": "I"
+    },
+    {
+      "id": "PSYC_53",
+      "title": "Patients’ attitudes toward the use of artificial intelligence as a diagnostic tool in radiology in S",
+      "doi": "10.2196/53108",
+      "year": "2024",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "PSYC_56",
+      "title": "The effect of artificial intelligence on patient-physician trust: Cross-sectional vignette study",
+      "doi": "",
+      "year": "2024",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "PSYC_57",
+      "title": "To advance AI use in education, focus on understanding educators",
+      "doi": "10.1007/s40593-023-00351-4",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 571,
+      "decision": "I"
+    },
+    {
+      "id": "PSYC_63",
+      "title": "Trust or mistrust in algorithmic grading? An embedded agency perspective",
+      "doi": "10.1016/j.ijinfomgt.2022.102555",
+      "year": "2023",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "PSYC_65",
+      "title": "Incorporating AI and learning analytics to build trustworthy peer assessment systems",
+      "doi": "10.1111/bjet.13233",
+      "year": "2022",
+      "has_pdf": true,
+      "pdf_size_kb": 4668,
+      "decision": "I"
+    },
+    {
+      "id": "PSYC_67",
+      "title": "Do people favor artificial intelligence over physicians? A survey among the general population and t",
+      "doi": "10.1016/j.jval.2021.09.004",
+      "year": "2022",
+      "has_pdf": true,
+      "pdf_size_kb": 495,
+      "decision": "I"
+    },
+    {
+      "id": "PSYC_69",
+      "title": "Limits of trust in medical AI",
+      "doi": "10.1136/medethics-2019-105935",
+      "year": "2020",
+      "has_pdf": true,
+      "pdf_size_kb": 187,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_111",
+      "title": "Mitigating students’ reliance on generative AI in computer engineering education: a case study",
+      "doi": "10.1007/s44217-025-01057-6",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1047,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_112",
+      "title": "Exploring trust in generative AI for higher education institutions: a systematic literature review f",
+      "doi": "10.1057/s41599-025-06253-1",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1472,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_114",
+      "title": "Generative AI in Mechanical Engineering Education: Enablers, Challenges, and Implementation Pathways",
+      "doi": "10.3390/su172310817",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1820,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_117",
+      "title": "Factors influencing medical students’ adoption of AI educational agents: an extended UTAUT model",
+      "doi": "10.1186/s12909-025-08234-z",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 2637,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_12",
+      "title": "Generative AI in higher education: Ethical and behavioral factors influencing students’ intentions t",
+      "doi": "10.1016/j.caeo.2026.100336",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 1386,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_126",
+      "title": "Uncovering the Mediating Effects of AI Trust and Self-Efficacy on Engagement in Human-GenAI Communic",
+      "doi": "10.1111/ejed.70336",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 397,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_130",
+      "title": "Research of Ethical Adoption of College Students' Learning Applications of Generative Artificial Int",
+      "doi": "10.1111/jcal.70146",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 591,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_136",
+      "title": "What students really think: unpacking AI ethics in educational assessments through a triadic framewo",
+      "doi": "10.1186/s41239-025-00556-8",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 2758,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_137",
+      "title": "AI-assisted diagnosis of renal cell carcinoma: educational needs and cognitive assessment based on t",
+      "doi": "10.1186/s12909-025-07965-3",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 2491,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_140",
+      "title": "Factors influencing intention to adopt an AI chatbot for learning in higher education: An integrated",
+      "doi": "10.1016/j.caeai.2025.100477",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 2804,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_142",
+      "title": "From classroom to Boardroom: Ethical and cognitive challenges of ChatGPT use among DBA students in b",
+      "doi": "10.1016/j.ijme.2025.101254",
+      "year": "2025",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_143",
+      "title": "Can Adopt AI-Powered Educational Technology Buffer Against Academic Stress and School Burnout? A Pro",
+      "doi": "10.1002/pits.70068",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 412,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_146",
+      "title": "Using Generative AI in nursing education: Students’ perceptions",
+      "doi": "10.1186/s12909-025-07416-z",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1274,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_148",
+      "title": "The Impact of Explainable AI on Teachers’ Trust and Acceptance of AI EdTech Recommendations: The Pow",
+      "doi": "10.1007/s40593-025-00486-6",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1971,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_173",
+      "title": "When AI explains in natural language: Unveiling the impact of generative AI explanations on educator",
+      "doi": "10.1007/s10639-025-13741-z",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 3353,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_190",
+      "title": "Critical Thinking as a Key to Empowering Graduate Students’ English Learning in the AI Era",
+      "doi": "10.1177/21582440251399104",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 658,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_193",
+      "title": "The Impact of English Students’ Increased Reliance on AI Technology in Literary Analysis",
+      "doi": "10.26803/ijlter.24.10.32",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 313,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_197",
+      "title": "Students’ Trust in AI and Their Verification Strategies: A Case Study at Camilo José Cela University",
+      "doi": "10.3390/educsci15101307",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 452,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_2",
+      "title": "Prompt engineering as cognitive scaffolding for ethical and explanatory quality in AI-mediated finan",
+      "doi": "10.1007/s44217-026-01134-4",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 2238,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_21",
+      "title": "In AI We Trust? Exploring the Role of Explainable GenAI and Expertise in Education",
+      "doi": "10.1177/00187208251401773",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 567,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_212",
+      "title": "How Learners’ Trust Changes in Generative AI over a Semester of Undergraduate Courses",
+      "doi": "10.1007/s40593-024-00446-6",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 993,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_213",
+      "title": "What Explains Teachers’ Trust in AI in Education Across Six Countries?",
+      "doi": "10.1007/s40593-024-00433-x",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 588,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_214",
+      "title": "Understanding Student Perceptions of Artificial Intelligence as a Teammate",
+      "doi": "10.1007/s10758-024-09780-z",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1596,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_215",
+      "title": "Generative AI as an English Writing Aid: Thai University Students’ Perceptions and Experiences with ",
+      "doi": "10.55766/sjss279466",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 428,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_226",
+      "title": "Digital Trust in Transition: Student Perceptions of AI-Enhanced Learning for Sustainable Educational",
+      "doi": "10.3390/su17177567",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 928,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_229",
+      "title": "The role of critical thinking on undergraduates' reliance behaviours on generative AI in problem-sol",
+      "doi": "10.1111/bjet.13613",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1983,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_23",
+      "title": "AI-supported higher-order thinking and EFL writing quality: A mechanism-focused study",
+      "doi": "10.1016/j.actpsy.2026.106239",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 1183,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_231",
+      "title": "Breaking human dominance: Investigating learners' preferences for learning feedback from generative ",
+      "doi": "10.1111/bjet.13614",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 4175,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_235",
+      "title": "Measuring undergraduate students' reliance on Generative AI during problem-solving: Scale developmen",
+      "doi": "10.1016/j.compedu.2025.105329",
+      "year": "2025",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_24",
+      "title": "Beyond Substitution: How Teacher Interpersonal Behaviours Empower Students to Communicate With AI—A ",
+      "doi": "10.1111/ejed.70499",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 449,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_240",
+      "title": "Can student accurately identify artificial intelligence generated content? an exploration of AIGC cr",
+      "doi": "10.1007/s10639-025-13448-1",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1235,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_241",
+      "title": "Reliance on AI and its Effects on Critical Thinking and Graduate Readiness: Evidence from UAE Higher",
+      "doi": "10.26803/ijlter.24.8.17",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 515,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_243",
+      "title": "Understanding the intention to use artificial intelligence chatbots in education: The role of indivi",
+      "doi": "10.1007/s42001-025-00387-7",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 879,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_246",
+      "title": "Exploration of the Role of ChatGPT in Teaching Communication Skills for Medical Students: A Pilot St",
+      "doi": "10.1007/s40670-025-02394-9",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 924,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_250",
+      "title": "Transforming International Student Recruitment: The Role of AI, Personalization, and Trust in Jordan",
+      "doi": "10.32674/m2fmc286",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 551,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_251",
+      "title": "Artificial Intelligence as a Catalyst for Promoting Utility Value Perceptions of Chemistry",
+      "doi": "10.1021/acs.jchemed.5c00625",
+      "year": "2025",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_253",
+      "title": "GENERATIVE AI IN HIGHER EDUCATION: UNIVERSITY FACULTY PERSPECTIVES ON OPPORTUNITIES AND CHALLENGES",
+      "doi": "10.17718/tojde.1530814",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 319,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_257",
+      "title": "Stench of Errors or the Shine of Potential: The Challenge of (Ir)Responsible Use of ChatGPT in Speec",
+      "doi": "10.1111/1460-6984.70088",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 154,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_26",
+      "title": "Trusting the Machine: How AI Assessment Feedback and AI Literacy Shape Students' Idea Implementation",
+      "doi": "10.1111/ejed.70457",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 461,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_274",
+      "title": "Understanding the practices, perceptions, and (dis)trust of generative AI among instructors: A mixed",
+      "doi": "10.1016/j.caeai.2025.100383",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 2166,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_277",
+      "title": "The critical role of trust in adopting AI-powered educational technology for learning: An instrument",
+      "doi": "10.1016/j.caeai.2025.100368",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1473,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_29",
+      "title": "From Social Drivers to Sustainable AI Usage and Dependency in Higher Education: Roles of Trust, Perc",
+      "doi": "10.3390/su18031598",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 673,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_292",
+      "title": "Why do graduate students use generative AI in thesis writing? the influence of self-efficacy, time p",
+      "doi": "10.1007/s12144-025-08003-7",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1312,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_293",
+      "title": "Can Generative Artificial Intelligence be a Good Teaching Assistant?—An Empirical Analysis Based on ",
+      "doi": "10.1111/jcal.70027",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 3502,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_296",
+      "title": "A cross-country analysis of self-determination and continuance use intention of AI tools in business",
+      "doi": "10.1016/j.caeai.2025.100402",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 3658,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_297",
+      "title": "A comparative analysis of pre-service teachers’ readiness for AI integration",
+      "doi": "10.1016/j.caeai.2025.100396",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1915,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_298",
+      "title": "From resistance to acceptance: the dynamics of educators’ intentions to use chatbots and the role of",
+      "doi": "10.1108/aeds-06-2024-0134",
+      "year": "2025",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_315",
+      "title": "The Review of Studies on Explainable Artificial Intelligence in Educational Research",
+      "doi": "10.1177/07356331241310915",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1483,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_32",
+      "title": "Timely introduction of AI teaching practices: an auxiliary tool for Chinese proposal writing",
+      "doi": "10.11591/ijere.v15i1.36136",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 396,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_322",
+      "title": "Unveiling the drivers of ChatGPT utilization in higher education sectors: the direct role of perceiv",
+      "doi": "10.1007/s10639-024-13095-y",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1481,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_329",
+      "title": "Shifting Dynamics: Who Holds the Reins in Decision-Making With Artificial Intelligence Tools? Perspe",
+      "doi": "10.1111/ejed.70053",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 2348,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_337",
+      "title": "Impact of Artificial Intelligence on Student Reliance for Exam Answers: A Case Study in IRCT Indones",
+      "doi": "10.26803/ijlter.24.3.22",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 20,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_340",
+      "title": "AI as the Therapist: Student Insights on the Challenges of Using Generative AI for School Mental Hea",
+      "doi": "10.3390/bs15030287",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 496,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_354",
+      "title": "Unpacking perceived risks and AI trust influences pre-service teachers’ AI acceptance: A structural ",
+      "doi": "10.1007/s10639-024-12905-7",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1230,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_36",
+      "title": "‘ChatGPT can make mistakes’ warnings fail: A randomized controlled trial",
+      "doi": "10.1111/medu.70056",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 113,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_372",
+      "title": "Higher education students’ trust and use of ChatGPT: empirical evidence",
+      "doi": "10.1504/ijtel.2025.143514",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 480,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_374",
+      "title": "Students’ Perceptions of ChatGPT in Higher Education: A Study of Academic Enhancement, Procrastinati",
+      "doi": "10.12973/eu-jer.14.1.199",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 549,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_384",
+      "title": "Learner perception changes of ChatGPT over ten days: Focusing on psychological anthropomorphism, pri",
+      "doi": "10.21860/j.16.1.12",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 351,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_397",
+      "title": "Framing Human–AI Collaboration in Language Education",
+      "doi": "10.29140/tltl.v7n4.103824",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 495,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_407",
+      "title": "Would You Trust Your GenAI Chatbot as Your School Therapist? Perspectives and Implications From Teac",
+      "doi": "10.1155/hbe2/8841208",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 855,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_421",
+      "title": "Investigating the antecedents and consequences of trust in ChatGPT across cultures: a learner-centri",
+      "doi": "10.1108/intr-08-2024-1237",
+      "year": "2025",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_424",
+      "title": "Trust, resistance, and transformation: A Q-methodological study of teachers' perspectives on AI-gene",
+      "doi": "10.1111/flan.70042",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 380,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_425",
+      "title": "The role of over-reliance on AI in the negative consequences of student learning: The moderating eff",
+      "doi": "10.1080/2331186x.2025.2591503",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1847,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_426",
+      "title": "Hooked on help: Student overreliance on ChatGPT in higher education",
+      "doi": "10.1177/20438869251397953",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 519,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_447",
+      "title": "Beyond Teacher-Led Approaches: Student-Initiated Translanguaging With Artificial Intelligence Tools ",
+      "doi": "10.1177/21582440251362998",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1409,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_449",
+      "title": "Cognitive Risks of AI: Literacy, Trust, and Critical Thinking",
+      "doi": "10.1080/08874417.2025.2582050",
+      "year": "2025",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_47",
+      "title": "CHATGPT AND OTHER GENERATIVE AI: A REVOLUTION OR A SETBACK IN H&T RESEARCH PUBLISHING",
+      "doi": "10.30892/gtg.64120-1671",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 824,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_472",
+      "title": "Paradox of AI in Higher Education: Qualitative Inquiry Into AI Dependency Among Educators in Palesti",
+      "doi": "10.2196/74947",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 162,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_475",
+      "title": "Developing trust and confidence in the delivery of Ai-Oriented",
+      "doi": "10.59429/esp.v10i8.3851",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 433,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_48",
+      "title": "From Prompts to Dependency: Standardization of the AI Chatbot Dependence Scale In A Turkish Context ",
+      "doi": "10.1080/10447318.2026.2629519",
+      "year": "2026",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_491",
+      "title": "Supporting learner agency in collaborative writing with generative AI",
+      "doi": "10.1111/bjet.70015",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 3252,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_492",
+      "title": "Building Trust in AI Through Dialogues With Eastern Ethics: Toward Ethical Partnerships in Education",
+      "doi": "10.1109/tlt.2025.3604616",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 907,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_495",
+      "title": "From optimism to trust: how ChatGPT is reshaping student confidence in AI-driven learning; Del optim",
+      "doi": "10.5944/ried.28.2.43238",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 696,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_510",
+      "title": "Large language models and GenAI in education: Insights from Nigerian in-service teachers through a h",
+      "doi": "10.12688/f1000research.161637.1",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 413,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_511",
+      "title": "Trust issues and the pace of skill acquisition in environmental science instruction: Educator perspe",
+      "doi": "10.59429/esp.v10i7.3872",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 369,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_538",
+      "title": "English language teachers' perspectives on digital trust in AI-supported education",
+      "doi": "10.1002/berj.4209",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 478,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_588",
+      "title": "Leveraging AI for Writing Instruction in EFL Classrooms: Opportunities and Challenges",
+      "doi": "10.22521/edupij.2025.15.158",
+      "year": "2025",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_591",
+      "title": "Ethical considerations of AI through a socio-technical lens: insights from ELT context as a higher e",
+      "doi": "10.1080/2331186x.2025.2488546",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 2475,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_60",
+      "title": "AI trust and protean career among university students: the mediating role of intrinsic motivation an",
+      "doi": "10.3389/fpsyg.2025.1749655",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 413,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_603",
+      "title": "EXAMINING THE IMPACT OF AI-POWERED WRITING TOOLS ON INDEPENDENT WRITING SKILLS OF HEALTH SCIENCE GRA",
+      "doi": "10.20535/2410-8286.315068",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 777,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_612",
+      "title": "An Experiment of AI-Based Assessment: Perspectives of Learning Preferences, Benefits, Intention, Tec",
+      "doi": "10.3390/educsci14121386",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 575,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_613",
+      "title": "How Does AI Affect College? The Impact of AI Usage in College Teaching on Students’ Innovative Behav",
+      "doi": "10.3390/bs14121223",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 448,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_616",
+      "title": "Exploring STEAM teachers’ trust in AI-based educational technologies: a structural equation modellin",
+      "doi": "10.1007/s44217-024-00092-z",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 3479,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_626",
+      "title": "Self-directed use of machine translation among language learners: Does it lead to disruptive L2 avoi",
+      "doi": "10.1111/flan.12768",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 321,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_627",
+      "title": "The interplay between teachers’ trust in artificial intelligence and digital competence",
+      "doi": "10.1007/s10639-024-12772-2",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 1026,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_630",
+      "title": "Exploring higher education students’ continuance usage intention of ChatGPT: amalgamation of the inf",
+      "doi": "10.1108/ijilt-01-2024-0006",
+      "year": "2024",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_631",
+      "title": "Meaningful Communication but not Superficial Anthropomorphism Facilitates Human-Automation Trust Cal",
+      "doi": "10.1177/00187208231218156",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 1312,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_68",
+      "title": "Development and validation of the AI dependence scale for Chinese undergraduates and a preliminary e",
+      "doi": "10.3389/fpsyg.2025.1725393",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 1340,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_715",
+      "title": "Changes and challenges of legal education in the era of generative artificial intelligence: Chinese ",
+      "doi": "10.24294/jipd.v8i8.5600",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 400,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_717",
+      "title": "Students’ Response to ChatGPT: An Adaptive Technology-To-Performance Model",
+      "doi": "10.1080/08874417.2024.2386546",
+      "year": "2024",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_719",
+      "title": "Evaluating ChatGPT adoption through the lens of the technology acceptance model: perspectives from h",
+      "doi": "10.1504/ijtlid.2024.140316",
+      "year": "2024",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_726",
+      "title": "The Impact of Performance Expectancy, Workload, Risk, and Satisfaction on Trust in ChatGPT: Cross-Se",
+      "doi": "10.2196/55399",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 163,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_731",
+      "title": "Design and Evaluation of Trustworthy Knowledge Tracing Model for Intelligent Tutoring System",
+      "doi": "10.1109/tlt.2024.3403135",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 3163,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_734",
+      "title": "AI CHATBOT ADOPTION IN ACADEMIA: TASK FIT, USEFULNESS, AND COLLEGIAL TIES",
+      "doi": "10.28945/5260",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 806,
+      "decision": "U"
+    },
+    {
+      "id": "SCOPUS_736",
+      "title": "Development and validation of a scale for dependence on artificial intelligence in university studen",
+      "doi": "10.3389/feduc.2024.1323898",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 385,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_741",
+      "title": "Student Perceptions of ChatGPT Use in a College Essay Assignment: Implications for Learning, Grading",
+      "doi": "10.1109/tlt.2024.3355015",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 574,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_76",
+      "title": "Trust in ChatGPT and Perceived Academic Writing Improvement: A TAM-based Quantitative Study in a ESL",
+      "doi": "10.46328/ijtes.5282",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 599,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_763",
+      "title": "The Future of Learning: Building Trust and Transparency in AI Education",
+      "doi": "10.33152/jmphss-8.3.6",
+      "year": "2024",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_770",
+      "title": "Personality-based tailored explainable recommendation for trustworthy smart learning system in the a",
+      "doi": "10.1186/s40561-023-00282-6",
+      "year": "2023",
+      "has_pdf": true,
+      "pdf_size_kb": 1556,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_78",
+      "title": "A TCCM-Based Systematic Literature Review of Anthropomorphism in Human-AI Interaction and Future Res",
+      "doi": "10.1007/s41347-026-00594-7",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 2536,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_815",
+      "title": "Teachable Conversational Agents for Crowdwork: Effects on Performance and Trust",
+      "doi": "10.1145/3555223",
+      "year": "2022",
+      "has_pdf": true,
+      "pdf_size_kb": 2167,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_822",
+      "title": "Teachers' trust in AI-powered educational technology and a professional development program to impro",
+      "doi": "10.1111/bjet.13232",
+      "year": "2022",
+      "has_pdf": true,
+      "pdf_size_kb": 1538,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_834",
+      "title": "Explainable Artificial Intelligence in education",
+      "doi": "10.1016/j.caeai.2022.100074",
+      "year": "2022",
+      "has_pdf": true,
+      "pdf_size_kb": 12405,
+      "decision": "I"
+    },
+    {
+      "id": "SCOPUS_9",
+      "title": "Untangling pathways from digital instructional leadership to AI pedagogy: a diffusion of innovation ",
+      "doi": "10.1186/s40359-025-03792-9",
+      "year": "2026",
+      "has_pdf": true,
+      "pdf_size_kb": 1685,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_105",
+      "title": "TRANSFORMATIVE PEDAGOGY IN THE DIGITAL AGE: UNRAVELING THE IMPACT OF ARTIFICIAL INTELLIGENCE ON HIGH",
+      "doi": "10.33225/pec/24.82.630",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 474,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_107",
+      "title": "Understanding teachers' willingness to use artificial intelligence-based teaching analysis system: e",
+      "doi": "10.1080/10494820.2024.2365345",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1254,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_119",
+      "title": "ChatGPT in Medical Education: A Precursor for Automation Bias?",
+      "doi": "10.2196/50174",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 89,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_129",
+      "title": "Extending the technology acceptance model: The role of subjective norms, ethics, and trust in AI too",
+      "doi": "10.1016/j.caeai.2025.100379",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1894,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_130",
+      "title": "A comprehensive structural equation modeling analysis of factors influencing teacher acceptance of A",
+      "doi": "10.1007/s10639-025-13833-w",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 2180,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_16",
+      "title": "Higher education students' trust and use of ChatGPT: empirical evidence",
+      "doi": "10.1504/ijtel.2024.10061581",
+      "year": "2025",
+      "has_pdf": false,
+      "pdf_size_kb": 0,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_175",
+      "title": "Fostering AI literacy in pre-service teachers: impact of a training intervention on awareness, attit",
+      "doi": "10.3389/feduc.2025.1668078",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 1766,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_180",
+      "title": "Multi-stakeholder perspective on responsible artificial intelligence and acceptability in education",
+      "doi": "10.1038/s41539-025-00333-2",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 929,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_50",
+      "title": "Understanding user trust in artificial intelligence-based educational systems: Evidence from China",
+      "doi": "10.1111/bjet.12994",
+      "year": "2020",
+      "has_pdf": true,
+      "pdf_size_kb": 303,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_58",
+      "title": "Demystifying School Leader Career Sustainability: The Role of Trust in Artificial Intelligence and A",
+      "doi": "10.1111/jcal.70135",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 919,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_63",
+      "title": "ARTIFICIAL INTELLIGENCE (AI) LITERACY AMONG TEACHERS: THE CASE OF ITMO UNI-VERSITY",
+      "doi": "",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 166,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_65",
+      "title": "Engineering Students' Use of Large Language Model Tools: An Empirical Study Based on a Survey of Stu",
+      "doi": "10.3390/educsci15030280",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 218,
+      "decision": "U"
+    },
+    {
+      "id": "WOS_79",
+      "title": "The effects of over-reliance on AI dialogue systems on students' cognitive abilities: a systematic r",
+      "doi": "10.1186/s40561-024-00316-7",
+      "year": "2024",
+      "has_pdf": true,
+      "pdf_size_kb": 1323,
+      "decision": "I"
+    },
+    {
+      "id": "WOS_80",
+      "title": "Trust in AI Feedback: Challenges in Pharmacy Education",
+      "doi": "10.1007/s40670-025-02440-6",
+      "year": "2025",
+      "has_pdf": true,
+      "pdf_size_kb": 614,
+      "decision": "I"
+    }
+  ]
+}
