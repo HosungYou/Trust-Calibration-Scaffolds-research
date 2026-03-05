@@ -1,4 +1,4 @@
-# AALS: Trust Calibration Readiness Scale Development
+# TCRS: Trust Calibration Readiness Scale Development
 
 ## Paper 2 of the Trust Calibration Research Program
 
@@ -21,13 +21,28 @@ Human Agency (Bandura, 2001)    → "Adjust" — active regulation toward optima
 Calibration (Outcome)           → Appropriate trust = optimal point
 ```
 
-## Scale Structure
+## Scale Structure (48 items → target 18-24 after EFA)
 
-| Subscale | Process Stage | Measures |
-|----------|--------------|----------|
-| Calibration Awareness | Recognition | Self-awareness of trust state + AI/task context |
-| Calibration Judgment | Evaluation | Whether current trust is appropriate |
-| Calibration Action | Regulation | Active verification and adjustment behaviors |
+| Subscale | Process Stage | Items | Response Format |
+|----------|--------------|-------|-----------------|
+| Calibration Awareness (CA-Aw) | Recognition | 16 | 7-point Agree-Disagree |
+| Calibration Judgment (CA-Jd) | Evaluation | 16 | 7-point Agree-Disagree |
+| Calibration Action (CA-Ac) | Regulation | 16 | 7-point Never-Always |
+
+## Current Status
+
+- [x] Process model development
+- [x] Literature review (16+ existing scales mapped)
+- [x] Expert critique synthesis (A3, D4, C1)
+- [x] Item pool development (48 items, 9 facets)
+- [x] Figure 1: Trust Calibration Process Model
+- [x] Manuscript draft v1 (pre-data collection)
+- [ ] Expert panel (CVI) ← NEXT
+- [ ] Cognitive interviews
+- [ ] Pilot test
+- [ ] OSF preregistration
+- [ ] Study 1: EFA (N=300-350)
+- [ ] Study 2: CFA + validity (N=300-350)
 
 ## Methodology
 
@@ -40,11 +55,19 @@ Calibration (Outcome)           → Appropriate trust = optimal point
 ```
 AALS-Scale-Development/
 ├── README.md
-├── discussion/          # Research discussions and decision logs
-│   ├── 01_Conceptualization
-│   ├── 02_Literature_Review
-│   ├── 03_Expert_Critique
-│   └── 04_Process_Model
-├── manuscript/          # Paper drafts (future)
-└── figures/             # Diagrams and visualizations
+├── discussion/
+│   ├── 01_Conceptualization — 3D framework and initial scale design
+│   ├── 02_Literature_Review — AI literacy scales landscape (16+ scales)
+│   ├── 03_Expert_Critique — Feasibility critique (A3, D4, C1)
+│   ├── 04_Process_Model — Process model and scale architecture
+│   ├── 05_Item_Pool — Initial 42-item pool
+│   ├── 06_Item_Revision — D4 review and revised 48-item pool
+│   └── 07_Roadmap — Next steps and timeline
+├── manuscript/
+│   └── draft_v1_TCRS.md — Pre-data manuscript draft
+└── figures/
+    ├── Figure_1_Trust_Calibration_Process_Model.png
+    ├── AALS_Research_Design.png
+    ├── Framework_Scale_Connection.png
+    └── Process_Model_Comparison.png
 ```
