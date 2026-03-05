@@ -140,6 +140,8 @@ Shneiderman, B. (2020). Human-centered artificial intelligence: Reliable, safe &
 
 Sparrow, B., Liu, J., & Wegner, D. M. (2011). Google effects on memory: Cognitive consequences of having information at our fingertips. *Science*, *333*(6043), 776--778. https://doi.org/10.1126/science.1207745
 
+Stone, N. J. (2000). Exploring the relationship between calibration and self-regulated learning. *Educational Psychology Review*, *12*(4), 437--475. https://doi.org/10.1023/A:1009084430926
+
 Strzelecki, A. (2023). To use or not to use ChatGPT in higher education? A study of students' acceptance and use of technology. *Interactive Learning Environments*, *32*(10), 5142--5155. https://doi.org/10.1080/10494820.2023.2209881
 
 Sweller, J. (2011). Cognitive load theory. In J. Mestre & B. Ross (Eds.), *The psychology of learning and motivation* (Vol. 55, pp. 37--76). Academic Press. https://doi.org/10.1016/B978-0-12-387691-1.00002-8
