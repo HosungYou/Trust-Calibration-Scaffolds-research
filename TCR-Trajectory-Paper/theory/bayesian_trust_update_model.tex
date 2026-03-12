@@ -1,0 +1,562 @@
+% =============================================================================
+% Bayesian Trust Update Model: Formal Specification
+% =============================================================================
+% Trust Calibration Trajectories in Human-AI Interaction
+% Paper 4: Theoretical Framework
+%
+% Author: Hosung You
+% Date: 2026-03-12
+% =============================================================================
+
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{natbib}
+
+\geometry{margin=1in}
+
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+
+\title{Bayesian Trust Update Model:\\
+  A Formal Specification of Trust Calibration Dynamics\\
+  in Human-AI Interaction}
+\author{Hosung You\\
+  College of Education, Pennsylvania State University}
+\date{March 2026}
+
+\begin{document}
+\maketitle
+
+% =============================================================================
+\section{Definitions}
+% =============================================================================
+
+\begin{definition}[Trust Calibration Space]
+  The \textbf{Trust Calibration Space} is a three-dimensional space
+  $\mathcal{S} = [0,1] \times [0,1] \times \mathbb{Z}^+$ defined by:
+  \begin{itemize}
+    \item $T_t \in [0,1]$: \textbf{Behavioral trust} at time $t$,
+      operationalized as reliance rate $R_b$
+      (proportion of AI recommendations followed)
+    \item $R_t \in [0,1]$: \textbf{AI reliability} at time $t$,
+      operationalized as AI accuracy
+      (proportion of correct AI recommendations)
+    \item $\tau \in \mathbb{Z}^+$: \textbf{Discrete time index}
+      representing sequential interaction episodes or windows
+  \end{itemize}
+\end{definition}
+
+\begin{definition}[Calibration Gap]
+  The \textbf{calibration gap} at time $t$ is defined as:
+  \begin{equation}
+    G_t = T_t - R_t
+  \end{equation}
+  where $G_t > 0$ indicates \textit{over-reliance}
+  (trust exceeds reliability),
+  $G_t < 0$ indicates \textit{under-reliance}
+  (trust falls below reliability),
+  and $G_t = 0$ indicates \textit{perfect calibration}.
+\end{definition}
+
+\begin{definition}[Prediction Error]
+  The \textbf{prediction error} at time $t$ is the discrepancy between
+  observed AI reliability and current behavioral trust:
+  \begin{equation}
+    \delta_t = R_t - T_t = -G_t
+  \end{equation}
+  Positive prediction error ($\delta_t > 0$) indicates AI performs
+  better than expected; negative ($\delta_t < 0$) indicates AI performs
+  worse than expected.
+\end{definition}
+
+% =============================================================================
+\section{Core Model: Prediction Error-Driven Trust Update}
+% =============================================================================
+
+\subsection{Symmetric Model}
+
+The simplest form assumes a single learning rate governing trust
+adaptation to prediction errors:
+
+\begin{equation}
+  \boxed{T_{t+1} = T_t + \alpha \cdot \delta_t = T_t + \alpha(R_t - T_t)}
+  \label{eq:symmetric}
+\end{equation}
+
+where $\alpha \in [0,1]$ is the \textbf{learning rate} parameter
+controlling the speed of trust adaptation.
+
+This is formally equivalent to the Rescorla-Wagner learning rule
+\citep{rescorla1972theory} and exponential smoothing in time series
+analysis. When $R_t = R$ (constant reliability):
+
+\begin{equation}
+  T_t = R + (T_0 - R)(1-\alpha)^t
+\end{equation}
+
+\begin{proposition}[Convergence under Constant Reliability]
+  When $R_t = R$ for all $t$ and $0 < \alpha \leq 1$:
+  \begin{enumerate}
+    \item $T_t \to R$ as $t \to \infty$ (convergence to true reliability)
+    \item $G_t = (1-\alpha)^t \cdot G_0$ (exponential decay of calibration gap)
+    \item Half-life of gap: $\tau_{1/2} = -\ln 2 / \ln(1-\alpha)$
+  \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+  From Equation~\ref{eq:symmetric} with constant $R$:
+  $G_{t+1} = T_{t+1} - R = T_t + \alpha(R - T_t) - R = (1-\alpha)(T_t - R) = (1-\alpha)G_t$.
+  By induction, $G_t = (1-\alpha)^t G_0$.
+  Since $|1-\alpha| < 1$, $G_t \to 0$.
+  Setting $(1-\alpha)^{\tau_{1/2}} = 1/2$ yields
+  $\tau_{1/2} = -\ln 2 / \ln(1-\alpha)$.
+\end{proof}
+
+\subsection{Asymmetric Model (Dual Learning Rate)}
+
+Empirical evidence from automation trust research demonstrates that
+trust decreases more rapidly after failures than it increases after
+successes \citep{lee1992trust, dzindolet2003role}. We capture this
+asymmetry by introducing direction-dependent learning rates:
+
+\begin{equation}
+  \boxed{T_{t+1} = T_t +
+    \begin{cases}
+      \alpha^+ \cdot \delta_t & \text{if } \delta_t \geq 0
+        \quad \text{(AI better than expected)} \\
+      \alpha^- \cdot \delta_t & \text{if } \delta_t < 0
+        \quad \text{(AI worse than expected)}
+    \end{cases}}
+  \label{eq:asymmetric}
+\end{equation}
+
+where:
+\begin{itemize}
+  \item $\alpha^+ \in [0,1]$: \textbf{Upward learning rate}
+    --- speed of trust increase when AI exceeds expectations
+  \item $\alpha^- \in [0,1]$: \textbf{Downward learning rate}
+    --- speed of trust decrease when AI falls below expectations
+\end{itemize}
+
+The \textbf{trust asymmetry ratio} is defined as:
+\begin{equation}
+  \rho = \frac{\alpha^+}{\alpha^-}
+\end{equation}
+
+Following \citet{lee1992trust}, the canonical expectation is $\rho < 1$
+(trust is harder to build than to destroy).
+
+% =============================================================================
+\section{Derivation of Five Trajectory Patterns}
+% =============================================================================
+
+The five trajectory patterns emerge as distinct regions in the
+$(\alpha^+, \alpha^-)$ parameter space, conditioned on the
+environmental reliability profile $\{R_t\}$.
+
+\subsection{Pattern 1: Convergent ($\alpha^+, \alpha^- > 0$; both sufficient)}
+
+\begin{proposition}[Convergent Trajectory]
+  When $\alpha^+ > 0$ and $\alpha^- > 0$, with both learning rates
+  sufficiently large relative to the rate of change of $R_t$:
+  \begin{equation}
+    |G_t| \to 0 \quad \text{as } t \to \infty
+  \end{equation}
+  regardless of the initial gap $G_0$ or the direction of
+  reliability change.
+\end{proposition}
+
+\textbf{Parameter region:} $\alpha^+ \geq \alpha_{min}$,
+$\alpha^- \geq \alpha_{min}$, where $\alpha_{min}$ depends on the
+rate of environmental change.
+
+\textbf{Subtypes:}
+\begin{itemize}
+  \item \textit{Rapid Convergent}: $\alpha^+, \alpha^- > 0.5$
+    ($\tau_{1/2} < 2$ windows)
+  \item \textit{Gradual Convergent}: $0.1 < \alpha^+, \alpha^- < 0.5$
+    ($\tau_{1/2} > 2$ windows)
+\end{itemize}
+
+\textbf{Empirical correspondence:}
+Chess Class 1 (Adaptive Reducer, $N=20$, C1) and
+Class 3 (Gradual Adaptor, $N=25$, C2).
+
+\textbf{Theoretical basis:}
+\citet{lee2004trust} --- trust as adaptive, experience-driven
+calibration process.
+
+% ---
+
+\subsection{Pattern 2: Stagnant ($\alpha^+ \approx \alpha^- \approx 0$)}
+
+\begin{proposition}[Stagnant Trajectory]
+  When $\alpha^+ \approx 0$ and $\alpha^- \approx 0$:
+  \begin{equation}
+    T_{t+1} \approx T_t \quad \forall t
+  \end{equation}
+  \begin{equation}
+    G_t \approx T_0 - R_t
+  \end{equation}
+  The calibration gap is determined entirely by the initial trust
+  level $T_0$ and the current reliability $R_t$, with no adaptive
+  updating.
+\end{proposition}
+
+\textbf{Parameter region:} $\alpha^+, \alpha^- < \epsilon$
+for small $\epsilon > 0$.
+
+\textbf{Mechanism:} Cognitive disengagement from the trust
+update process. The individual does not attend to or process
+AI performance feedback, resulting in behavioral inertia.
+
+\textbf{Boundary condition:} This pattern is distinguishable from
+rational non-reliance (where $T_0$ is appropriately low given $R$)
+only when $G_t \neq 0$ persists despite observable opportunities
+for calibration.
+
+\textbf{Empirical correspondence:}
+EdNet Class 4 ($N=451$, $R_b \approx 0.06$--$0.11$, $\Delta G \approx +0.03$).
+
+\textbf{Theoretical basis:}
+\citet{parasuraman1997humans} --- automation bias as persistent
+behavioral pattern; \citet{goddard2012automation} --- trust inertia.
+
+% ---
+
+\subsection{Pattern 3: Catastrophic ($\alpha^- \approx 0$; $R$ drops sharply)}
+
+\begin{proposition}[Catastrophic Trajectory]
+  When $\alpha^- \approx 0$ and a trust violation event occurs
+  at time $t^*$ such that $R_{t^*} \ll R_{t^*-1}$:
+  \begin{equation}
+    T_{t} \approx T_{t^*-1} \quad \forall t > t^*
+  \end{equation}
+  \begin{equation}
+    G_t \approx T_{t^*-1} - R_{t} \gg 0 \quad \forall t > t^*
+  \end{equation}
+  The calibration gap jumps abruptly to a large positive value
+  (over-reliance) and persists because the downward learning
+  rate is near zero.
+\end{proposition}
+
+\textbf{Parameter region:} $\alpha^- < \epsilon$, $\alpha^+$
+unconstrained.
+
+\textbf{Environmental condition required:}
+Trust violation event --- a discrete, significant drop in $R_t$.
+Without such an event, this pattern is observationally
+indistinguishable from Stagnant.
+
+\textbf{Distinction from Stagnant:}
+\begin{itemize}
+  \item Stagnant: $\alpha^+ \approx \alpha^- \approx 0$
+    (bilateral learning failure; no environmental trigger needed)
+  \item Catastrophic: $\alpha^- \approx 0$, $\alpha^+$ may be $> 0$
+    (unilateral downward learning failure; requires $R$ drop to manifest)
+\end{itemize}
+
+\textbf{Empirical correspondence:}
+Chess Class 5 ($N=30$, 60\% of C1):
+$R_b$ drops only from 0.700 to 0.620 ($\Delta = -0.080$)
+despite AI accuracy dropping from 1.000 to 0.200.
+$G$ jumps from $-0.300$ to $+0.420$ ($\Delta = +0.720$).
+
+\textbf{Theoretical basis:}
+\citet{lee1992trust} --- trust violation and asymmetric recovery;
+\citet{parasuraman1993performance} --- automation complacency;
+anchoring effect \citep{tversky1974judgment}.
+
+% ---
+
+\subsection{Pattern 4: Oscillating (nonlinear $\alpha$ or $\alpha > 1$)}
+
+\begin{proposition}[Oscillating Trajectory]
+  When either (a) $\alpha > 1$ causing overshooting, or
+  (b) $\alpha$ is threshold-dependent:
+  \begin{equation}
+    \alpha_t =
+    \begin{cases}
+      \alpha_H & \text{if } |G_t| > \theta \\
+      \alpha_L & \text{if } |G_t| \leq \theta
+    \end{cases}
+    \quad \text{with } \alpha_H \gg \alpha_L
+  \end{equation}
+  the trust trajectory exhibits non-monotonic fluctuation
+  around the reliability level, failing to achieve stable
+  convergence.
+\end{proposition}
+
+\textbf{Mechanism A --- Overshooting:}
+When $\alpha > 1$, the update $T_{t+1} = T_t + \alpha(R_t - T_t)$
+pushes $T$ past $R$, reversing the sign of $\delta$ and creating
+a damped (or sustained) oscillation.
+
+\textbf{Mechanism B --- Threshold switching:}
+When large gaps trigger strong corrections but small gaps
+are ignored, a limit cycle emerges:
+$|G|$ large $\to$ strong correction $\to$ $|G|$ small $\to$
+weak maintenance $\to$ $|G|$ grows $\to$ cycle repeats.
+
+\textbf{Note on evidence strength:}
+This pattern has the weakest empirical support (GRADE: Low).
+With only 6 windows in Chess and 10 in EdNet, distinguishing
+true oscillation from measurement noise is difficult.
+This pattern should be presented as a theoretical possibility
+with preliminary evidence, pending longer time series data.
+
+\textbf{Empirical correspondence:}
+Chess Class 2 ($N=14$): non-monotonic $R_b$ trajectory,
+$\text{gap\_sd} = 0.421$ (highest variability).
+
+\textbf{Theoretical basis:}
+\citet{gao2006extending} --- oscillatory trust recovery;
+\citet{muir1996trust} --- repeated failure-recovery cycles.
+
+% ---
+
+\subsection{Pattern 5: AI Benefit Emergence ($\alpha^+ \ll \alpha^-$; $R$ rises)}
+
+\begin{proposition}[AI Benefit Emergence Trajectory]
+  When $\alpha^+ \ll \alpha^-$ (trust asymmetry ratio $\rho \ll 1$)
+  and AI reliability gradually increases ($R_t \uparrow$ over time):
+  \begin{equation}
+    \frac{dT}{dt} \approx \alpha^+ \cdot (R_t - T_t) \ll \frac{dR}{dt}
+  \end{equation}
+  \begin{equation}
+    G_t = T_t - R_t < 0 \quad \text{and} \quad |G_t| \uparrow
+    \text{ over time}
+  \end{equation}
+  The under-reliance gap progressively widens as AI improves
+  faster than trust adapts.
+\end{proposition}
+
+\textbf{Parameter region:} $\alpha^+ < \epsilon$, $\alpha^- > 0$.
+
+\textbf{Environmental condition required:}
+Gradual or sudden improvement in $R_t$.
+Without reliability improvement, this pattern cannot manifest.
+
+\textbf{Mirror symmetry with Catastrophic:}
+\begin{equation}
+  \text{Catastrophic:} \quad \alpha^- \approx 0, \; R \downarrow
+    \implies G \gg 0 \; \text{(over-reliance)}
+\end{equation}
+\begin{equation}
+  \text{ABE:} \quad \alpha^+ \approx 0, \; R \uparrow
+    \implies G \ll 0 \; \text{(under-reliance)}
+\end{equation}
+
+These two patterns are \textbf{mathematical mirror images} in the
+$(\alpha^+, \alpha^-)$ parameter space, representing unilateral
+non-adaptation in opposite directions.
+
+\textbf{Discovery status:}
+This pattern was \textit{inductively discovered} during exploratory
+GMM analysis of EdNet data. It was not among the four
+\textit{a priori} patterns derived from the literature.
+Post-hoc theoretical interpretation links it to three established
+mechanisms:
+\begin{enumerate}
+  \item \textbf{Disuse} \citep{parasuraman1997humans}:
+    failure to utilize an automated aid despite its reliability
+  \item \textbf{Trust asymmetry} \citep{lee1992trust}:
+    trust builds more slowly than it decays ($\rho < 1$),
+    here in the extreme case ($\rho \to 0$)
+  \item \textbf{Anchoring} \citep{tversky1974judgment}:
+    initial low trust serves as an anchor resistant to
+    upward adjustment
+\end{enumerate}
+
+\textbf{Empirical correspondence:}
+EdNet S2 Class 4 ($N=256$, 5.7\%): $P_{\text{adaptive}}$
+$0.275 \to 0.852$, $R_b$ $0.020 \to 0.171$, $G \to -0.601$.
+Chess Class 4 ($N=9$, C2): $R_b = 0.200$, $G = -0.600$.
+
+% =============================================================================
+\section{Parameter Space Map}
+% =============================================================================
+
+The five patterns occupy distinct regions of the
+$(\alpha^+, \alpha^-)$ parameter space (Figure~1):
+
+\begin{center}
+\begin{tabular}{lccl}
+  \toprule
+  \textbf{Pattern} & $\alpha^+$ & $\alpha^-$
+    & \textbf{Environmental condition} \\
+  \midrule
+  Convergent & $> \alpha_{\min}$ & $> \alpha_{\min}$
+    & Any (robust to $R$ changes) \\
+  Stagnant & $\approx 0$ & $\approx 0$
+    & Any (no response to $R$) \\
+  Catastrophic & unconstrained & $\approx 0$
+    & $R \downarrow$ (trust violation) \\
+  ABE & $\approx 0$ & unconstrained
+    & $R \uparrow$ (trust repair / AI improvement) \\
+  Oscillating & $> 1$ or nonlinear & $> 1$ or nonlinear
+    & $R$ variable \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\begin{proposition}[Completeness]
+  The five patterns partition the behaviorally relevant
+  $(\alpha^+, \alpha^-)$ space:
+  \begin{enumerate}
+    \item Both learning rates active $\to$ Convergent
+    \item Both learning rates inactive $\to$ Stagnant
+    \item Only upward inactive ($\alpha^+ \approx 0$) $\to$ ABE
+      (when $R \uparrow$)
+    \item Only downward inactive ($\alpha^- \approx 0$) $\to$ Catastrophic
+      (when $R \downarrow$)
+    \item Nonlinear / overshooting dynamics $\to$ Oscillating
+  \end{enumerate}
+\end{proposition}
+
+% =============================================================================
+\section{Testable Predictions}
+% =============================================================================
+
+The model generates the following testable predictions for
+confirmatory studies:
+
+\begin{enumerate}
+  \item \textbf{Individual consistency:}
+    An individual's $(\alpha^+, \alpha^-)$ values should be
+    relatively stable across tasks within a session, predicting
+    consistent pattern membership across different AI reliability
+    conditions.
+
+  \item \textbf{Asymmetry prevalence:}
+    In the general population, $\alpha^- > \alpha^+$ (i.e., $\rho < 1$)
+    should be the modal configuration, consistent with
+    \citet{lee1992trust}.
+
+  \item \textbf{Catastrophic--ABE mirror:}
+    Individuals classified as Catastrophic under trust violation
+    ($R \downarrow$) should show elevated ABE risk under trust
+    repair ($R \uparrow$), because both patterns share the feature
+    of unilateral non-adaptation (one learning rate near zero).
+
+  \item \textbf{Domain expertise moderation:}
+    Higher domain expertise should increase both $\alpha^+$ and
+    $\alpha^-$ (more accurate performance monitoring enables
+    faster trust updating), shifting individuals toward the
+    Convergent region.
+
+  \item \textbf{Intervention targets:}
+    Calibration interventions (e.g., AI confidence displays,
+    performance feedback) should primarily affect the deficient
+    learning rate: $\alpha^+$ for ABE-prone individuals,
+    $\alpha^-$ for Catastrophic-prone individuals.
+\end{enumerate}
+
+% =============================================================================
+\section{Scope and Limitations}
+% =============================================================================
+
+\begin{enumerate}
+  \item \textbf{What $\alpha$ does not explain:}
+    The model describes \textit{how} trust updates occur but not
+    \textit{why} individuals differ in $\alpha^+$ and $\alpha^-$.
+    Determinants of learning rates (personality traits, prior
+    experience, cognitive style, domain expertise) are outside
+    the current model's scope.
+
+  \item \textbf{Exogenous reliability:}
+    The model treats $R_t$ as exogenously given. In interactive
+    systems where human behavior affects AI performance (e.g.,
+    through data quality), a coupled dynamical system would be
+    required.
+
+  \item \textbf{Illustrative status in Paper 4:}
+    In the current paper, this model serves as a theoretical
+    framework for organizing and interpreting exploratory findings.
+    Formal parameter estimation is deferred to subsequent
+    experimental studies where trial-level data permits
+    individual $\alpha$ fitting.
+
+  \item \textbf{Linearity assumption:}
+    The model assumes linear prediction error integration.
+    Nonlinear variants (e.g., sigmoid trust functions, Bayesian
+    updating with beta priors) may better capture boundary effects
+    and extreme reliability regimes.
+\end{enumerate}
+
+% =============================================================================
+\section*{References}
+% =============================================================================
+
+\begingroup
+\renewcommand{\section}[2]{}
+\begin{thebibliography}{99}
+
+\bibitem[Dzindolet et al.(2003)]{dzindolet2003role}
+Dzindolet, M.~T., Peterson, S.~A., Pomranky, R.~A., Pierce, L.~G.,
+\& Beck, H.~P. (2003).
+The role of trust in automation reliance.
+\textit{International Journal of Human-Computer Studies}, 58(6), 697--718.
+
+\bibitem[Gao \& Lee(2006)]{gao2006extending}
+Gao, J., \& Lee, J.~D. (2006).
+Extending the decision field theory to model operators'
+reliance on automation in supervisory control situations.
+\textit{IEEE Transactions on Systems, Man, and Cybernetics---Part A},
+36(5), 943--959.
+
+\bibitem[Goddard et al.(2012)]{goddard2012automation}
+Goddard, K., Roudsari, A., \& Wyatt, J.~C. (2012).
+Automation bias: A systematic review of frequency, effect mediators,
+and mitigators.
+\textit{Journal of the American Medical Informatics Association},
+19(1), 121--127.
+
+\bibitem[Lee \& Moray(1992)]{lee1992trust}
+Lee, J.~D., \& Moray, N. (1992).
+Trust, control strategies and allocation of function in
+human-machine systems.
+\textit{Ergonomics}, 35(10), 1243--1270.
+
+\bibitem[Lee \& See(2004)]{lee2004trust}
+Lee, J.~D., \& See, K.~A. (2004).
+Trust in automation: Designing for appropriate reliance.
+\textit{Human Factors}, 46(1), 50--80.
+
+\bibitem[Muir \& Moray(1996)]{muir1996trust}
+Muir, B.~M., \& Moray, N. (1996).
+Trust in automation. Part II. Experimental studies of trust and
+human intervention in a process control simulation.
+\textit{Ergonomics}, 39(3), 429--460.
+
+\bibitem[Parasuraman \& Riley(1997)]{parasuraman1997humans}
+Parasuraman, R., \& Riley, V. (1997).
+Humans and automation: Use, misuse, disuse, abuse.
+\textit{Human Factors}, 39(2), 230--253.
+
+\bibitem[Parasuraman et al.(1993)]{parasuraman1993performance}
+Parasuraman, R., Molloy, R., \& Singh, I.~L. (1993).
+Performance consequences of automation-induced ``complacency.''
+\textit{The International Journal of Aviation Psychology}, 3(1), 1--23.
+
+\bibitem[Rescorla \& Wagner(1972)]{rescorla1972theory}
+Rescorla, R.~A., \& Wagner, A.~R. (1972).
+A theory of Pavlovian conditioning: Variations in the effectiveness
+of reinforcement and nonreinforcement.
+In A.~H. Black \& W.~F. Prokasy (Eds.),
+\textit{Classical conditioning II: Current research and theory}
+(pp. 64--99). Appleton-Century-Crofts.
+
+\bibitem[Tversky \& Kahneman(1974)]{tversky1974judgment}
+Tversky, A., \& Kahneman, D. (1974).
+Judgment under uncertainty: Heuristics and biases.
+\textit{Science}, 185(4157), 1124--1131.
+
+\end{thebibliography}
+\endgroup
+
+\end{document}

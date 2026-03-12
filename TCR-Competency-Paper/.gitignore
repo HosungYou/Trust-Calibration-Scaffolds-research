@@ -1,0 +1,12 @@
+# Large data files
+data/ednet-kt3/raw/
+data/ednet-kt3/processed/*.csv
+data/pew-atp/raw/
+data/tier1-experiments/
+
+# Analysis outputs (regeneratable)
+analysis/outputs/
+
+# OS files
+.DS_Store
+__MACOSX/

@@ -1,0 +1,124 @@
+================================================================
+CHESS PUZZLE LCGA ANALYSIS (lcmm)
+Piecewise Linear Growth Model
+================================================================
+
+Loaded: 600 rows, 100 sessions
+  C1 (High->Low): 50 
+  C2 (Low->High): 50 
+
+Subjects (sessions): 100 
+
+=== Analysis A: cal_gap trajectory ===
+
+--- A1: 1-class model ---
+  Done (0.0s): loglik=-226.5, conv=1
+
+--- A2: 2-class model (gridsearch 30 reps) ---
+  Done (1.7s): loglik=-163.8, conv=1, BIC=369.1
+
+--- A3: 3-class model (gridsearch 30 reps) ---
+  Done (5.5s): loglik=-162.4, conv=1, BIC=384.7
+
+--- A4: 4-class model (gridsearch 30 reps) ---
+  Done (15.1s): loglik=-158.0, conv=1, BIC=394.3
+
+--- A5: 5-class model (gridsearch 30 reps) ---
+  Done (26.4s): loglik=-156.1, conv=1, BIC=408.9
+
+--- A6: 6-class model (gridsearch 30 reps) ---
+  Done (43.7s): loglik=-152.8, conv=1, BIC=420.7
+
+
+=== cal_gap Model Selection ===
+G         loglik        npm        BIC      SABIC    Entropy       Conv
+1         -226.5          5      476.0      460.2      0.000          1
+2         -163.8          9      369.1      340.7      0.871          1
+3         -162.4         13      384.7      343.6      0.000          1
+4         -158.0         17      394.3      340.6      0.000          1
+5         -156.1         21      408.9      342.6      0.000          1
+6         -152.8         25      420.7      341.7      0.000          1
+
+Best model (BIC): G=2
+
+Class distribution:
+  Class 1: N=52 (C1=49, C2=3)
+  Class 2: N=48 (C1=1, C2=47)
+
+
+=== Analysis B: R_b trajectory ===
+
+--- B1: 1-class model ---
+  Done (0.0s): loglik=-31.3, conv=1
+
+--- B2: 2-class model (gridsearch 30 reps) ---
+  Done (1.7s): loglik=-21.5, conv=1, BIC=84.4
+
+--- B3: 3-class model (gridsearch 30 reps) ---
+  Done (5.2s): loglik=-19.1, conv=1, BIC=98.0
+
+--- B4: 4-class model (gridsearch 30 reps) ---
+  Done (12.3s): loglik=-13.3, conv=1, BIC=104.9
+
+--- B5: 5-class model (gridsearch 30 reps) ---
+  Done (22.9s): loglik=-11.0, conv=1, BIC=118.7
+
+--- B6: 6-class model (gridsearch 30 reps) ---
+  Done (42.4s): loglik=-9.4, conv=1, BIC=134.0
+
+
+=== R_b Model Selection ===
+G         loglik        npm        BIC      SABIC    Entropy       Conv
+1          -31.3          5       85.6       69.8      0.000          1
+2          -21.5          9       84.4       55.9      0.718          1
+3          -19.1         13       98.0       57.0      0.550          1
+4          -13.3         17      104.9       51.2      0.000          1
+5          -11.0         21      118.7       52.4      0.000          1
+6           -9.4         25      134.0       55.0      0.000          1
+
+Best model (BIC): G=2
+
+Class distribution:
+  Class 1: N=88 (C1=49, C2=39)
+  Class 2: N=12 (C1=1, C2=11)
+
+
+=== Analysis C: Multivariate LCGA (R_b + cal_gap) ===
+
+--- C1: 1-class bivariate model ---
+  Done (0.2s): loglik=-199.1, conv=1
+
+--- C2: 2-class bivariate model (gridsearch 20 reps) ---
+  Done (8.4s): loglik=-183.2, conv=1, BIC=426.2
+
+--- C3: 3-class bivariate model (gridsearch 20 reps) ---
+  Done (41.4s): loglik=-177.8, conv=1, BIC=438.5
+
+--- C4: 4-class bivariate model (gridsearch 20 reps) ---
+  Done (99.0s): loglik=-174.4, conv=1, BIC=454.8
+
+--- C5: 5-class bivariate model (gridsearch 20 reps) ---
+  Done (236.2s): loglik=-170.7, conv=1, BIC=470.3
+
+
+=== Bivariate Model Selection ===
+G         loglik        npm        BIC      SABIC       Conv
+1         -199.1          8      435.0      409.8          1
+2         -183.2         13      426.2      385.1          1
+3         -177.8         18      438.5      381.6          1
+4         -174.4         23      454.8      382.1          1
+5         -170.7         28      470.3      381.9          1
+
+
+=== Cross-Method Comparison ===
+  ARI (LCGA gap G=2 vs mclust GMM S2): 0.362
+
+  Cross-tabulation:
+    GMM
+LCGA  1  2  3  4  5  6
+   1 19  0  3  0 30  0
+   2  1 14 22  9  0  2
+
+
+Saved workspace to chess_lcga_workspace.RData
+Done!

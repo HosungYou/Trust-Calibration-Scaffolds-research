@@ -1,0 +1,18 @@
+# Large data files
+data/ednet-kt3/raw/
+data/ednet-kt3/processed/*.parquet
+data/ednet-kt3/processed/*.csv
+!data/ednet-kt3/processed/kt3_u562823*.csv
+data/tier1-experiments/
+
+# Python venv
+.venv/
+
+# Analysis outputs (regeneratable)
+analysis/outputs/
+
+# OS files
+.DS_Store
+__MACOSX/
+__pycache__/
+*.pyc

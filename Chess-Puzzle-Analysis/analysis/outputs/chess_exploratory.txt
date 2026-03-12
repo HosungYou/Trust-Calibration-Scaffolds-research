@@ -1,0 +1,223 @@
+======================================================================
+CHESS PUZZLE TRUST CALIBRATION — EXPLORATORY ANALYSIS
+Bondi et al. (2023)
+======================================================================
+
+## 1. OVERALL SUMMARY
+Sessions: 100 (C1 High→Low: 50, C2 Low→High: 50)
+Trials: 3000, Windows: 600
+Window size: 5 trials, 6 windows per session
+Switch point: trial 20 (between window 4 and 5)
+
+## 2. TRIAL-LEVEL STATISTICS
+Overall follow rate: 0.522
+Overall AI accuracy: 0.500
+Overall correct rate: 0.454
+
+### By Condition × Phase:
+  Condition       Phase            Follow  AI_acc Correct  Approp
+  --------------- --------------- ------- ------- ------- -------
+  High→Low        pre_switch        0.636   0.800   0.605   0.640
+  High→Low        post_switch       0.502   0.200   0.268   0.522
+  Low→High        pre_switch        0.411   0.200   0.361   0.623
+  Low→High        post_switch       0.536   0.800   0.522   0.520
+
+## 3. WINDOW-LEVEL TRAJECTORIES (Mean ± SD)
+
+### Condition 1 (High→Low):
+    W         R_b      AI_acc           P         Gap      Approp
+  ---  ----------  ----------  ----------  ----------  ----------
+    1  0.612±0.24  0.800±0.00  0.608±0.20  -0.188±0.24  0.660±0.21
+    2  0.592±0.23  0.600±0.00  0.420±0.16  -0.008±0.23  0.536±0.18
+    3  0.612±0.30  0.800±0.00  0.604±0.22  -0.188±0.30  0.636±0.24
+    4  0.728±0.23  1.000±0.00  0.788±0.23  -0.272±0.23  0.728±0.23
+    5  0.496±0.28  0.200±0.00  0.208±0.20  0.296±0.28  0.464±0.25 ◄
+    6  0.508±0.28  0.200±0.00  0.328±0.21  0.308±0.28  0.580±0.21
+
+### Condition 2 (Low→High):
+    W         R_b      AI_acc           P         Gap      Approp
+  ---  ----------  ----------  ----------  ----------  ----------
+    1  0.348±0.26  0.200±0.00  0.372±0.22  0.148±0.26  0.628±0.23
+    2  0.456±0.27  0.400±0.00  0.428±0.15  0.056±0.27  0.608±0.18
+    3  0.516±0.31  0.200±0.00  0.276±0.18  0.316±0.31  0.580±0.26
+    4  0.324±0.27  0.000±0.00  0.368±0.25  0.324±0.27  0.676±0.27
+    5  0.512±0.24  0.800±0.00  0.496±0.24  -0.288±0.24  0.528±0.21 ◄
+    6  0.560±0.33  0.800±0.00  0.548±0.24  -0.240±0.33  0.512±0.23
+
+## 4. RELIABILITY SWITCH EFFECT (Pre W1-W4 vs Post W5-W6)
+
+### Condition 1 (High→Low), N=50:
+  R_b:
+    Pre:  0.636 ± 0.194
+    Post: 0.502 ± 0.247
+    Effect: -0.134 (d=-0.60)
+    W4→W5 jump: -0.232 ± 0.278
+  cal_gap:
+    Pre:  -0.164 ± 0.194
+    Post: 0.302 ± 0.247
+    Effect: +0.466 (d=+2.10)
+    W4→W5 jump: +0.568 ± 0.278
+  appropriate_reliance:
+    Pre:  0.640 ± 0.130
+    Post: 0.522 ± 0.193
+    Effect: -0.118 (d=-0.72)
+    W4→W5 jump: -0.264 ± 0.405
+
+### Condition 2 (Low→High), N=50:
+  R_b:
+    Pre:  0.411 ± 0.220
+    Post: 0.536 ± 0.241
+    Effect: +0.125 (d=+0.54)
+    W4→W5 jump: +0.188 ± 0.284
+  cal_gap:
+    Pre:  0.211 ± 0.220
+    Post: -0.264 ± 0.241
+    Effect: -0.475 (d=-2.06)
+    W4→W5 jump: -0.612 ± 0.284
+  appropriate_reliance:
+    Pre:  0.623 ± 0.162
+    Post: 0.520 ± 0.187
+    Effect: -0.103 (d=-0.59)
+    W4→W5 jump: -0.148 ± 0.377
+
+## 5. TRAJECTORY FEATURES (Mean ± SD)
+
+### Condition 1 (High→Low):
+  R_b:
+    Slope:     -0.0198 ± 0.0479
+    SD:        0.1940 ± 0.0775
+    Reversals: 2.04 ± 1.02
+    Max drop:  0.3760 ± 0.2103
+  cal_gap:
+    Slope:     +0.0945 ± 0.0479
+    SD:        0.3077 ± 0.0848
+    Reversals: 2.08 ± 0.72
+    Max drop:  0.3720 ± 0.1833
+
+### Condition 2 (Low→High):
+  R_b:
+    Slope:     +0.0296 ± 0.0620
+    SD:        0.2182 ± 0.0830
+    Reversals: 2.04 ± 0.98
+    Max drop:  0.3520 ± 0.1982
+  cal_gap:
+    Slope:     -0.0847 ± 0.0620
+    SD:        0.3296 ± 0.0852
+    Reversals: 1.88 ± 0.93
+    Max drop:  0.6400 ± 0.2530
+
+## 6. PRELIMINARY PATTERN CLASSIFICATION (Rule-Based)
+
+  Pattern                            C1     C2  Total
+  ------------------------------  -----  -----  -----
+  Catastrophic_jump                  42     46     88
+  Convergent                          5      1      6
+  Oscillating                        38     32     70
+  Over_reliance_any                  42      0     42
+  Over_reliance_post                 35      0     35
+  Under_reliance_post                 0     18     18
+
+## 7. THEORETICAL PATTERN MAPPING
+
+  CONDITION 1 (High→Low): AI reliability drops from ~80% to ~20% at trial 20
+    Expected patterns:
+    - Pre-switch (W1-W4): Participants learn AI is good → increase reliance → CONVERGENT
+    - Post-switch (W5-W6): AI becomes bad but reliance may persist → OVER-RELIANCE
+    - Over time if reliance drops: OSCILLATING → eventually CONVERGENT
+    - If reliance stays high despite bad AI: CATASTROPHIC (over-reliance harm)
+
+  CONDITION 2 (Low→High): AI reliability rises from ~20% to ~80% at trial 20
+    Expected patterns:
+    - Pre-switch (W1-W4): Participants learn AI is bad → low/decreasing reliance → STAGNANT
+    - Post-switch (W5-W6): AI becomes good but reliance may stay low → UNDER-RELIANCE
+    - This maps to "AI Benefit Emergence" pattern from EdNet analysis!
+    - Parasuraman & Riley (1997): "disuse" of a reliable system
+    - Lee & Moray (1992): trust lags behind reliability changes (asymmetric)
+
+  KEY HYPOTHESIS:
+    → C1 should produce CATASTROPHIC + OSCILLATING patterns
+    → C2 should produce AI BENEFIT EMERGENCE (under-adaptation) patterns
+    → Both conditions should show CONVERGENT patterns (adaptive calibration)
+    
+
+## 8. TRIAL-BY-TRIAL TRAJECTORY (group means)
+
+### Condition 1 (High→Low):
+  Trial   Follow   AI_acc  Correct      Gap
+  -----  -------  -------  -------  -------
+      1    0.500    1.000    0.660   -0.500
+      2    0.540    1.000    0.580   -0.460
+      3    0.780    1.000    0.860   -0.220
+      4    0.380    0.000    0.060   +0.380
+      5    0.860    1.000    0.880   -0.140
+      6    0.340    1.000    0.360   -0.660
+      7    0.520    1.000    0.640   -0.480
+      8    0.960    1.000    0.960   -0.040
+      9    0.480    0.000    0.080   +0.480
+     10    0.660    0.000    0.060   +0.660
+     11    0.500    1.000    0.500   -0.500
+     12    0.580    1.000    0.600   -0.420
+     13    0.820    1.000    0.860   -0.180
+     14    0.720    1.000    0.880   -0.280
+     15    0.440    0.000    0.180   +0.440
+     16    0.860    1.000    0.900   -0.140
+     17    0.520    1.000    0.560   -0.480
+     18    0.900    1.000    0.900   -0.100
+     19    0.580    1.000    0.620   -0.420
+     20    0.780    1.000    0.960   -0.220
+     21    0.380    0.000    0.140   +0.380  ◄ SWITCH
+     22    0.520    0.000    0.220   +0.520
+     23    0.640    0.000    0.100   +0.640
+     24    0.400    1.000    0.540   -0.600
+     25    0.540    0.000    0.040   +0.540
+     26    0.380    0.000    0.380   +0.380
+     27    0.260    0.000    0.260   +0.260
+     28    0.480    0.000    0.220   +0.480
+     29    0.720    1.000    0.720   -0.280
+     30    0.700    0.000    0.060   +0.700
+
+### Condition 2 (Low→High):
+  Trial   Follow   AI_acc  Correct      Gap
+  -----  -------  -------  -------  -------
+      1    0.280    0.000    0.280   +0.280
+      2    0.400    0.000    0.020   +0.400
+      3    0.340    0.000    0.440   +0.340
+      4    0.440    1.000    0.460   -0.560
+      5    0.280    0.000    0.660   +0.280
+      6    0.320    0.000    0.040   +0.320
+      7    0.640    0.000    0.080   +0.640
+      8    0.160    0.000    0.760   +0.160
+      9    0.520    1.000    0.560   -0.480
+     10    0.640    1.000    0.700   -0.360
+     11    0.520    0.000    0.000   +0.520
+     12    0.440    0.000    0.140   +0.440
+     13    0.500    0.000    0.200   +0.500
+     14    0.380    0.000    0.300   +0.380
+     15    0.740    1.000    0.740   -0.260
+     16    0.260    0.000    0.620   +0.260
+     17    0.420    0.000    0.040   +0.420
+     18    0.220    0.000    0.480   +0.220
+     19    0.520    0.000    0.140   +0.520
+     20    0.200    0.000    0.560   +0.200
+     21    0.220    1.000    0.320   -0.780  ◄ SWITCH
+     22    0.700    1.000    0.700   -0.300
+     23    0.680    1.000    0.720   -0.320
+     24    0.460    0.000    0.200   +0.460
+     25    0.500    1.000    0.540   -0.500
+     26    0.460    1.000    0.720   -0.540
+     27    0.500    1.000    0.660   -0.500
+     28    0.600    1.000    0.660   -0.400
+     29    0.620    0.000    0.020   +0.620
+     30    0.620    1.000    0.680   -0.380
+
+## 9. OVER-RELIANCE ANALYSIS (C1 Post-Switch)
+  Post-switch trials (C1): 500
+  Followed inaccurate AI: 195 (39.0%)
+  → These are OVER-RELIANCE events (trust violation not yet processed)
+  → Of these, AI actually hurt performance: 38 (19.5%)
+
+## 10. UNDER-RELIANCE / AI BENEFIT EMERGENCE (C2 Post-Switch)
+  Post-switch trials (C2): 500
+  Ignored accurate AI: 186 (37.2%)
+  → These are UNDER-RELIANCE events (distrust persists despite good AI)
+  → Of these, participant got it wrong (missed opportunity): 150 (80.6%)

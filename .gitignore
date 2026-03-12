@@ -46,6 +46,15 @@ node_modules/
 *.out
 *.synctex.gz
 
+# Large data files
+TCR-Trajectory-Paper/data/collab-cxr/clickstream_public.txt
+TCR-Trajectory-Paper/data/collab-cxr/clickstream_public.txt.gz
+TCR-Trajectory-Paper/data/collab-cxr/data_public.txt
+TCR-Trajectory-Paper/data/collab-cxr/data_public.txt.gz
+
+# R workspace files (regenerable)
+*.RData
+
 # Environment
 .env
 .env.local
