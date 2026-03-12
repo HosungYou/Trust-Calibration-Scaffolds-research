@@ -66,9 +66,33 @@ $$T_{t+1} = T_t + \begin{cases} \alpha^+ \cdot \delta_t & \text{if } \delta_t \g
 
 where $\delta_t = R_t - T_t$ is the prediction error (discrepancy between observed AI reliability and current behavioral trust), and $\alpha^+$ and $\alpha^-$ are asymmetric learning rates for positive and negative prediction errors, respectively.
 
+## The Trust Calibration Space
+
+To formalize the dynamics of trust calibration, we define the Trust Calibration Space $\mathcal{S} = [0,1] \times [0,1] \times \mathbb{Z}^+$ as a three-dimensional space characterized by:
+
+- $T_t \in [0,1]$: Behavioral trust at time *t*, operationalized as behavioral reliance rate *R*~b~.
+- $R_t \in [0,1]$: AI reliability at time *t*, operationalized as AI accuracy *P*.
+- $\tau \in \mathbb{Z}^+$: Discrete time index representing sequential interaction windows.
+
+The calibration gap at time *t* is defined as $G_t = T_t - R_t$, where $G > 0$ indicates over-reliance (behavioral trust exceeds AI capability), $G < 0$ indicates under-reliance (behavioral trust falls below AI capability), and $G = 0$ represents perfect calibration. A trust trajectory is thus a path through this three-dimensional space, $\{(T_t, R_t, \tau)\}_{t=1}^{N}$, and the goal of trust calibration research is to characterize the geometry and dynamics of these paths.
+
+### The Trust-Reliability Matrix
+
+In the $T \times R$ plane (collapsing across time), four theoretically meaningful regions emerge relative to the identity diagonal $T = R$:
+
+- **Calibrated** ($T \approx R$): Behavioral reliance is appropriately matched to AI capability, falling near the diagonal.
+- **Over-reliance** ($T > R$): Behavioral trust exceeds AI capability, located above the diagonal.
+- **Under-reliance** ($T < R$): Behavioral trust falls below AI capability, located below the diagonal.
+
+The experimental design creates a powerful test of this framework: C1 (High-to-Low) forces participants from the calibrated region toward potential over-reliance as reliability drops, while C2 (Low-to-High) forces participants toward potential under-reliance as reliability increases. Whether and how quickly participants recalibrate—returning to the diagonal—reveals their trust updating characteristics. Figure 2 illustrates this matrix with the chess GMM trajectory data projected into the $T \times R$ plane.
+
+### Trust Hysteresis
+
+A key prediction from the asymmetric learning rate model ($\alpha^+ \neq \alpha^-$) is trust hysteresis: the path of trust erosion (when *R* decreases) differs from the path of trust building (when *R* increases). Specifically, when $\alpha^- > \alpha^+$ (the canonical expectation from Lee & Moray, 1992), trust erodes faster than it builds, creating a hysteresis loop in the $T \times R$ space. Conversely, when automation complacency dominates ($\alpha^- \approx 0$), the erosion path is nearly flat while the building path shows gradual increase. The experimental design with its explicit reliability switch—and the contrasting C1 and C2 conditions—provides a direct test of this asymmetry, as the same participants experience both trust erosion and trust building contexts. Figure 3 visualizes the full three-dimensional trajectories in the Trust Calibration Space $\mathcal{S}$.
+
 ## Five Theoretically Derived Trajectory Patterns
 
-This model predicts five distinct trajectory patterns based on different configurations of the learning rate parameters:
+This model predicts five distinct trajectory patterns based on different configurations of the learning rate parameters (see Figure 4 for a visual summary of the theoretical predictions in the chess context):
 
 1. **Convergent** ($\alpha^+, \alpha^- > \alpha_{min}$): Trust gradually converges toward actual reliability, regardless of direction. Both learning rates are active and sufficient.
 
@@ -171,7 +195,7 @@ The experimental manipulation produced large effects on the calibration gap. In 
 
 Table 1 presents the model selection results for the calibration gap LCGA models. The two-class model was selected based on the lowest *BIC* (369.1), which was lower than the three-class model by a margin of 15.6 (see Table 1). Entropy for the two-class solution was 0.871, indicating good classification quality.
 
-Class 1 (*n* = 52) consisted of 49 C1 and three C2 sessions. Class 2 (*n* = 48) consisted of 47 C2 and one C1 session. This represents 96% accuracy in condition classification, confirming that the experimental condition is the dominant determinant of the calibration gap trajectory (see Figure 2).
+Class 1 (*n* = 52) consisted of 49 C1 and three C2 sessions. Class 2 (*n* = 48) consisted of 47 C2 and one C1 session. This represents 96% accuracy in condition classification, confirming that the experimental condition is the dominant determinant of the calibration gap trajectory (see Figure 5).
 
 #### Behavioral Reliance Trajectory Classes
 
@@ -179,7 +203,7 @@ Behavioral reliance (*R*~b~) trajectories also yielded a two-class solution (*BI
 
 ### GMM Results
 
-The six-class VEI model was selected based on *BIC* optimization across all parameterizations. All six classes achieved perfect condition separation (100% C1 or 100% C2 within each class), indicating that condition-driven variance dominated the feature space (see Figure 3 and Table 2).
+The six-class VEI model was selected based on *BIC* optimization across all parameterizations. All six classes achieved perfect condition separation (100% C1 or 100% C2 within each class), indicating that condition-driven variance dominated the feature space (see Figure 6 and Table 2). The six GMM classes occupy distinct regions of the Trust-Reliability Matrix (see Figure 2): C1 classes (Catastrophic and Convergent) move from the calibrated diagonal into the over-reliance region as reliability drops, while C2 classes (Convergent, Oscillating, and ABE) move from under-reliance toward the diagonal as reliability increases.
 
 #### C1 (High-to-Low) Subgroups
 
@@ -199,11 +223,11 @@ The six-class VEI model was selected based on *BIC* optimization across all para
 
 ### Theoretical Pattern Mapping
 
-Table 2 summarizes the mapping from empirically observed GMM classes to theoretically predicted trajectory patterns. Five of six GMM classes map directly onto the five theoretically predicted patterns. The sixth class (Extreme Compliance, *n* = 2) represents an additional, theoretically unanticipated extreme case. This mapping is further illustrated in the Bayesian Trust Update Model parameter space (see Figure 4).
+Table 2 summarizes the mapping from empirically observed GMM classes to theoretically predicted trajectory patterns. Five of six GMM classes map directly onto the five theoretically predicted patterns. The sixth class (Extreme Compliance, *n* = 2) represents an additional, theoretically unanticipated extreme case. This mapping is further illustrated in the Bayesian Trust Update Model parameter space (see Figure 7). The full three-dimensional trajectories of each GMM class through the Trust Calibration Space ($T \times R \times \tau$) are shown in Figure 3, revealing the distinct geometric paths that each pattern traces through the space.
 
 ### Cross-Method Comparison
 
-The Adjusted Rand Index between LCGA (*G* = 2) and GMM (*G* = 6) class assignments was ARI = .362, reflecting moderate agreement (see Table 3 and Figure 5). Cross-tabulation revealed that LCGA Class 1 (C1-dominant) comprised GMM Class 1 (Convergent) and GMM Class 5 (Catastrophic), while LCGA Class 2 (C2-dominant) comprised GMM Classes 2, 3, and 4 (Oscillating, Convergent, and ABE, respectively). This confirms that LCGA captures condition-level macro-structure while GMM captures within-condition micro-heterogeneity. The two methods provide complementary, not redundant, information.
+The Adjusted Rand Index between LCGA (*G* = 2) and GMM (*G* = 6) class assignments was ARI = .362, reflecting moderate agreement (see Table 3 and Figure 8). Cross-tabulation revealed that LCGA Class 1 (C1-dominant) comprised GMM Class 1 (Convergent) and GMM Class 5 (Catastrophic), while LCGA Class 2 (C2-dominant) comprised GMM Classes 2, 3, and 4 (Oscillating, Convergent, and ABE, respectively). This confirms that LCGA captures condition-level macro-structure while GMM captures within-condition micro-heterogeneity. The two methods provide complementary, not redundant, information.
 
 ---
 
@@ -233,6 +257,10 @@ In the C2 (Low-to-High) condition, three distinct adaptation pathways emerged:
 
 The ABE pattern is particularly noteworthy. These participants had *lower* reliance at Window 6 (*R*~b~ = 0.200) than at Window 5 (*R*~b~ = 0.267), moving *away* from appropriate trust despite continued exposure to high-accuracy AI. This aligns with the "disuse" phenomenon (Parasuraman & Riley, 1997) and suggests that initial negative experiences can create persistent anchoring effects that override subsequent positive evidence (see also Tversky & Kahneman, 1974).
 
+### Trust Hysteresis: Asymmetric Erosion and Building
+
+The comparison between C1 (trust erosion) and C2 (trust building) reveals a striking asymmetry consistent with trust hysteresis. In C1, 60% of participants showed Catastrophic non-adaptation ($\alpha^- \approx 0$)—they failed to reduce trust when *R* dropped. In C2, 50% showed gradual Convergent adaptation but 18% showed ABE non-adaptation ($\alpha^+ \approx 0$). The fact that non-adaptation was more prevalent in the erosion direction (60%) than the building direction (18%) is consistent with the canonical trust asymmetry (trust is harder to destroy than to build; Lee & Moray, 1992), but with an important nuance: the Catastrophic pattern represents a failure to *erode* trust (the opposite of what standard asymmetry predicts). This suggests that automation complacency (Goddard et al., 2012; Parasuraman et al., 1993) creates an additional barrier to downward recalibration beyond what simple learning rate asymmetry would predict. In decision field theory terms (Gao & Lee, 2006), the subjective evaluation of automation performance may be biased by prior positive experiences, creating an inertial force that resists trust erosion even in the face of clear reliability declines. Figure 2 illustrates these asymmetric paths in the $T \times R$ space, and Figure 3 shows the full trajectories in the three-dimensional Trust Calibration Space.
+
 ### Complementary Methods: LCGA and GMM
 
 Our dual-method approach demonstrates the value of combining trajectory-explicit (LCGA) and feature-based (GMM) clustering for trust calibration research. LCGA answers whether the experimental manipulation produces distinct trajectory shapes (yes—two macro-level patterns with 96% condition separation). GMM answers what behavioral subgroups exist within conditions (five distinct patterns corresponding to theoretical predictions). Cross-method comparison (ARI = .362) confirms that the methods capture different levels of structure, providing complementary rather than redundant evidence.
@@ -260,6 +288,10 @@ Several limitations should be noted. First, with *N* = 100 sessions (50 per cond
 Bondi, A., Kuo, Y.-L., Parvez, M. R., & Shah, J. (2023). Role of human-AI interaction in selective prediction. *Proceedings of the AAAI Conference on Artificial Intelligence*, *37*(5), 5286–5294. https://doi.org/10.1609/aaai.v37i5.25684
 
 Dzindolet, M. T., Peterson, S. A., Pomranky, R. A., Pierce, L. G., & Beck, H. P. (2003). The role of trust in automation reliance. *International Journal of Human-Computer Studies*, *58*(6), 697–718. https://doi.org/10.1016/S1071-5819(03)00038-7
+
+Gao, J., & Lee, J. D. (2006). Extending the decision field theory to model operators' reliance on automation in supervisory control of multiple robots. *IEEE Transactions on Systems, Man, and Cybernetics—Part A: Systems and Humans*, *36*(5), 943–959. https://doi.org/10.1109/TSMCA.2006.878984
+
+Goddard, K., Roudsari, A., & Wyatt, J. C. (2012). Automation bias: A systematic review of frequency, effect mediators, and mitigators. *Journal of the American Medical Informatics Association*, *19*(1), 121–127. https://doi.org/10.1136/amiajnl-2011-000089
 
 Lee, J. D., & Moray, N. (1992). Trust, control strategies and allocation of function in human-machine systems. *Ergonomics*, *35*(10), 1243–1270. https://doi.org/10.1080/00140139208967392
 
@@ -356,6 +388,36 @@ You, H. (2026). Trust calibration trajectories in AI-assisted learning: A Bayesi
 
 **Figure 2**
 
+*Trust-Reliability Matrix With Chess GMM Trajectories*
+
+![Trust-Reliability Matrix](../figures/Figure_2_Trust_Reliability_Matrix.png)
+
+*Note.* The Trust-Reliability Matrix shows the $T \times R$ plane of the Trust Calibration Space, with behavioral trust (*T*, operationalized as behavioral reliance *R*~b~) on the vertical axis and AI reliability (*R*, operationalized as AI accuracy *P*) on the horizontal axis. The diagonal line represents perfect calibration ($T = R$, $G = 0$). Points above the diagonal indicate over-reliance ($G > 0$); points below indicate under-reliance ($G < 0$). GMM class trajectories are projected into this plane, illustrating how C1 classes (Catastrophic, Convergent) move from the calibrated region into over-reliance, while C2 classes move from under-reliance toward the diagonal. The asymmetric paths between C1 and C2 trajectories reveal trust hysteresis.
+
+---
+
+**Figure 3**
+
+*Three-Dimensional Trust Calibration Trajectories in the $T \times R \times \tau$ Space*
+
+![3D Trust Trajectory](../figures/Figure_3_3D_Trust_Trajectory.png)
+
+*Note.* Three-dimensional trajectories of the six GMM classes through the Trust Calibration Space $\mathcal{S} = [0,1] \times [0,1] \times \mathbb{Z}^+$. The *x*-axis represents AI reliability (*R*), the *y*-axis represents behavioral trust (*T*), and the *z*-axis represents time ($\tau$, Windows 1–6). The transparent diagonal plane marks perfect calibration ($T = R$). C1 trajectories (Catastrophic, Convergent) begin near the calibrated plane and diverge above it after the reliability switch at Window 5. C2 trajectories begin below the plane and approach it at different rates. The Catastrophic trajectory remains far above the plane post-switch, while the Convergent trajectory returns near it.
+
+---
+
+**Figure 4**
+
+*Theoretical Predictions for Five Trust Calibration Trajectory Patterns in the Chess Context*
+
+![Theoretical Predictions](../figures/Figure_4_Theoretical_Predictions.png)
+
+*Note.* Theoretical predictions for the five trajectory patterns derived from the Bayesian Trust Update Model, illustrated in the context of the chess puzzle experimental design. Each panel shows the predicted behavioral trust trajectory (*T*~*t*~) relative to AI reliability (*R*~*t*~) across six windows, given different configurations of the asymmetric learning rate parameters ($\alpha^+$, $\alpha^-$). The vertical dashed line marks the reliability switch between Windows 4 and 5.
+
+---
+
+**Figure 5**
+
 *LCGA Calibration Gap Trajectories by Class*
 
 ![LCGA Trajectories](../figures/Figure_2_LCGA_Trajectories.png)
@@ -364,7 +426,7 @@ You, H. (2026). Trust calibration trajectories in AI-assisted learning: A Bayesi
 
 ---
 
-**Figure 3**
+**Figure 6**
 
 *GMM Six-Class Trajectory Profiles*
 
@@ -374,7 +436,7 @@ You, H. (2026). Trust calibration trajectories in AI-assisted learning: A Bayesi
 
 ---
 
-**Figure 4**
+**Figure 7**
 
 *Bayesian Trust Update Model: Theoretical Pattern Space*
 
@@ -384,7 +446,7 @@ You, H. (2026). Trust calibration trajectories in AI-assisted learning: A Bayesi
 
 ---
 
-**Figure 5**
+**Figure 8**
 
 *Cross-Method Comparison: LCGA and GMM Class Assignments*
 
