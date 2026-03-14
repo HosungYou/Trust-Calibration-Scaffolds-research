@@ -22,7 +22,7 @@ Correspondence concerning this article should be addressed to Hosung You, Colleg
 
 **Abstract**
 
-Trust calibration---the alignment between a user's reliance on an AI system and the system's actual reliability---is critical for effective human-AI collaboration. While prior research has examined trust as a unidimensional construct, few studies have investigated the heterogeneity of trust calibration *trajectories* over time. Using data from an experimental chess puzzle study (*N* = 100 sessions, 50 participants in two conditions), we applied complementary analytic approaches---Latent Class Growth Analysis (LCGA) and Gaussian Mixture Model (GMM) clustering---to identify distinct trust calibration trajectory patterns following experimental reliability switches. LCGA identified two macro-level trajectory classes corresponding to experimental conditions (Entropy = 0.871, 96% classification accuracy), confirming the manipulation's effectiveness. GMM revealed six micro-level subgroups within conditions, mapping onto five theoretically derived trajectory patterns: Convergent, Catastrophic, Oscillating, AI Benefit Emergence (ABE), and Extreme Compliance. In the High-to-Low reliability condition, 60% of participants exhibited Catastrophic over-reliance (trust inertia despite AI accuracy dropping from 100% to 20%), while 40% showed rapid Convergent adaptation. In the Low-to-High condition, 50% converged gradually, 28% oscillated, and 18% showed ABE---persistent under-reliance despite AI improvement. These findings provide the first experimental evidence for a five-pattern typology of trust calibration dynamics, with implications for designing adaptive AI systems that account for individual differences in trust updating.
+Trust calibration---the alignment between a user's reliance on an AI system and the system's actual reliability---is critical for effective human-AI collaboration. While prior research has examined trust as a unidimensional construct, few studies have investigated the heterogeneity of trust calibration *trajectories* over time. Using data from an experimental chess puzzle study (*N* = 100 sessions from 50 participants across two conditions), we applied Latent Class Growth Analysis (LCGA) as the primary analytic method, supplemented by exploratory Gaussian Mixture Model (GMM) clustering to probe within-condition heterogeneity. LCGA identified two robust trajectory classes corresponding to experimental conditions (Entropy = 0.871, 96% classification accuracy), confirming the manipulation's effectiveness as the dominant driver of trust calibration dynamics. Exploratory GMM analysis suggested further within-condition differentiation: in the High-to-Low reliability condition, a majority subgroup (60%) exhibited Catastrophic over-reliance (trust inertia despite AI accuracy dropping from ~80% to ~20%), while 40% showed rapid Convergent adaptation. In the Low-to-High condition, 50% converged gradually, 28% oscillated, and 18% showed a pattern consistent with AI Benefit Emergence (ABE)---persistent under-reliance despite AI improvement---a pattern previously identified in large-scale educational data (*N* = 4,568; You, 2026). Given the modest sample size (50 sessions per condition), the GMM subgroups should be interpreted as exploratory; the convergence with independently identified patterns in a larger dataset strengthens confidence in these findings while highlighting the need for larger-sample replication.
 
 *Keywords:* trust calibration, human-AI interaction, latent class growth analysis, trust trajectory, reliability switch, automation trust
 
@@ -44,25 +44,25 @@ $$T_{t+1} = T_t + \begin{cases} \alpha^+ \cdot \delta_t & \text{if } \delta_t \g
 
 where $\delta_t = R_t - T_t$ is the prediction error (discrepancy between observed AI reliability and current behavioral trust), and $\alpha^+$ and $\alpha^-$ are asymmetric learning rates for positive and negative prediction errors, respectively. The key insight is that $\alpha^+$ and $\alpha^-$ need not be equal: individuals may update trust more readily in response to positive evidence (AI succeeding) than negative evidence (AI failing), or vice versa. This asymmetry generates qualitatively distinct trajectory patterns, including regions of over-reliance (when behavioral trust exceeds AI capability) and under-reliance (when behavioral trust falls below AI capability).
 
-## Five Theoretically Derived Trajectory Patterns
+## Predicted Trajectory Patterns
 
-The Trust Calibration Space, $\mathcal{S} = [0,1] \times [0,1] \times \mathbb{Z}^+$, defines the three-dimensional state space in which Trust ($T$), AI Reliability ($R$), and Time ($\tau$) jointly determine a participant's calibration status. A trajectory through this space reveals how trust evolves relative to changing reliability---with the $T = R$ plane representing perfect calibration (see Figure 2).
+Different configurations of $\alpha^+$ and $\alpha^-$ generate qualitatively distinct trajectory patterns. Three patterns are derivable from the model on theoretical grounds:
 
-Different configurations of $\alpha^+$ and $\alpha^-$ predict five distinct trajectory patterns (see Figure 3a for theoretical predictions):
-
-1. **Convergent** ($\alpha^+, \alpha^- > \alpha_{min}$): Trust gradually converges toward actual reliability, regardless of direction. Both learning rates are active and sufficient.
+1. **Convergent** ($\alpha^+, \alpha^- > \alpha_{min}$): Trust gradually converges toward actual reliability. Both learning rates are active and sufficient.
 
 2. **Stagnant** ($\alpha^+ \approx \alpha^- \approx 0$): Trust remains fixed near its initial level, unresponsive to changes in AI reliability.
 
-3. **Catastrophic** ($\alpha^- \approx 0$; requires $R \downarrow$): When AI reliability drops suddenly, the individual fails to reduce trust, maintaining over-reliance despite clear evidence of declining performance.
+3. **Catastrophic** ($\alpha^- \approx 0$; requires $R \downarrow$): When reliability drops, the individual fails to reduce trust, maintaining over-reliance.
+
+Two additional patterns were identified through exploratory analysis of large-scale educational data (*N* = 4,568 learners; You, 2026) and subsequently formalized within the model:
 
 4. **Oscillating** (nonlinear or threshold-dependent $\alpha$): Trust fluctuates non-monotonically, failing to achieve stable convergence.
 
-5. **AI Benefit Emergence (ABE)** ($\alpha^+ \approx 0$; requires $R \uparrow$): When AI reliability improves, the individual fails to increase trust, maintaining under-reliance. The mathematical mirror of the Catastrophic pattern, first identified in exploratory analysis of educational data (You, 2026).
+5. **AI Benefit Emergence (ABE)** ($\alpha^+ \approx 0$; requires $R \uparrow$): When reliability improves, the individual fails to increase trust, maintaining under-reliance. The mathematical mirror of the Catastrophic pattern.
 
 ## The Present Study
 
-The present study applies this theoretical framework to an experimental dataset featuring an explicit AI reliability switch, providing an ideal testbed for identifying trust calibration trajectories. We analyze data from Bondi et al. (2023), in which participants solved chess puzzles with AI recommendations under two conditions: High-to-Low reliability (C1: AI accuracy ~80% then ~20%) and Low-to-High reliability (C2: AI accuracy ~20% then ~80%; see Figure 1). Figure 3b shows how the empirically identified GMM classes correspond to these theoretical predictions. This design creates a powerful within-subject test: C1 forces participants from the calibrated region toward potential over-reliance as reliability drops, while C2 forces participants toward potential under-reliance as reliability increases. Whether and how quickly participants recalibrate reveals their trust updating characteristics.
+The present study applies this theoretical framework to an experimental dataset featuring an explicit AI reliability switch, providing an ideal testbed for identifying trust calibration trajectories. We analyze data from Bondi et al. (2023), in which participants solved chess puzzles with AI recommendations under two conditions: High-to-Low reliability (C1: AI accuracy ~80% then ~20%) and Low-to-High reliability (C2: AI accuracy ~20% then ~80%; see Figure 1). This design creates a powerful within-subject test: C1 forces participants from the calibrated region toward potential over-reliance as reliability drops, while C2 forces participants toward potential under-reliance as reliability increases. Whether and how quickly participants recalibrate reveals their trust updating characteristics.
 
 We employ two complementary analytic approaches:
 
@@ -75,7 +75,7 @@ We employ two complementary analytic approaches:
 
 **RQ2:** Within each experimental condition, what distinct trajectory patterns emerge? (GMM)
 
-**RQ3:** Do the empirically identified patterns correspond to the five theoretically predicted trajectory types?
+**RQ3:** Do the empirically identified patterns correspond to the five predicted trajectory types?
 
 **RQ4:** How do LCGA and GMM results relate to each other, and what complementary insights does each method provide?
 
@@ -153,7 +153,7 @@ The experimental manipulation produced large effects on the calibration gap. In 
 
 Table 1 presents the model selection results for the calibration gap LCGA models. The two-class model was selected based on the lowest *BIC* (369.1), which was lower than the three-class model by a margin of 15.6 (see Table 1). Entropy for the two-class solution was 0.871, indicating good classification quality.
 
-Class 1 (*n* = 52) consisted of 49 C1 and three C2 sessions. Class 2 (*n* = 48) consisted of 47 C2 and one C1 session. This represents 96% accuracy in condition classification, confirming that the experimental condition is the dominant determinant of the calibration gap trajectory (see Figure 4).
+Class 1 (*n* = 52) consisted of 49 C1 and three C2 sessions. Class 2 (*n* = 48) consisted of 47 C2 and one C1 session. This represents 96% accuracy in condition classification, confirming that the experimental condition is the dominant determinant of the calibration gap trajectory (see Figure 2).
 
 #### Behavioral Reliance Trajectory Classes
 
@@ -161,7 +161,7 @@ Behavioral reliance (*R*~b~) trajectories also yielded a two-class solution (*BI
 
 ### GMM Results
 
-The six-class VEI model was selected based on *BIC* optimization across all parameterizations and class numbers (*G* = 2--8). As shown in Figure 6, the VEI parameterization consistently achieved the highest *BIC* across all values of *G*, with the optimal solution at *G* = 6 (*BIC* = --4966.3). The *BIC* improvement from *G* = 5 to *G* = 6 ($\Delta$BIC = +60.1) was substantial, while *G* = 7 showed a decline ($\Delta$BIC = --31.4), confirming the six-class solution as optimal. All six classes achieved perfect condition separation (100% C1 or 100% C2 within each class), indicating that condition-driven variance dominated the feature space (see Figure 5 and Table 2).
+The six-class VEI model was selected based on *BIC* optimization across all parameterizations and class numbers (*G* = 2--8). As shown in Figure 4, the VEI parameterization consistently achieved the highest *BIC* across all values of *G*, with the optimal solution at *G* = 6 (*BIC* = --4966.3). The *BIC* improvement from *G* = 5 to *G* = 6 ($\Delta$BIC = +60.1) was substantial, while *G* = 7 showed a decline ($\Delta$BIC = --31.4), confirming the six-class solution as optimal. All six classes achieved perfect condition separation (100% C1 or 100% C2 within each class), indicating that condition-driven variance dominated the feature space (see Figure 3 and Table 2). Given the sample size (*N* = 100), the GMM results should be interpreted as exploratory rather than confirmatory; the smallest classes (Class 4, *n* = 9; Class 6, *n* = 2) warrant particular caution.
 
 #### C1 (High-to-Low) Subgroups
 
@@ -177,15 +177,15 @@ The six-class VEI model was selected based on *BIC* optimization across all para
 
 **Class 4: AI Benefit Emergence (*n* = 9, 18% of C2).** Despite AI accuracy of 80%, *R*~b~ remained at 0.200 and even *decreased* from Window 5 (*R*~b~ = 0.267) to Window 6 (*R*~b~ = 0.200). The calibration gap of --0.600 at Window 6 indicates severe under-reliance. This corresponds to the ABE pattern ($\alpha^+ \approx 0$; see Table 4).
 
-**Class 6: Extreme Compliance (*n* = 2, 4% of C2).** Two sessions showed near-100% AI following regardless of accuracy, representing an extreme case of automation compliance.
+**Class 6: Extreme Compliance (*n* = 2, 4% of C2).** Two sessions showed near-100% AI following regardless of accuracy. Given that this class comprises only two sessions, it is best interpreted as an outlier phenomenon (extreme automation compliance) rather than a robust behavioral subgroup; we retain it descriptively but exclude it from substantive theoretical interpretation.
 
 ### Theoretical Pattern Mapping
 
-Table 2 summarizes the mapping from empirically observed GMM classes to theoretically predicted trajectory patterns. Five of six GMM classes map directly onto the five theoretically predicted patterns. The sixth class (Extreme Compliance, *n* = 2) represents an additional, theoretically unanticipated extreme case.
+Table 2 summarizes the mapping from empirically observed GMM classes to predicted trajectory patterns. Five of six GMM classes correspond to the five predicted patterns. The sixth class (Extreme Compliance, *n* = 2) is an outlier case retained for descriptive completeness but not interpreted as a distinct theoretical pattern given its minimal size.
 
 ### Cross-Method Comparison
 
-The Adjusted Rand Index between LCGA (*G* = 2) and GMM (*G* = 6) class assignments was ARI = .362, reflecting moderate agreement (see Table 3 and Figure 7). Cross-tabulation revealed that LCGA Class 1 (C1-dominant) comprised GMM Class 1 (Convergent) and GMM Class 5 (Catastrophic), while LCGA Class 2 (C2-dominant) comprised GMM Classes 2, 3, and 4 (Oscillating, Convergent, and ABE, respectively). This confirms that LCGA captures condition-level macro-structure while GMM captures within-condition micro-heterogeneity. The two methods provide complementary, not redundant, information.
+The Adjusted Rand Index between LCGA (*G* = 2) and GMM (*G* = 6) class assignments was ARI = .362, reflecting moderate agreement (see Table 3 and Figure 5). Cross-tabulation revealed that LCGA Class 1 (C1-dominant) comprised GMM Class 1 (Convergent) and GMM Class 5 (Catastrophic), while LCGA Class 2 (C2-dominant) comprised GMM Classes 2, 3, and 4 (Oscillating, Convergent, and ABE, respectively). This confirms that LCGA captures condition-level macro-structure while GMM captures within-condition micro-heterogeneity. The two methods provide complementary, not redundant, information.
 
 ### Hypothesis Evaluation
 
@@ -207,7 +207,7 @@ Table 5 summarizes the evaluation of each hypothesis against the empirical resul
 
 ### Summary of Findings
 
-This study provides the first experimental evidence for five distinct trust calibration trajectory patterns following AI reliability switches. Using complementary LCGA and GMM analyses of chess puzzle data with experimental reliability manipulation, we confirmed four of five hypotheses (H1, H2, H3, H5), with H4 partially disconfirmed. Three key findings emerged. First, LCGA confirmed the experimental manipulation's effectiveness (*G* = 2, 96% condition separation), establishing the reliability switch as the primary driver of trust calibration trajectories. Second, GMM revealed within-condition heterogeneity corresponding to five theoretically predicted patterns: Convergent, Catastrophic, Oscillating, ABE, and Extreme Compliance. Third, the Bayesian Trust Update Model successfully accounts for all observed patterns through different configurations of asymmetric learning rate parameters ($\alpha^+$, $\alpha^-$).
+This study examined trust calibration trajectories following experimental AI reliability switches, employing LCGA as the primary analytic method and exploratory GMM clustering as a supplementary probe of within-condition heterogeneity. Four of five hypotheses were supported (H1, H2, H3, H5), with H4 partially disconfirmed. The central finding is that LCGA robustly identified two trajectory classes corresponding to experimental conditions (*G* = 2, Entropy = 0.871, 96% classification accuracy), establishing the reliability switch as the dominant driver of trust calibration dynamics. Beyond this condition-level structure, exploratory GMM analysis suggested five within-condition subgroups---Convergent, Catastrophic, Oscillating, ABE, and Extreme Compliance---that align with patterns predicted by the Bayesian Trust Update Model and, for ABE and Oscillating, with patterns independently identified in large-scale educational data (*N* = 4,568; You, 2026). Given the modest sample size (*N* = 100), the GMM subgroups are best regarded as hypothesis-generating; the cross-domain convergence with the larger EdNet dataset strengthens confidence in their substantive meaning while underscoring the need for larger-sample replication.
 
 ### Trust Violation Produces Bifurcated Responses
 
@@ -233,7 +233,7 @@ The comparison between C1 (trust erosion) and C2 (trust building) reveals a stri
 
 ### ABE: A Novel Pattern With Practical Significance
 
-The AI Benefit Emergence pattern merits special attention as a theoretically and practically significant finding. ABE was first identified inductively in exploratory analysis of large-scale educational data (EdNet; You, 2026), where a subgroup of learners persistently under-relied on an AI tutoring system despite its demonstrated accuracy. The present study provides the first *experimental* confirmation of this pattern. The convergence is striking: ABE participants in both the educational dataset and the chess experiment exhibited calibration gaps of approximately --0.600, despite fundamentally different task domains, sample characteristics, and experimental designs.
+The AI Benefit Emergence pattern merits special attention as a theoretically and practically significant finding. ABE was first identified inductively in large-scale educational data (*N* = 4,568 learners; You, 2026), where a substantial subgroup (*n* = 451, 9.9%) persistently under-relied on an AI tutoring system despite its demonstrated accuracy. The present study provides suggestive experimental evidence for the same pattern. The cross-domain convergence is noteworthy: ABE participants in the EdNet dataset (gap $\approx$ --0.600, *n* = 451) and in the chess experiment (gap = --0.600, *n* = 9) exhibited nearly identical calibration gaps despite fundamentally different task domains (education vs. chess), sample characteristics (K-12 learners vs. adults), sample sizes, and study designs (observational vs. experimental). While the chess ABE subgroup is small (*n* = 9) and must be interpreted cautiously, the quantitative alignment with an independently identified pattern in a dataset 50 times larger lends credibility that exceeds what the chess sample alone could provide.
 
 This cross-domain replication suggests that ABE reflects a robust individual difference in trust updating---specifically, a near-zero positive learning rate ($\alpha^+ \approx 0$) that prevents upward recalibration even in the face of sustained positive evidence. ABE participants appear anchored to their initial negative impression of the AI system, consistent with first-impression effects and negativity bias in social judgment (Tversky & Kahneman, 1974). In the chess context, these individuals experienced the AI performing at ~20% accuracy during the first 20 trials and were subsequently unable to revise their behavioral reliance upward when the AI improved to ~80% accuracy. The fact that ABE participants' reliance actually *decreased* from Window 5 (*R*~b~ = 0.267) to Window 6 (*R*~b~ = 0.200) suggests active resistance to the AI rather than passive inattention.
 
@@ -241,7 +241,7 @@ For AI system deployment, ABE has direct practical implications. It suggests tha
 
 ### Implications for Adaptive AI System Design
 
-The five-pattern typology identified in this study has several concrete implications for the design of AI systems that must maintain appropriate user trust.
+The trajectory patterns suggested by this study---robust at the condition level (LCGA) and exploratory at the subgroup level (GMM)---carry several implications for the design of AI systems that must maintain appropriate user trust. We frame these as design hypotheses warranting further empirical testing.
 
 **Implication 1: Passive reliability changes are insufficient.** The finding that 60% of users in the Catastrophic class maintained over-reliance despite an 80-percentage-point drop in AI accuracy demonstrates that simply changing system reliability does not automatically update user trust. AI systems must actively communicate reliability changes---for example, through explicit uncertainty displays, confidence indicators, or performance dashboards---rather than assuming users will detect and respond to performance shifts on their own.
 
@@ -253,17 +253,17 @@ The five-pattern typology identified in this study has several concrete implicat
 
 ### Complementary Methods: LCGA and GMM
 
-Our dual-method approach demonstrates the value of combining trajectory-explicit (LCGA) and feature-based (GMM) clustering for trust calibration research. LCGA answers whether the experimental manipulation produces distinct trajectory shapes (yes---two macro-level patterns with 96% condition separation). GMM answers what behavioral subgroups exist within conditions (five distinct patterns corresponding to theoretical predictions). Cross-method comparison (ARI = .362) confirms that the methods capture different levels of structure, providing complementary rather than redundant evidence. We recommend this approach as a methodological standard for trust trajectory research.
+Our dual-method approach illustrates how trajectory-explicit (LCGA) and feature-based (GMM) clustering can serve different roles in trust calibration research. LCGA provided the primary, inferentially robust finding: the experimental manipulation produces two distinct trajectory classes with 96% condition separation. GMM served an exploratory role, probing within-condition heterogeneity to suggest behavioral subgroups that align with theoretically predicted patterns. Cross-method comparison (ARI = .362) confirms that the methods capture different levels of structure---condition-level macro-patterns (LCGA) versus within-condition micro-heterogeneity (GMM)---providing complementary rather than redundant information. For future studies with larger samples, this layered approach could move from hypothesis generation (as here) to confirmatory testing of within-condition subgroups.
 
 ### Limitations and Future Directions
 
-Several limitations should be noted. First, with *N* = 100 sessions (50 per condition), some GMM classes are small (Class 4, *n* = 9; Class 6, *n* = 2). Larger samples are needed to replicate these patterns. Second, six windows (five trials each) provide limited temporal resolution for distinguishing true oscillation from measurement noise. Third, chess puzzles represent a specific domain; generalization to other human-AI interaction contexts requires further study. Fourth, each participant completed both conditions, meaning carry-over effects between sessions cannot be fully ruled out. Fifth, this study is registered as a secondary analysis of existing data. While analyses were pre-registered, the data were observed prior to the analysis plan (as disclosed in the pre-registration).
+Several limitations should be noted. First, the sample size (*N* = 100 sessions, 50 per condition) is below the commonly recommended minimum of 200 for GMM (Nylund et al., 2007). The GMM six-class solution should therefore be interpreted as exploratory and hypothesis-generating rather than confirmatory. In particular, Class 6 (*n* = 2) represents extreme outlier cases rather than a robust subgroup, and Class 4 (ABE, *n* = 9) is at the boundary of reliable estimation given the 20-feature trajectory space. The LCGA results (*G* = 2, Entropy = 0.871) rest on more solid inferential ground given the simpler model structure. Second, six windows (five trials each) provide limited temporal resolution for distinguishing true oscillation from measurement noise. Third, chess puzzles represent a specific domain; generalization to other human-AI interaction contexts requires further study. Fourth, each participant completed both conditions, meaning carry-over effects between sessions cannot be fully ruled out. Fifth, this study is registered as a secondary analysis of existing data. While analyses were pre-registered, the data were observed prior to the analysis plan (as disclosed in the pre-registration). Sixth, the GMM results showed low cross-strategy agreement (ARI = 0.088--0.243 between feature strategies), indicating that the identified subgroups are sensitive to feature selection, a common limitation in small-sample clustering applications.
 
 Future research should address these limitations through larger-sample studies with finer temporal resolution, extend the paradigm to applied domains (e.g., medical diagnosis, autonomous driving), and directly test whether identifying users' trust updating profiles early in an interaction enables effective personalized interventions. The development of real-time $\alpha$ estimation algorithms and their integration into adaptive AI interfaces represents a promising translational direction.
 
 ## Conclusion
 
-This study provides the first experimental evidence for a five-pattern typology of trust calibration trajectories---Convergent, Catastrophic, Oscillating, AI Benefit Emergence, and Extreme Compliance---following AI reliability switches. Using complementary LCGA and GMM analyses, we demonstrated that the same experimental event (a reliability switch) produces qualitatively different responses across individuals, driven by asymmetric trust updating mechanisms captured by the Bayesian Trust Update Model. The dominance of Catastrophic over-reliance (60%) in the trust violation condition and the persistence of ABE under-reliance (18%) in the trust repair condition challenge the assumption that users will naturally recalibrate trust when AI reliability changes. These findings establish that adaptive AI systems must account for individual differences in trust updating and actively support recalibration, rather than relying on passive reliability changes to guide user behavior.
+This study provides experimental evidence that AI reliability switches produce two robustly distinguishable trust calibration trajectory classes (LCGA: *G* = 2, 96% condition separation, Entropy = 0.871), confirming that the direction of reliability change is the dominant driver of trust dynamics. Exploratory GMM analysis further suggested within-condition heterogeneity consistent with the Bayesian Trust Update Model's predictions---including Convergent, Catastrophic, Oscillating, and ABE patterns---several of which converge with independently identified patterns in large-scale educational data (*N* = 4,568; You, 2026). Given the modest sample size, the GMM-derived subgroups should be treated as hypotheses for future confirmatory research rather than established findings. Nonetheless, the suggestive prevalence of Catastrophic over-reliance (~60% of trust violation sessions) and ABE under-reliance (~18% of trust repair sessions) highlights that passive reliability changes may be insufficient to recalibrate user trust, motivating the development of adaptive AI systems that actively detect and support individual trust updating profiles.
 
 ---
 
@@ -280,6 +280,8 @@ Goddard, K., Roudsari, A., & Wyatt, J. C. (2012). Automation bias: A systematic 
 Lee, J. D., & Moray, N. (1992). Trust, control strategies and allocation of function in human-machine systems. *Ergonomics*, *35*(10), 1243--1270. https://doi.org/10.1080/00140139208967392
 
 Lee, J. D., & See, K. A. (2004). Trust in automation: Designing for appropriate reliance. *Human Factors*, *46*(1), 50--80. https://doi.org/10.1518/hfes.46.1.50.30392
+
+Nylund, K. L., Asparouhov, T., & Muthén, B. O. (2007). Deciding on the number of classes in latent class analysis and growth mixture modeling: A Monte Carlo simulation study. *Structural Equation Modeling*, *14*(4), 535--569. https://doi.org/10.1080/10705510701575396
 
 Muir, B. M., & Moray, N. (1996). Trust in automation. Part II. Experimental studies of trust and human intervention in a process control simulation. *Ergonomics*, *39*(3), 429--460. https://doi.org/10.1080/00140139608964474
 
@@ -386,55 +388,35 @@ You, H. (2026). Trust calibration trajectories in AI-assisted learning: A Bayesi
 
 **Figure 2**
 
-*Trust Calibration Space: Theoretical Trajectory Framework ($T \times R \times \tau$)*
-
-![3D Theoretical Framework](../figures/Figure_2_3D_Theoretical_Framework.png)
-
-*Note.* Idealized trajectories for five theoretically derived trust calibration patterns in the three-dimensional Trust ($T$) $\times$ AI Reliability ($R$) $\times$ Time ($\tau$) space. The gray plane represents the $T = R$ calibration surface (perfect calibration). Convergent trajectories approach this plane from either direction; Catastrophic trajectories maintain high trust despite reliability drops (deviating above the plane); ABE trajectories maintain low trust despite reliability improvements (deviating below the plane); Oscillating trajectories fluctuate around the calibration surface; Stagnant trajectories remain fixed regardless of reliability changes. Circles indicate trajectory start points ($\tau = 0$); stars indicate end points ($\tau = 10$). The vertical plane at $\tau = 5$ marks the reliability switch.
-
----
-
-**Figure 3**
-
-*Theoretical Predictions Versus Empirical GMM Findings*
-
-![Theory vs Empirical](../figures/Figure_3_Theory_vs_Empirical.png)
-
-*Note.* (a) Theoretical predictions for calibration gap trajectories under five trajectory patterns, derived from the Bayesian Trust Update Model with different $\alpha^+$/$\alpha^-$ configurations. The dashed vertical line marks the reliability switch. (b) Empirical calibration gap trajectories from the six-class GMM solution (Strategy 2, VEI parameterization), showing five empirically identified trajectory patterns. The correspondence between panels demonstrates that the theoretically derived patterns are recoverable from data-driven clustering: Catastrophic over-reliance (gap $\approx$ +0.42 post-switch), ABE under-reliance (gap $\approx$ --0.60 post-switch), Convergent adaptation (gap approaching 0), and Oscillating non-monotonic adjustment.
-
----
-
-**Figure 4**
-
 *LCGA Calibration Gap Trajectories by Class*
 
-![LCGA Trajectories](../figures/Figure_2_LCGA_Trajectories.png)
+![LCGA Trajectories](../figures/Figure_3_LCGA_Trajectories.png)
 
 *Note.* Mean calibration gap trajectories for the two-class LCGA solution (*G* = 2). Class 1 (*n* = 52, C1-dominant) shows a shift from under-reliance to over-reliance at the switch point. Class 2 (*n* = 48, C2-dominant) shows a shift from over-reliance to under-reliance. Shaded bands represent 95% confidence intervals. Individual session trajectories are shown in light traces. Entropy = 0.871; classification accuracy = 96%.
 
 ---
 
-**Figure 5**
+**Figure 3**
 
 *GMM Six-Class Trajectory Profiles*
 
-![GMM Six-Class Profiles](../figures/Figure_3_GMM_Six_Class_Profiles.png)
+![GMM Six-Class Profiles](../figures/Figure_4_GMM_Six_Class_Profiles.png)
 
-*Note.* Trajectory profiles for the six-class GMM solution, showing behavioral reliance (*R*~b~, solid line) and AI accuracy (dashed line) across six windows. Orange/red shading indicates over-reliance (*R*~b~ > AI accuracy); blue shading indicates under-reliance (*R*~b~ < AI accuracy). Classes are labeled by their theoretical pattern mapping: Convergent (rapid), Oscillating, Convergent (gradual), AI Benefit Emergence (ABE), Catastrophic, and Extreme Compliance.
+*Note.* Trajectory profiles for the six-class GMM solution (Strategy 2, VEI parameterization), showing behavioral reliance (*R*~b~, solid line) and AI accuracy (dashed line) across six windows. Orange/red shading indicates over-reliance (*R*~b~ > AI accuracy); blue shading indicates under-reliance (*R*~b~ < AI accuracy). Classes are labeled by their theoretical pattern mapping: Convergent (rapid), Oscillating, Convergent (gradual), AI Benefit Emergence (ABE), Catastrophic, and Extreme Compliance. Given *N* = 100, these subgroups should be considered exploratory; Class 6 (*n* = 2) in particular represents extreme outlier cases.
 
 ---
 
-**Figure 6**
+**Figure 4**
 
 *GMM Model Selection: BIC Across Parameterizations and Number of Classes*
 
 ![GMM Model Selection](../figures/Figure_6_GMM_Model_Selection.png)
 
-*Note.* (a) Bayesian Information Criterion (BIC; higher is better) for Strategy 2 (trajectory features) GMM across four covariance parameterizations (EII, VII, EEI, VEI) and class numbers (*G* = 2--8). The VEI parameterization consistently achieved the highest BIC. (b) Best BIC per *G* showing the elbow at *G* = 6 (VEI, BIC = --4966.3). The $\Delta$BIC from *G* = 5 to *G* = 6 was +60.1 (substantial improvement), while the $\Delta$BIC from *G* = 6 to *G* = 7 was --31.4 (decline), confirming the six-class solution as optimal.
+*Note.* (a) Bayesian Information Criterion (BIC; higher is better) for Strategy 2 (trajectory features) GMM across four covariance parameterizations (EII, VII, EEI, VEI) and class numbers (*G* = 2--8). The VEI parameterization consistently achieved the highest BIC. (b) Best BIC per *G* showing the elbow at *G* = 6 (VEI, BIC = --4966.3). The $\Delta$BIC from *G* = 5 to *G* = 6 was +60.1 (substantial improvement), while the $\Delta$BIC from *G* = 6 to *G* = 7 was --31.4 (decline), supporting the six-class solution.
 
 ---
 
-**Figure 7**
+**Figure 5**
 
 *Cross-Method Comparison: LCGA and GMM Class Assignments*
 

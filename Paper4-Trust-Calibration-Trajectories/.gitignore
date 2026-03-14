@@ -11,6 +11,9 @@ data/tier1-experiments/
 # Analysis outputs (regeneratable)
 analysis/outputs/
 
+# Archived intermediate figures (iteration artifacts, regeneratable)
+_archive/figures/intermediate/
+
 # OS files
 .DS_Store
 __MACOSX/
