@@ -1,0 +1,41 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: appropriate_reliance_diagnostic ~ analogy_domain * ai_correct +  
+    task_block + (1 | user_id) + (1 | task_id)
+   Data: follow_diag
+Control: glmerControl(optimizer = "bobyqa")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   2031.3    2079.6   -1006.7    2013.3      1574 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.5370 -0.7136 -0.5914  1.0256  1.9852 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ user_id (Intercept) 0.2081   0.4562  
+ task_id (Intercept) 0.1541   0.3925  
+Number of obs: 1583, groups:  user_id, 248; task_id, 12
+
+Fixed effects:
+                                     Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                           0.51373    0.40141   1.280    0.201    
+analogy_domainvaccine                 0.38973    0.31188   1.250    0.211    
+analogy_domainweather                -0.15747    0.30339  -0.519    0.604    
+ai_correctTRUE                       -1.11201    0.25378  -4.382 1.18e-05 ***
+task_block                           -0.04319    0.15332  -0.282    0.778    
+analogy_domainvaccine:ai_correctTRUE -0.22264    0.34699  -0.642    0.521    
+analogy_domainweather:ai_correctTRUE  0.25843    0.33960   0.761    0.447    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+                 (Intr) anlgy_dmnv anlgy_dmnw a_TRUE tsk_bl anlgy_dmnv:_TRUE
+anlgy_dmnvc      -0.403                                                     
+anlgy_dmnwt      -0.408  0.514                                              
+a_crrctTRUE      -0.519  0.621      0.641                                   
+task_block       -0.778  0.016      0.005      0.027                        
+anlgy_dmnv:_TRUE  0.355 -0.899     -0.461     -0.694 -0.006                 
+anlgy_dmnw:_TRUE  0.367 -0.459     -0.894     -0.711 -0.009  0.514          

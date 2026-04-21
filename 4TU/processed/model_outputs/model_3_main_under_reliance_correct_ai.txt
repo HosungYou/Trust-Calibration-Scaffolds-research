@@ -1,0 +1,35 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: under_reliance ~ user_group + task_position + (1 | user_id) +  
+    (1 | task_id)
+   Data: main_correct_ai
+Control: glmerControl(optimizer = "bobyqa")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1414.1    1444.2    -701.0    1402.1      1112 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.6216 -0.7924  0.4399  0.6654  1.6521 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ user_id (Intercept) 1.1034   1.0504  
+ task_id (Intercept) 0.4076   0.6384  
+Number of obs: 1118, groups:  user_id, 281; task_id, 10
+
+Fixed effects:
+                   Estimate Std. Error z value Pr(>|z|)   
+(Intercept)        -0.19825    0.31023  -0.639  0.52280   
+user_groupaccuracy -0.14109    0.24046  -0.587  0.55737   
+user_groupanalogy   0.31204    0.23458   1.330  0.18345   
+task_position       0.08275    0.02667   3.102  0.00192 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) usr_grpc usr_grpn
+usr_grpccrc -0.411                  
+usr_grpnlgy -0.425  0.537           
+task_positn -0.491  0.005    0.006  
